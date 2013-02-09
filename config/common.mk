@@ -72,20 +72,20 @@ PRODUCT_COPY_FILES += \
 
 # JELLYBAM APPS
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/app/BamPapers.apk:system/app/BamPapers.apk \
-    vendor/cm/prebuilt/common/app/XPosedDPI.apk:system/app/XPosedDPI.apk \
-    vendor/cm/prebuilt/common/app/XPosedInstaller.apk:system/app/XPosedInstaller.apk \
-    vendor/cm/prebuilt/common/app/ATweakerFree.apk:system/app/ATweakerFree.apk \
-    vendor/cm/prebuilt/common/app/UpdateMe.apk:system/app/UpdateMe.apk \
-    vendor/cm/prebuilt/common/app/AccuweatherDaemon.apk:system/app/AccuweatherDaemon.apk \
-    vendor/cm/prebuilt/common/app/AccuweatherWidget.apk:system/app/AccuweatherWidget.apk \
-    vendor/cm/prebuilt/common/app/AccuweatherWidget_Main.apk:system/app/AccuweatherWidget_Main.apk \
-    vendor/cm/prebuilt/common/app/BadgeProvider.apk:system/app/BadgeProvider.apk \
-    vendor/cm/prebuilt/common/app/SamsungServiceMode.apk:system/app/SamsungServiceMode.apk \
-    vendor/cm/prebuilt/common/app/SamsungTTS.apk:system/app/SamsungTTS.apk \
-    vendor/cm/prebuilt/common/app/SamsungWidget_WeatherClock.apk:system/app/SamsungWidget_WeatherClock.apk \
-    vendor/cm/prebuilt/common/app/SecLauncher2.apk:system/app/SecLauncher2.apk \
-    vendor/cm/prebuilt/common/app/SecWallpaperChooser.apk:system/app/SecWallpaperChooser.apk 
+    vendor/cm/prebuilt/common/apps/BamPapers.apk:system/app/BamPapers.apk \
+    vendor/cm/prebuilt/common/apps/XPosedDPI.apk:system/app/XPosedDPI.apk \
+    vendor/cm/prebuilt/common/apps/XPosedInstaller.apk:system/app/XPosedInstaller.apk \
+    vendor/cm/prebuilt/common/apps/ATweakerFree.apk:system/app/ATweakerFree.apk \
+    vendor/cm/prebuilt/common/apps/UpdateMe.apk:system/app/UpdateMe.apk \
+    vendor/cm/prebuilt/common/apps/AccuweatherDaemon.apk:system/app/AccuweatherDaemon.apk \
+    vendor/cm/prebuilt/common/apps/AccuweatherWidget.apk:system/app/AccuweatherWidget.apk \
+    vendor/cm/prebuilt/common/apps/AccuweatherWidget_Main.apk:system/app/AccuweatherWidget_Main.apk \
+    vendor/cm/prebuilt/common/apps/BadgeProvider.apk:system/app/BadgeProvider.apk \
+    vendor/cm/prebuilt/common/apps/SamsungServiceMode.apk:system/app/SamsungServiceMode.apk \
+    vendor/cm/prebuilt/common/apps/SamsungTTS.apk:system/app/SamsungTTS.apk \
+    vendor/cm/prebuilt/common/apps/SamsungWidget_WeatherClock.apk:system/app/SamsungWidget_WeatherClock.apk \
+    vendor/cm/prebuilt/common/apps/SecLauncher2.apk:system/app/SecLauncher2.apk \
+    vendor/cm/prebuilt/common/apps/SecWallpaperChooser.apk:system/app/SecWallpaperChooser.apk 
 
 # JELLYBAM XML
 PRODUCT_COPY_FILES += \
