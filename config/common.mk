@@ -72,6 +72,7 @@ PRODUCT_COPY_FILES += \
 
 # JELLYBAM APPS
 PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/apps/PerformanceControl.apk:system/app/PerformanceControl.apk \
     vendor/cm/prebuilt/common/apps/BamPapers.apk:system/app/BamPapers.apk \
     vendor/cm/prebuilt/common/apps/XPosedDPI.apk:system/app/XPosedDPI.apk \
     vendor/cm/prebuilt/common/apps/XPosedInstaller.apk:system/app/XPosedInstaller.apk \
