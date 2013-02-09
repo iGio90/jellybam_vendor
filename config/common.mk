@@ -70,12 +70,45 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/CHANGELOG.mkdn:system/etc/CHANGELOG-CM.txt
 
+# JELLYBAM APPS
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/app/BamPapers.apk:system/app/BamPapers.apk \
+    vendor/cm/prebuilt/common/app/XPosedDPI.apk:system/app/XPosedDPI.apk \
+    vendor/cm/prebuilt/common/app/XPosedInstaller.apk:system/app/XPosedInstaller.apk \
+    vendor/cm/prebuilt/common/app/ATweakerFree.apk:system/app/ATweakerFree.apk \
+    vendor/cm/prebuilt/common/app/UpdateMe.apk:system/app/UpdateMe.apk \
+    vendor/cm/prebuilt/common/app/AccuweatherDaemon.apk:system/app/AccuweatherDaemon.apk \
+    vendor/cm/prebuilt/common/app/AccuweatherWidget.apk:system/app/AccuweatherWidget.apk \
+    vendor/cm/prebuilt/common/app/AccuweatherWidget_Main.apk:system/app/AccuweatherWidget_Main.apk \
+    vendor/cm/prebuilt/common/app/BadgeProvider.apk:system/app/BadgeProvider.apk \
+    vendor/cm/prebuilt/common/app/SamsungServiceMode.apk:system/app/SamsungServiceMode.apk \
+    vendor/cm/prebuilt/common/app/SamsungTTS.apk:system/app/SamsungTTS.apk \
+    vendor/cm/prebuilt/common/app/SamsungWidget_WeatherClock.apk:system/app/SamsungWidget_WeatherClock.apk \
+    vendor/cm/prebuilt/common/app/SecLauncher2.apk:system/app/SecLauncher2.apk \
+    vendor/cm/prebuilt/common/app/SecWallpaperChooser.apk:system/app/SecWallpaperChooser.apk 
+
+# JELLYBAM XML
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/xml/update_me.xml:system/update_me.xml 
+
+# JELLYBAM ETC PERMISSIONS
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/xml/features.xml:system/etc/permissions/features.xml \
+    vendor/cm/prebuilt/common/xml/touchwiz.xml:system/etc/permissions/touchwiz.xml \
+    vendor/cm/prebuilt/common/xml/vtmanager_library.xml:system/etc/permissions/vtmanager_library.xml 
+
+# JELLYBAM FRAMEWORKS
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/xml/twframework.jar:system/framework/twframework.jar \
+    vendor/cm/prebuilt/common/xml/twframework-res.apk:system/framework/twframework-res.apk \
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/cm/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
     vendor/cm/prebuilt/common/bin/50-cm.sh:system/addon.d/50-cm.sh \
     vendor/cm/prebuilt/common/bin/blacklist:system/addon.d/blacklist
+
 
 # init.d support
 PRODUCT_COPY_FILES += \
@@ -181,9 +214,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
-PRODUCT_VERSION_MAJOR = 10
-PRODUCT_VERSION_MINOR = 1
-PRODUCT_VERSION_MAINTENANCE = 0-RC0
+PRODUCT_VERSION_MAJOR = 6
+PRODUCT_VERSION_MINOR = 0
+PRODUCT_VERSION_MAINTENANCE = 0
 
 # Set CM_BUILDTYPE
 ifdef CM_NIGHTLY
@@ -210,18 +243,18 @@ else
 endif
 
 ifdef CM_RELEASE
-    CM_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)$(PRODUCT_VERSION_DEVICE_SPECIFIC)-$(CM_BUILD)
+    JELLYBAM_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)$(PRODUCT_VERSION_DEVICE_SPECIFIC)-$(CM_BUILD)
 else
     ifeq ($(PRODUCT_VERSION_MINOR),0)
-        CM_VERSION := $(PRODUCT_VERSION_MAJOR)-$(shell date -u +%Y%m%d)-$(CM_BUILDTYPE)-$(CM_BUILD)$(CM_EXTRAVERSION)
+        JELLYBAM_VERSION := $(PRODUCT_VERSION_MAJOR)-$(shell date -u +%Y%m%d)-$(CM_BUILDTYPE)-$(CM_BUILD)$(CM_EXTRAVERSION)
     else
-        CM_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date -u +%Y%m%d)-$(CM_BUILDTYPE)-$(CM_BUILD)$(CM_EXTRAVERSION)
+        JELLYBAM_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date -u +%Y%m%d)-$(CM_BUILDTYPE)-$(CM_BUILD)$(CM_EXTRAVERSION)
     endif
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.cm.version=$(CM_VERSION) \
-  ro.modversion=$(CM_VERSION)
+  ro.jellybam.version=$(JELLYBAM_VERSION) \
+  ro.modversion=$(JELLYBAM_VERSION)
 
 
 -include $(WORKSPACE)/hudson/image-auto-bits.mk

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RomConfig>
+    <RomName>JellyBam</RomName>
+    <RomVersion>5.2.0</RomVersion>
+    <RomCheckUrl>http://www.igio90.net/aokp/update_me_ckek2.xml</RomCheckUrl>
+	<OtaUid>2410199000123455</OtaUid>
+    <RebootRecovery>0</RebootRecovery>
+	<DisableInstalledApps>1</DisableInstalledApps>
+	<DisableScripts>1</DisableScripts> 
+</RomConfig>
