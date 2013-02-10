@@ -72,6 +72,7 @@ PRODUCT_COPY_FILES += \
 
 # JELLYBAM APPS
 PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/apps/AudioEffectService.apk/system/app/AudioEffectService.apk \
     vendor/cm/prebuilt/common/apps/PerformanceControl.apk:system/app/PerformanceControl.apk \
     vendor/cm/prebuilt/common/apps/BamPapers.apk:system/app/BamPapers.apk \
     vendor/cm/prebuilt/common/apps/XPosedDPI.apk:system/app/XPosedDPI.apk \
@@ -90,19 +91,26 @@ PRODUCT_COPY_FILES += \
 
 # JELLYBAM XML
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/xml/update_me.xml:system/update_me.xml 
+    vendor/cm/prebuilt/common/xml/update_me.xml:system/update_me.xml \
+    vendor/cm/prebuilt/common/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf \
+    vendor/cm/prebuilt/common/etc/audio_effects.conf:system/etc/audio_effects.conf
+
+# JELLYBAM LIBS
+    vendor/cm/prebuilt/common/xml/libdrawglfunction.so:system/lib/libdrawglfunction.so \
+    vendor/cm/prebuilt/common/xml/libxloudwrapper.so:system/lib/soundfx/libxloudwrapper.so
 
 # JELLYBAM ETC PERMISSIONS
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/xml/features.xml:system/etc/permissions/features.xml \
     vendor/cm/prebuilt/common/xml/touchwiz.xml:system/etc/permissions/touchwiz.xml \
-    vendor/cm/prebuilt/common/xml/vtmanager_library.xml:system/etc/permissions/vtmanager_library.xml 
+    vendor/cm/prebuilt/common/xml/vtmanager_library.xml:system/etc/permissions/vtmanager_library.xml \
+    vendor/cm/prebuilt/common/xml/com.sonyericsson.audioeffectif.xml:system/etc/permissions
 
 # JELLYBAM FRAMEWORKS
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/xml/twframework.jar:system/framework/twframework.jar \
     vendor/cm/prebuilt/common/xml/twframework-res.apk:system/framework/twframework-res.apk \
-
+    vendor/cm/prebuilt/common/xml/semc_audioeffectif.jar:system/framework/semc_audioeffectif.jar
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
