@@ -239,5 +239,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.jellybam.version=$(JELLYBAM_VERSION) \
   ro.modversion=$(JELLYBAM_VERSION)
 
+PRODUCT_PROPERTY_OVERRIDES += \  
+  ro.service.swiqi.supported=true \
+  persist.service.swiqi.enable=1
 
 -include $(WORKSPACE)/hudson/image-auto-bits.mk
