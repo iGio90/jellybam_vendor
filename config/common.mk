@@ -64,7 +64,7 @@ PRODUCT_COPY_FILES += \
 
 # JELLYBAM APPS
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/apps/AudioEffectService.apk/system/app/AudioEffectService.apk \
+    vendor/cm/prebuilt/common/apps/AudioEffectService.apk:system/app/AudioEffectService.apk \
     vendor/cm/prebuilt/common/apps/PerformanceControl.apk:system/app/PerformanceControl.apk \
     vendor/cm/prebuilt/common/apps/BamPapers.apk:system/app/BamPapers.apk \
     vendor/cm/prebuilt/common/apps/XPosedDPI.apk:system/app/XPosedDPI.apk \
@@ -79,7 +79,10 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/apps/SamsungTTS.apk:system/app/SamsungTTS.apk \
     vendor/cm/prebuilt/common/apps/SamsungWidget_WeatherClock.apk:system/app/SamsungWidget_WeatherClock.apk \
     vendor/cm/prebuilt/common/apps/SecLauncher2.apk:system/app/SecLauncher2.apk \
-    vendor/cm/prebuilt/common/apps/SecWallpaperChooser.apk:system/app/SecWallpaperChooser.apk 
+    vendor/cm/prebuilt/common/apps/SecWallpaperChooser.apk:system/app/SecWallpaperChooser.apk \
+    vendor/cm/prebuilt/common/libs/libdrawglfunction.so:system/lib/libdrawglfunction.so \
+    vendor/cm/prebuilt/common/libs/libswiqibmpcnv.so:system/lib/libswiqibmpcnv.so \
+    vendor/cm/prebuilt/common/libs/libxloudwrapper.so:system/lib/soundfx/libxloudwrapper.so 
 
 # JELLYBAM XML
 PRODUCT_COPY_FILES += \
@@ -88,11 +91,6 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/audio_effects.conf:system/etc/audio_effects.conf \
     vendor/cm/prebuilt/common/etc/be_movie:system/etc/be_movie \
     vendor/cm/prebuilt/common/etc/be_photo:system/etc/be_photo
-
-# JELLYBAM LIBS
-    vendor/cm/prebuilt/common/xml/libdrawglfunction.so:system/lib/libdrawglfunction.so \
-    vendor/cm/prebuilt/common/xml/libxloudwrapper.so:system/lib/soundfx/libxloudwrapper.so \
-    vendor/cm/prebuilt/common/xml/libswiqibmpcnv.so:system/lib/libswiqibmpcnv.so
 
 # JELLYBAM ETC PERMISSIONS
 PRODUCT_COPY_FILES += \
