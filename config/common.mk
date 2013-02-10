@@ -46,14 +46,6 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/bootanimation/$(TARGET_BOOTANIMATION_NAME).zip:system/media/bootanimation.zip
 endif
 
-ifdef JELLYBAM_NIGHTLY
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.rommanager.developerid=cyanogenmodnightly
-else
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.rommanager.developerid=cyanogenmod
-endif
-
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -93,7 +85,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/xml/update_me.xml:system/update_me.xml \
     vendor/cm/prebuilt/common/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf \
-    vendor/cm/prebuilt/common/etc/audio_effects.conf:system/etc/audio_effects.conf
+    vendor/cm/prebuilt/common/etc/audio_effects.conf:system/etc/audio_effects.conf \
     vendor/cm/prebuilt/common/etc/be_movie:system/etc/be_movie \
     vendor/cm/prebuilt/common/etc/be_photo:system/etc/be_photo
 
@@ -237,9 +229,7 @@ JELLYBAM_VERSION = v$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.jellybam.version=$(JELLYBAM_VERSION) \
-  ro.modversion=$(JELLYBAM_VERSION)
-
-PRODUCT_PROPERTY_OVERRIDES += \  
+  ro.modversion=$(JELLYBAM_VERSION) \
   ro.service.swiqi.supported=true \
   persist.service.swiqi.enable=1
 
