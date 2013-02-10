@@ -94,30 +94,35 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/xml/update_me.xml:system/update_me.xml \
     vendor/cm/prebuilt/common/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf \
     vendor/cm/prebuilt/common/etc/audio_effects.conf:system/etc/audio_effects.conf
+    vendor/cm/prebuilt/common/etc/be_movie:system/etc/be_movie \
+    vendor/cm/prebuilt/common/etc/be_photo:system/etc/be_photo
 
 # JELLYBAM LIBS
     vendor/cm/prebuilt/common/xml/libdrawglfunction.so:system/lib/libdrawglfunction.so \
-    vendor/cm/prebuilt/common/xml/libxloudwrapper.so:system/lib/soundfx/libxloudwrapper.so
+    vendor/cm/prebuilt/common/xml/libxloudwrapper.so:system/lib/soundfx/libxloudwrapper.so \
+    vendor/cm/prebuilt/common/xml/libswiqibmpcnv.so:system/lib/libswiqibmpcnv.so
 
 # JELLYBAM ETC PERMISSIONS
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/xml/features.xml:system/etc/permissions/features.xml \
     vendor/cm/prebuilt/common/xml/touchwiz.xml:system/etc/permissions/touchwiz.xml \
     vendor/cm/prebuilt/common/xml/vtmanager_library.xml:system/etc/permissions/vtmanager_library.xml \
-    vendor/cm/prebuilt/common/xml/com.sonyericsson.audioeffectif.xml:system/etc/permissions
+    vendor/cm/prebuilt/common/xml/com.sonyericsson.audioeffectif.xml:system/etc/permissions/com.sonyericsson.audioeffectif.xml \
+    vendor/cm/prebuilt/common/xml/com.sonyericsson.android.SwIqiBmp.xml:system/etc/permissions/com.sonyericsson.android.SwIqiBmp.xml
 
 # JELLYBAM FRAMEWORKS
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/xml/twframework.jar:system/framework/twframework.jar \
     vendor/cm/prebuilt/common/xml/twframework-res.apk:system/framework/twframework-res.apk \
-    vendor/cm/prebuilt/common/xml/semc_audioeffectif.jar:system/framework/semc_audioeffectif.jar
+    vendor/cm/prebuilt/common/xml/semc_audioeffectif.jar:system/framework/semc_audioeffectif.jar \
+    vendor/cm/prebuilt/common/xml/com.sonyericsson.android.SwIqiBmp.jar:system/framework/com.sonyericsson.android.SwIqiBmp.jar
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/cm/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
     vendor/cm/prebuilt/common/bin/50-cm.sh:system/addon.d/50-cm.sh \
     vendor/cm/prebuilt/common/bin/blacklist:system/addon.d/blacklist
-
 
 # init.d support
 PRODUCT_COPY_FILES += \
