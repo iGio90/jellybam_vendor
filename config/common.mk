@@ -123,7 +123,7 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/gapps/app/Talk.apk:system/app/Talk.apk \
     vendor/cm/prebuilt/common/gapps/app/Talkback.apk:system/app/Talkback.apk \
     vendor/cm/prebuilt/common/gapps/app/VoiceSearchStub.apk:system/app/VoiceSearchStub.apk \
-    vendor/cm/prebuilt/common/gapps/app/PicasaSyncAdapter.apk:system/app/PicasaSyncAdapter.apk \
+    vendor/cm/prebuilt/common/apps/PicasaSyncAdapter.apk:system/app/PicasaSyncAdapter.apk \
     vendor/cm/prebuilt/common/gapps/app/YouTube.apk:system/app/YouTube.apk \
     vendor/cm/prebuilt/common/gapps/etc/g.prop:system/etc/g.prop \
     vendor/cm/prebuilt/common/gapps/etc/permissions/com.google.android.maps.xml:system/etc/permissions/com.google.android.maps.xml \
