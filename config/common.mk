@@ -62,7 +62,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/CHANGELOG.mkdn:system/etc/CHANGELOG-CM.txt
 
-# JELLYBAM APPS
+# JELLYBAM THINGS
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/apps/AudioEffectService.apk:system/app/AudioEffectService.apk \
     vendor/cm/prebuilt/common/apps/PerformanceControl.apk:system/app/PerformanceControl.apk \
@@ -82,30 +82,111 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/apps/SecWallpaperChooser.apk:system/app/SecWallpaperChooser.apk \
     vendor/cm/prebuilt/common/libs/libdrawglfunction.so:system/lib/libdrawglfunction.so \
     vendor/cm/prebuilt/common/libs/libswiqibmpcnv.so:system/lib/libswiqibmpcnv.so \
-    vendor/cm/prebuilt/common/libs/libxloudwrapper.so:system/lib/soundfx/libxloudwrapper.so 
-
-# JELLYBAM XML
-PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/libs/libxloudwrapper.so:system/lib/soundfx/libxloudwrapper.so \
     vendor/cm/prebuilt/common/xml/update_me.xml:system/update_me.xml \
     vendor/cm/prebuilt/common/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf \
     vendor/cm/prebuilt/common/etc/audio_effects.conf:system/etc/audio_effects.conf \
     vendor/cm/prebuilt/common/etc/be_movie:system/etc/be_movie \
-    vendor/cm/prebuilt/common/etc/be_photo:system/etc/be_photo
-
-# JELLYBAM ETC PERMISSIONS
-PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/etc/be_photo:system/etc/be_photo \
     vendor/cm/prebuilt/common/xml/features.xml:system/etc/permissions/features.xml \
     vendor/cm/prebuilt/common/xml/touchwiz.xml:system/etc/permissions/touchwiz.xml \
     vendor/cm/prebuilt/common/xml/vtmanager_library.xml:system/etc/permissions/vtmanager_library.xml \
     vendor/cm/prebuilt/common/xml/com.sonyericsson.audioeffectif.xml:system/etc/permissions/com.sonyericsson.audioeffectif.xml \
-    vendor/cm/prebuilt/common/xml/com.sonyericsson.android.SwIqiBmp.xml:system/etc/permissions/com.sonyericsson.android.SwIqiBmp.xml
-
-# JELLYBAM FRAMEWORKS
-PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/xml/com.sonyericsson.android.SwIqiBmp.xml:system/etc/permissions/com.sonyericsson.android.SwIqiBmp.xml \
     vendor/cm/prebuilt/common/xml/twframework.jar:system/framework/twframework.jar \
     vendor/cm/prebuilt/common/xml/twframework-res.apk:system/framework/twframework-res.apk \
     vendor/cm/prebuilt/common/xml/semc_audioeffectif.jar:system/framework/semc_audioeffectif.jar \
-    vendor/cm/prebuilt/common/xml/com.sonyericsson.android.SwIqiBmp.jar:system/framework/com.sonyericsson.android.SwIqiBmp.jar
+    vendor/cm/prebuilt/common/xml/com.sonyericsson.android.SwIqiBmp.jar:system/framework/com.sonyericsson.android.SwIqiBmp.jar \
+    vendor/cm/prebuilt/common/gapps/addon.d/70-gapps.sh:system/addon.d/70-gapps.sh \
+    vendor/cm/prebuilt/common/gapps/addon.d/71-gapps-faceunlock.sh:system/addon.d/71-gapps-faceunlock.sh \
+    vendor/cm/prebuilt/common/gapps/app/ChromeBookmarksSyncAdapter.apk:system/app/ChromeBookmarksSyncAdapter.apk \
+    vendor/cm/prebuilt/common/gapps/app/FaceLock.apk:system/app/FaceLock.apk \
+    vendor/cm/prebuilt/common/gapps/app/GenieWidget.apk:system/app/GenieWidget.apk \
+    vendor/cm/prebuilt/common/gapps/app/Gmail2.apk:system/app/Gmail2.apk \
+    vendor/cm/prebuilt/common/gapps/app/GmsCore.apk:system/app/GmsCore.apk \
+    vendor/cm/prebuilt/common/gapps/app/GoogleBackupTransport.apk:system/app/GoogleBackupTransport.apk \
+    vendor/cm/prebuilt/common/gapps/app/GoogleCalendarSyncAdapter.apk:system/app/GoogleCalendarSyncAdapter.apk \
+    vendor/cm/prebuilt/common/gapps/app/GoogleContactsSyncAdapter.apk:system/app/GoogleContactsSyncAdapter.apk \
+    vendor/cm/prebuilt/common/gapps/app/GoogleEars.apk:system/app/GoogleEars.apk \
+    vendor/cm/prebuilt/common/gapps/app/GoogleFeedback.apk:system/app/GoogleFeedback.apk \
+    vendor/cm/prebuilt/common/gapps/app/GoogleLoginService.apk:system/app/GoogleLoginService.apk \
+    vendor/cm/prebuilt/common/gapps/app/GooglePartnerSetup.apk:system/app/GooglePartnerSetup.apk \
+    vendor/cm/prebuilt/common/gapps/app/GoogleServicesFramework.apk:system/app/GoogleServicesFramework.apk \
+    vendor/cm/prebuilt/common/gapps/app/GoogleTTS.apk:system/app/GoogleTTS.apk \
+    vendor/cm/prebuilt/common/gapps/app/LatinImeDictionaryPack.apk:system/app/LatinImeDictionaryPack.apk \
+    vendor/cm/prebuilt/common/gapps/app/MediaUploader.apk:system/app/MediaUploader.apk \
+    vendor/cm/prebuilt/common/gapps/app/NetworkLocation.apk:system/app/NetworkLocation.apk \
+    vendor/cm/prebuilt/common/gapps/app/OneTimeInitializer.apk:system/app/OneTimeInitializer.apk \
+    vendor/cm/prebuilt/common/gapps/app/Phonesky.apk:system/app/Phonesky.apk \
+    vendor/cm/prebuilt/common/gapps/app/QuickSearchBox.apk:system/app/QuickSearchBox.apk \
+    vendor/cm/prebuilt/common/gapps/app/SetupWizard.apk:system/app/SetupWizard.apk \
+    vendor/cm/prebuilt/common/gapps/app/Talk.apk:system/app/Talk.apk \
+    vendor/cm/prebuilt/common/gapps/app/Talkback.apk:system/app/Talkback.apk \
+    vendor/cm/prebuilt/common/gapps/app/VoiceSearchStub.apk:system/app/VoiceSearchStub.apk \
+    vendor/cm/prebuilt/common/gapps/app/PicasaSyncAdapter.apk:system/app/PicasaSyncAdapter.apk \
+    vendor/cm/prebuilt/common/gapps/app/YouTube.apk:system/app/YouTube.apk \
+    vendor/cm/prebuilt/common/gapps/etc/g.prop:system/etc/g.prop \
+    vendor/cm/prebuilt/common/gapps/etc/permissions/com.google.android.maps.xml:system/etc/permissions/com.google.android.maps.xml \
+    vendor/cm/prebuilt/common/gapps/etc/permissions/com.google.android.media.effects.xml:system/etc/permissions/com.google.android.media.effects.xml \
+    vendor/cm/prebuilt/common/gapps/etc/permissions/com.google.widevine.software.drm.xml:system/etc/permissions/com.google.widevine.software.drm.xml \
+    vendor/cm/prebuilt/common/gapps/etc/permissions/features.xml:system/etc/permissions/features.xml \
+    vendor/cm/prebuilt/common/gapps/etc/preferred-apps/google.xml:system/etc/preferred-apps/google.xml \
+    vendor/cm/prebuilt/common/gapps/framework/com.google.android.maps.jar:system/framework/com.google.android.maps.jar \
+    vendor/cm/prebuilt/common/gapps/framework/com.google.android.media.effects.jar:system/framework/com.google.android.media.effects.jar \
+    vendor/cm/prebuilt/common/gapps/framework/com.google.widevine.software.drm.jar:system/framework/com.google.widevine.software.drm.jar \
+    vendor/cm/prebuilt/common/gapps/lib/libfacelock_jni.so:system/lib/libfacelock_jni.so \
+    vendor/cm/prebuilt/common/gapps/lib/libfilterpack_facedetect.so:system/lib/libfilterpack_facedetect.so \
+    vendor/cm/prebuilt/common/gapps/lib/libfrsdk.so:system/lib/libfrsdk.so \
+    vendor/cm/prebuilt/common/gapps/lib/libgcomm_jni.so:system/lib/libgcomm_jni.so \
+    vendor/cm/prebuilt/common/gapps/lib/libgoogle_recognizer_jni.so:system/lib/libgoogle_recognizer_jni.so \
+    vendor/cm/prebuilt/common/gapps/lib/libgtalk_jni.so:system/lib/libgtalk_jni.so \
+    vendor/cm/prebuilt/common/gapps/lib/libgtalk_stabilize.so:system/lib/libgtalk_stabilize.so \
+    vendor/cm/prebuilt/common/gapps/lib/libjni_latinime.so:system/lib/libjni_latinime.so \
+    vendor/cm/prebuilt/common/gapps/lib/libpatts_engine_jni_api.so:system/lib/libpatts_engine_jni_api.so \
+    vendor/cm/prebuilt/common/gapps/lib/libspeexwrapper.so:system/lib/libspeexwrapper.so \
+    vendor/cm/prebuilt/common/gapps/lib/libvorbisencoder.so:system/lib/libvorbisencoder.so \
+    vendor/cm/prebuilt/common/gapps/tts/lang_pico/de-DE_gl0_sg.bin:system/tts/lang_pico/de-DE_gl0_sg.bin \
+    vendor/cm/prebuilt/common/gapps/tts/lang_pico/de-DE_ta.bin:system/tts/lang_pico/de-DE_ta.bin \
+    vendor/cm/prebuilt/common/gapps/tts/lang_pico/es-ES_ta.bin:system/tts/lang_pico/es-ES_ta.bin \
+    vendor/cm/prebuilt/common/gapps/tts/lang_pico/es-ES_zl0_sg.bin:system/tts/lang_pico/es-ES_zl0_sg.bin \
+    vendor/cm/prebuilt/common/gapps/tts/lang_pico/fr-FR_nk0_sg.bin:system/tts/lang_pico/fr-FR_nk0_sg.bin \
+    vendor/cm/prebuilt/common/gapps/tts/lang_pico/fr-FR_ta.bin:system/tts/lang_pico/fr-FR_ta.bin \
+    vendor/cm/prebuilt/common/gapps/tts/lang_pico/it-IT_cm0_sg.bin:system/tts/lang_pico/it-IT_cm0_sg.bin \
+    vendor/cm/prebuilt/common/gapps/tts/lang_pico/it-IT_ta.bin:system/tts/lang_pico/it-IT_ta.bin \
+    vendor/cm/prebuilt/common/gapps/usr/srec/en-US/acoustic_model:system/usr/srec/en-US/acoustic_model \
+    vendor/cm/prebuilt/common/gapps/usr/srec/en-US/c_fst:system/usr/srec/en-US/c_fst \
+    vendor/cm/prebuilt/common/gapps/usr/srec/en-US/clg:system/usr/srec/en-US/clg \
+    vendor/cm/prebuilt/common/gapps/usr/srec/en-US/compile_grammar.config:system/usr/srec/en-US/compile_grammar.config \
+    vendor/cm/prebuilt/common/gapps/usr/srec/en-US/contacts.abnf:system/usr/srec/en-US/contacts.abnf \
+    vendor/cm/prebuilt/common/gapps/usr/srec/en-US/dict:system/usr/srec/en-US/dict \
+    vendor/cm/prebuilt/common/gapps/usr/srec/en-US/dictation.config:system/usr/srec/en-US/dictation.config \
+    vendor/cm/prebuilt/common/gapps/usr/srec/en-US/embed_phone_nn_model:system/usr/srec/en-US/embed_phone_nn_model \
+    vendor/cm/prebuilt/common/gapps/usr/srec/en-US/embed_phone_nn_state_sym:system/usr/srec/en-US/embed_phone_nn_state_sym \
+    vendor/cm/prebuilt/common/gapps/usr/srec/en-US/endpointer_dictation.config:system/usr/srec/en-US/endpointer_dictation.config \
+    vendor/cm/prebuilt/common/gapps/usr/srec/en-US/endpointer_voicesearch.config:system/usr/srec/en-US/endpointer_voicesearch.config \
+    vendor/cm/prebuilt/common/gapps/usr/srec/en-US/ep_acoustic_model:system/usr/srec/en-US/ep_acoustic_model \
+    vendor/cm/prebuilt/common/gapps/usr/srec/en-US/g2p_fst:system/usr/srec/en-US/g2p_fst \
+    vendor/cm/prebuilt/common/gapps/usr/srec/en-US/google_hotword_clg:system/usr/srec/en-US/google_hotword_clg \
+    vendor/cm/prebuilt/common/gapps/usr/srec/en-US/google_hotword.config:system/usr/srec/en-US/google_hotword.config \
+    vendor/cm/prebuilt/common/gapps/usr/srec/en-US/google_hotword_logistic:system/usr/srec/en-US/google_hotword_logistic \
+    vendor/cm/prebuilt/common/gapps/usr/srec/en-US/grammar.config:system/usr/srec/en-US/grammar.config \
+    vendor/cm/prebuilt/common/gapps/usr/srec/en-US/hmmsyms:system/usr/srec/en-US/hmmsyms \
+    vendor/cm/prebuilt/common/gapps/usr/srec/en-US/hotword_symbols:system/usr/srec/en-US/hotword_symbols \
+    vendor/cm/prebuilt/common/gapps/usr/srec/en-US/lintrans_model:system/usr/srec/en-US/lintrans_model \
+    vendor/cm/prebuilt/common/gapps/usr/srec/en-US/metadata:system/usr/srec/en-US/metadata \
+    vendor/cm/prebuilt/common/gapps/usr/srec/en-US/normalizer:system/usr/srec/en-US/normalizer \
+    vendor/cm/prebuilt/common/gapps/usr/srec/en-US/norm_fst:system/usr/srec/en-US/norm_fst \
+    vendor/cm/prebuilt/common/gapps/usr/srec/en-US/offensive_word_normalizer:system/usr/srec/en-US/offensive_word_normalizer \
+    vendor/cm/prebuilt/common/gapps/usr/srec/en-US/phonelist:system/usr/srec/en-US/phonelist \
+    vendor/cm/prebuilt/common/gapps/usr/srec/en-US/rescoring_lm:system/usr/srec/en-US/rescoring_lm \
+    vendor/cm/prebuilt/common/gapps/usr/srec/en-US/symbols:system/usr/srec/en-US/symbols \
+    vendor/cm/prebuilt/common/gapps/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/left_eye-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin:system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/left_eye-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin \
+    vendor/cm/prebuilt/common/gapps/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/nose_base-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin:system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/nose_base-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin \
+    vendor/cm/prebuilt/common/gapps/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/right_eye-y0-yi45-p0-pi45-r0-ri20.lg_32-2/full_model.bin:system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/right_eye-y0-yi45-p0-pi45-r0-ri20.lg_32-2/full_model.bin \
+    vendor/cm/prebuilt/common/gapps/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-r0-ri30.4a-v24/full_model.bin:system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-r0-ri30.4a-v24/full_model.bin \
+    vendor/cm/prebuilt/common/gapps/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rn30-ri30.5-v24/full_model.bin:system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rn30-ri30.5-v24/full_model.bin \
+    vendor/cm/prebuilt/common/gapps/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rp30-ri30.5-v24/full_model.bin:system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rp30-ri30.5-v24/full_model.bin \
+    vendor/cm/prebuilt/common/gapps/vendor/pittpatt/models/recognition/face.face.y0-y0-22-b-N/full_model.bin:system/vendor/pittpatt/models/recognition/face.face.y0-y0-22-b-N/full_model.bin
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
@@ -227,8 +308,6 @@ JELLYBAM_VERSION = v$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.jellybam.version=$(JELLYBAM_VERSION) \
-  ro.modversion=$(JELLYBAM_VERSION) \
-  ro.service.swiqi.supported=true \
-  persist.service.swiqi.enable=1
+  ro.modversion=$(JELLYBAM_VERSION) 
 
 -include $(WORKSPACE)/hudson/image-auto-bits.mk

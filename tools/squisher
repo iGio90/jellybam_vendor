@@ -33,6 +33,8 @@ fi
 # Determine what to name the new package
 MODVERSION=`sed -n -e'/ro\.jellybam\.version/s/^.*=//p' $OUT/system/build.prop`
 echo -e $CL_CYN"MODVERSION: $MODVERSION"$CL_RST
+echo ro.service.swiqi.supported=true >> $OUT/system/build.prop
+echo persist.service.swiqi.enable=1 >> $OUT/system/build.prop
 OUTFILE=$OUT/jellybam-$MODVERSION.zip
 
 ln -f $OTAPACKAGE $OUTFILE
