@@ -148,7 +148,6 @@ PRODUCT_COPY_FILES += \
     vendor/jellybam/prebuilt/common/xml/twframework-res.apk:system/framework/twframework-res.apk \
     vendor/jellybam/prebuilt/common/apps/AudioEffectService.apk:system/app/AudioEffectService.apk \
     vendor/jellybam/prebuilt/common/apps/PerformanceControl.apk:system/app/PerformanceControl.apk \
-    vendor/jellybam/prebuilt/common/apps/BamPapers.apk:system/app/BamPapers.apk \
     vendor/jellybam/prebuilt/common/apps/XPosedDPI.apk:system/app/XPosedDPI.apk \
     vendor/jellybam/prebuilt/common/apps/XPosedInstaller.apk:system/app/XPosedInstaller.apk \
     vendor/jellybam/prebuilt/common/apps/ATweakerFree.apk:system/app/ATweakerFree.apk \
