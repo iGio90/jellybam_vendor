@@ -150,7 +150,7 @@ echo persist.audio.vr.enable=false >> /system/build.prop
 echo persist.audio.handset.mic=analog >> /system/build.prop
 echo htc.audio.swalt.enable=1 >> /system/build.prop
 echo htc.audio.swalt.mingain=14512 >> /system/build.prop
-echo htc.audio.alc.enable=1" >> /system/build.prop
+echo htc.audio.alc.enable=1 >> /system/build.prop
 
 
 # Determine what to name the new signed package
