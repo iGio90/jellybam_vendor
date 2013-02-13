@@ -9,7 +9,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/jellybam/overlay/aokp/device/i9100
 
 # JELLYBAM bootanimation
 PRODUCT_COPY_FILES += \
-    vendor/jellybam/prebuilt/common/bootanimation/hdpi.zip:/system/media/bootanimation.zip
+    vendor/jellybam/prebuilt/common/bootanimation/hdpi.zip:system/media/bootanimation.zip
 
 # include JELLYBAM common configuration
 include vendor/jellybam/config/jellybam_common.mk

@@ -20,9 +20,6 @@ include vendor/pa/config/themes_common.mk
 
 # JELLYBAM THINGS
 PRODUCT_COPY_FILES += \
-    vendor/jellybam/prebuilt/common/apps/MusicFX.apk:system/app/MusicFX.apk \
-    vendor/jellybam/prebuilt/common/apps/DolbyMobile.apk:system/app/DolbyMobile.apk \
-    vendor/jellybam/prebuilt/common/apps/DSPManager.apk:system/app/DSPManager.apk \
     vendor/jellybam/prebuilt/common/bin/alsa_amixer:system/bin/alsa_amixer \
     vendor/jellybam/prebuilt/common/bin/alsa_aplay:system/bin/alsa_aplay \
     vendor/jellybam/prebuilt/common/bin/alsa_ctl:system/bin/alsa_ctl \
@@ -146,21 +143,6 @@ PRODUCT_COPY_FILES += \
     vendor/jellybam/prebuilt/common/xbin/alsa_ctl:system/xbin/alsa_ctl \
     vendor/jellybam/prebuilt/common/xml/twframework.jar:system/framework/twframework.jar \
     vendor/jellybam/prebuilt/common/xml/twframework-res.apk:system/framework/twframework-res.apk \
-    vendor/jellybam/prebuilt/common/apps/AudioEffectService.apk:system/app/AudioEffectService.apk \
-    vendor/jellybam/prebuilt/common/apps/PerformanceControl.apk:system/app/PerformanceControl.apk \
-    vendor/jellybam/prebuilt/common/apps/XPosedDPI.apk:system/app/XPosedDPI.apk \
-    vendor/jellybam/prebuilt/common/apps/XPosedInstaller.apk:system/app/XPosedInstaller.apk \
-    vendor/jellybam/prebuilt/common/apps/ATweakerFree.apk:system/app/ATweakerFree.apk \
-    vendor/jellybam/prebuilt/common/apps/UpdateMe.apk:system/app/UpdateMe.apk \
-    vendor/jellybam/prebuilt/common/apps/AccuweatherDaemon.apk:system/app/AccuweatherDaemon.apk \
-    vendor/jellybam/prebuilt/common/apps/AccuweatherWidget.apk:system/app/AccuweatherWidget.apk \
-    vendor/jellybam/prebuilt/common/apps/AccuweatherWidget_Main.apk:system/app/AccuweatherWidget_Main.apk \
-    vendor/jellybam/prebuilt/common/apps/BadgeProvider.apk:system/app/BadgeProvider.apk \
-    vendor/jellybam/prebuilt/common/apps/SamsungServiceMode.apk:system/app/SamsungServiceMode.apk \
-    vendor/jellybam/prebuilt/common/apps/SamsungTTS.apk:system/app/SamsungTTS.apk \
-    vendor/jellybam/prebuilt/common/apps/SamsungWidget_WeatherClock.apk:system/app/SamsungWidget_WeatherClock.apk \
-    vendor/jellybam/prebuilt/common/apps/SecLauncher2.apk:system/app/SecLauncher2.apk \
-    vendor/jellybam/prebuilt/common/apps/SecWallpaperChooser.apk:system/app/SecWallpaperChooser.apk \
     vendor/jellybam/prebuilt/common/libs/libglcanvas.so:system/lib/libglcanvas.so \
     vendor/jellybam/prebuilt/common/libs/libdrawglfunction.so:system/lib/libdrawglfunction.so \
     vendor/jellybam/prebuilt/common/libs/libdhwr.so:system/lib/libdhwr.so \
