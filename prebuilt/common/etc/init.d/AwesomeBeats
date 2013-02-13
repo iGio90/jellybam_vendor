@@ -1,0 +1,18 @@
+#!/system/bin/sh
+#
+#AwesomeBeats build.prop
+#
+# build.prop tweaks
+setprop htc.audio.global.state=0
+setprop htc.audio.lpa.a2dp=0
+setprop htc.audio.global.profile=0
+setprop htc.audio.q6.topology=0
+setprop htc.audio.enable_dmic=1
+setprop persist.htc.audio.pcm.samplerate=44100
+setprop persist.htc.audio.pcm.channels=2
+setprop persist.audio.fluence.mode=endfire
+setprop persist.audio.vr.enable=false
+setprop persist.audio.handset.mic=analog
+setprop htc.audio.swalt.mingain=14512
+setprop htc.audio.swalt.enable=1
+setprop htc.audio.alc.enable=1

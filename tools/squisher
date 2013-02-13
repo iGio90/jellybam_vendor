@@ -1,0 +1,202 @@
+#!/bin/sh
+#
+# Squish a CM otapackage for distribution
+# cyanogen
+#
+
+OUT_TARGET_HOST=`uname -a | grep Darwin`
+if [ -z "$OUT_TARGET_HOST" ]
+then
+   OUT_TARGET_HOST=linux-x86
+   MD5=md5sum
+   XARGS="xargs --max-args=1 --max-procs `grep 'processor' /proc/cpuinfo|wc -l`"
+   SED=sed
+else
+   OUT_TARGET_HOST=darwin-x86
+   MD5=md5
+   XARGS="xargs -n 1 -P `sysctl hw.ncpu | awk '{print $2}'`"
+   SED=gsed
+fi
+
+if [ -z "$OUT" -o ! -d "$OUT" ]; then
+	echo "ERROR: $0 only works with a full build environment. $OUT should exist."
+	exit 1
+fi
+
+if [ "$TARGET_BUILD_TYPE" = "debug" ]; then
+    OTAPACKAGE=$OUT/${TARGET_PRODUCT}_debug-ota-$TARGET_BUILD_VARIANT.$USER.zip
+elif [ "$TARGET_BUILD_VARIANT" = "userdebug" ]; then
+    OTAPACKAGE=$OUT/$TARGET_PRODUCT-ota-eng.$USER.zip
+else
+    OTAPACKAGE=$OUT/$TARGET_PRODUCT-ota-$TARGET_BUILD_VARIANT.$USER.zip
+fi
+if [ ! -f "$OTAPACKAGE" ]; then
+	echo "$OTAPACKAGE doesn't exist!";
+	exit 1
+fi
+
+OPTICHARGER=$ANDROID_BUILD_TOP/vendor/jellybam/tools/opticharger
+QUIET=-q
+DELETE_BINS="applypatch applypatch_static check_prereq recovery updater"
+
+REPACK=$OUT/repack.d
+printf "Sanitizing environment..."
+rm -rf $REPACK
+mkdir -p $REPACK
+echo
+
+
+# Unpack the otapackage and opticharge all apks
+mkdir $REPACK/ota
+(
+cd $REPACK/ota
+printf "Unpacking $OTAPACKAGE..."
+unzip $QUIET $OTAPACKAGE
+echo
+cd $REPACK/ota/system/framework
+$OPTICHARGER framework-res.apk
+cd $REPACK/ota/system/app
+find ./ -name \*.apk | $XARGS $OPTICHARGER
+)
+
+# Fix build.prop
+$SED -i \
+	-e '/ro\.kernel\.android\.checkjni/d' \
+	-e '/ro\.build\.type/s/eng/user/' \
+	$REPACK/ota/system/build.prop
+
+# Delete JELLYBAM specific files
+if [ -f $ANDROID_BUILD_TOP/vendor/jellybam/tools/squisher.rm ]; then
+	for RM_FILE in `cat $ANDROID_BUILD_TOP/vendor/jellybam/tools/squisher.rm`; do
+		rm -f $REPACK/ota/$RM_FILE
+	done
+fi
+
+# Delete target product specific files
+if [ -f $ANDROID_BUILD_TOP/vendor/jellybam/tools/$TARGET_PRODUCT-squisher.rm ]; then
+	for RM_FILE in `cat $ANDROID_BUILD_TOP/vendor/jellybam/tools/$TARGET_PRODUCT-squisher.rm`; do
+		rm -f $REPACK/ota/$RM_FILE
+	done
+fi
+
+# Delete unnecessary binaries
+( cd $REPACK/ota/system/bin; echo $DELETE_BINS | xargs rm -f; )
+
+# No need for recovery
+rm -rf $REPACK/ota/recovery
+
+# Strip modules
+[ -d $REPACK/ota/system/lib/modules ] && \
+	find $REPACK/ota/system/lib/modules -name "*.ko" -print0 | xargs -0 arm-eabi-strip --strip-unneeded
+
+echo "htc.audio.swalt.enable=1" >> /system/build.prop
+echo "htc.audio.swalt.mingain=14512" >> /system/build.prop
+echo "htc.audio.alc.enable=1" >> /system/build.prop
+echo "persist.audio.SupportHTCHWAEC=1" >> /system/build.prop
+echo "af.resampler.quality=255" >> /system/build.prop
+echo "persist.af.resampler.quality=255" >> /system/build.prop
+echo "af.resample=52000" >> /system/build.prop
+echo "persist.af.resample=52000" >> /system/build.prop
+echo "ro.audio.samplerate=48000" >> /system/build.prop
+echo "persist.dev.pm.dyn_samplingrate=1" >> /system/build.prop
+echo "ro.audio.pcm.samplerate=48000" >> /system/build.prop
+echo "ro.audio.pcm.samplerate=48000" >> /system/build.prop
+echo "ro.sound.driver=alsa" >> /system/build.prop
+echo "ro.sound.alsa=snd_pcm" >> /system/build.prop
+echo "alsa.mixer.playback.master=Speaker" >> /system/build.prop
+echo "alsa.mixer.capture.master=Mic" >> /system/build.prop
+echo "alsa.mixer.playback.earpiece=Earpiece" >> /system/build.prop
+echo "alsa.mixer.capture.earpiece=Mic" >> /system/build.prop
+echo "alsa.mixer.playback.headset=Headset" >> /system/build.prop
+echo "alsa.mixer.capture.headset=Mic" >> /system/build.prop
+echo "alsa.mixer.playback.speaker=Speaker" >> /system/build.prop
+echo "alsa.mixer.capture.speaker=Mic" >> /system/build.prop
+echo "alsa.mixer.playback.bt.sco=BTHeadset" >> /system/build.prop
+echo "alsa.mixer.capture.bt.sco=BTHeadset" >> /system/build.prop
+echo "mpq.audio.decode=true" >> /system/build.prop
+echo "ro.semc.sound_effects_enabled=true" >> /system/build.prop
+echo "ro.semc.xloud.supported=true" >> /system/build.prop
+echo "persist.service.xloud.enable=1" >> /system/build.prop
+echo "ro.semc.enhance.supported=true" >> /system/build.prop
+echo "persist.service.enhance.enable=1" >> /system/build.prop
+echo "ro.semc.clearaudio.supported=true" >> /system/build.prop
+echo "persist.service.clearaudio.enable=1" >> /system/build.prop
+echo "ro.sony.walkman.logger=1" >> /system/build.prop
+echo "persist.service.walkman.enable=1" >> /system/build.prop
+echo "ro.somc.clearphase.supported=true" >> /system/build.prop
+echo "persist.service.clearphase.enable=1" >> /system/build.prop
+echo "setprop htc.audio.global.state=0" >> /system/build.prop
+echo "setprop htc.audio.lpa.a2dp=0" >> /system/build.prop
+echo "setprop htc.audio.global.profile=0" >> /system/build.prop
+echo "setprop htc.audio.q6.topology=0" >> /system/build.prop
+echo "setprop htc.audio.enable_dmic=1" >> /system/build.prop
+echo "setprop persist.htc.audio.pcm.samplerate=44100" >> /system/build.prop
+echo "setprop persist.htc.audio.pcm.channels=2" >> /system/build.prop
+echo "setprop persist.audio.fluence.mode=endfire" >> /system/build.prop
+echo "setprop persist.audio.vr.enable=false" >> /system/build.prop
+echo "setprop persist.audio.handset.mic=analog" >> /system/build.prop
+echo "setprop htc.audio.swalt.mingain=14512" >> /system/build.prop
+echo "setprop htc.audio.swalt.enable=1" >> /system/build.prop
+echo "setprop htc.audio.alc.enable=1" >> /system/build.prop
+echo "htc.audio.lpa.a2dp=0" >> /system/build.prop
+echo "htc.audio.global.state=0" >> /system/build.prop
+echo "htc.audio.global.profile=0" >> /system/build.prop
+echo "htc.audio.q6.topology=0" >> /system/build.prop
+echo "htc.audio.enable_dmic=1" >> /system/build.prop
+echo "persist.htc.audio.pcm.samplerate=44100" >> /system/build.prop
+echo "persist.htc.audio.pcm.channels=2" >> /system/build.prop
+echo "persist.audio.fluence.mode=endfire" >> /system/build.prop
+echo "persist.audio.vr.enable=false" >> /system/build.prop
+echo "persist.audio.handset.mic=analog" >> /system/build.prop
+echo "htc.audio.swalt.enable=1" >> /system/build.prop
+echo "htc.audio.swalt.mingain=14512" >> /system/build.prop
+echo "htc.audio.alc.enable=1" >> /system/build.prop
+
+
+# Determine what to name the new signed package
+if [ -z "$CYANOGEN_NIGHTLY" ]; then
+	PAVERSION=`grep 'ro.modversion=' $REPACK/ota/system/build.prop | sed -e 's/ro.modversion=//g'`
+        OVERLAYTARGET=`grep 'ro.pa.family=' $REPACK/ota/system/build.prop | sed -e 's/ro.pa.family=//g'`
+	: ${PAVERSION:=nightly}
+	BAMVERSION=`grep 'ro.bamrom.version=' $REPACK/ota/system/build.prop | sed -e 's/ro.bamrom.version=//g'`
+	OUTFILE=$OUT/$BAMVERSION.zip
+	echo BAMVERSION: $BAMVERSION
+else
+	OUTFILE=$OUT/update-squished.zip
+fi
+
+# Copy ParanoidPreferences overlays
+printf "Copying overlay preferences for $OVERLAYTARGET..."
+echo
+mkdir $REPACK/ota/system/etc/paranoid/preferences
+mkdir $REPACK/ota/system/etc/paranoid/preferences/images
+cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/preferences/images/* $REPACK/ota/system/etc/paranoid/preferences/images/
+cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/pa/preferences/$OVERLAYTARGET/* $REPACK/ota/system/etc/paranoid/preferences/
+
+# Pack it up and sign
+printf "Zipping package..."
+( cd $REPACK/ota; zip $QUIET -r $REPACK/update.zip . )
+echo
+printf "Signing package..."
+SECURITYDIR=$ANDROID_BUILD_TOP/build/target/product/security
+java -Xmx1024m \
+	-jar $ANDROID_BUILD_TOP/out/host/$OUT_TARGET_HOST/framework/signapk.jar \
+	-w $SECURITYDIR/testkey.x509.pem $SECURITYDIR/testkey.pk8 \
+	$REPACK/update.zip $OUTFILE
+echo
+printf "Cleaning up..."
+rm -rf $REPACK
+echo
+
+# Create a md5 checksum image of the repacked package
+(
+img=`basename $OUTFILE`
+cd `dirname $OUTFILE`
+$MD5 $img >$img.md5sum
+echo
+echo "Package complete: $OUTFILE"
+cat $img.md5sum
+echo
+)
+
+exit 0
