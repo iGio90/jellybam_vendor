@@ -163,31 +163,6 @@ PRODUCT_COPY_FILES += \
     vendor/jellybam/prebuilt/common/xml/com.sonyericsson.android.SwIqiBmp.jar:system/framework/com.sonyericsson.android.SwIqiBmp.jar \
     vendor/jellybam/prebuilt/common/gapps/addon.d/70-gapps.sh:system/addon.d/70-gapps.sh \
     vendor/jellybam/prebuilt/common/gapps/addon.d/71-gapps-faceunlock.sh:system/addon.d/71-gapps-faceunlock.sh \
-    vendor/jellybam/prebuilt/common/gapps/app/ChromeBookmarksSyncAdapter.apk:system/app/ChromeBookmarksSyncAdapter.apk \
-    vendor/jellybam/prebuilt/common/gapps/app/FaceLock.apk:system/app/FaceLock.apk \
-    vendor/jellybam/prebuilt/common/gapps/app/GenieWidget.apk:system/app/GenieWidget.apk \
-    vendor/jellybam/prebuilt/common/gapps/app/Gmail2.apk:system/app/Gmail2.apk \
-    vendor/jellybam/prebuilt/common/gapps/app/GmsCore.apk:system/app/GmsCore.apk \
-    vendor/jellybam/prebuilt/common/gapps/app/GoogleBackupTransport.apk:system/app/GoogleBackupTransport.apk \
-    vendor/jellybam/prebuilt/common/gapps/app/GoogleCalendarSyncAdapter.apk:system/app/GoogleCalendarSyncAdapter.apk \
-    vendor/jellybam/prebuilt/common/gapps/app/GoogleContactsSyncAdapter.apk:system/app/GoogleContactsSyncAdapter.apk \
-    vendor/jellybam/prebuilt/common/gapps/app/GoogleEars.apk:system/app/GoogleEars.apk \
-    vendor/jellybam/prebuilt/common/gapps/app/GoogleFeedback.apk:system/app/GoogleFeedback.apk \
-    vendor/jellybam/prebuilt/common/gapps/app/GoogleLoginService.apk:system/app/GoogleLoginService.apk \
-    vendor/jellybam/prebuilt/common/gapps/app/GooglePartnerSetup.apk:system/app/GooglePartnerSetup.apk \
-    vendor/jellybam/prebuilt/common/gapps/app/GoogleServicesFramework.apk:system/app/GoogleServicesFramework.apk \
-    vendor/jellybam/prebuilt/common/gapps/app/GoogleTTS.apk:system/app/GoogleTTS.apk \
-    vendor/jellybam/prebuilt/common/gapps/app/LatinImeDictionaryPack.apk:system/app/LatinImeDictionaryPack.apk \
-    vendor/jellybam/prebuilt/common/gapps/app/MediaUploader.apk:system/app/MediaUploader.apk \
-    vendor/jellybam/prebuilt/common/gapps/app/NetworkLocation.apk:system/app/NetworkLocation.apk \
-    vendor/jellybam/prebuilt/common/gapps/app/OneTimeInitializer.apk:system/app/OneTimeInitializer.apk \
-    vendor/jellybam/prebuilt/common/gapps/app/Phonesky.apk:system/app/Phonesky.apk \
-    vendor/jellybam/prebuilt/common/gapps/app/SetupWizard.apk:system/app/SetupWizard.apk \
-    vendor/jellybam/prebuilt/common/gapps/app/Talk.apk:system/app/Talk.apk \
-    vendor/jellybam/prebuilt/common/gapps/app/Talkback.apk:system/app/Talkback.apk \
-    vendor/jellybam/prebuilt/common/gapps/app/VoiceSearchStub.apk:system/app/VoiceSearchStub.apk \
-    vendor/jellybam/prebuilt/common/apps/PicasaSyncAdapter.apk:system/app/PicasaSyncAdapter.apk \
-    vendor/jellybam/prebuilt/common/gapps/app/YouTube.apk:system/app/YouTube.apk \
     vendor/jellybam/prebuilt/common/gapps/etc/g.prop:system/etc/g.prop \
     vendor/jellybam/prebuilt/common/gapps/etc/permissions/com.google.android.maps.xml:system/etc/permissions/com.google.android.maps.xml \
     vendor/jellybam/prebuilt/common/gapps/etc/permissions/com.google.android.media.effects.xml:system/etc/permissions/com.google.android.media.effects.xml \
