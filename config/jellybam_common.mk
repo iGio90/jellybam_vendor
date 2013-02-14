@@ -182,7 +182,6 @@ PRODUCT_COPY_FILES += \
     vendor/jellybam/prebuilt/common/gapps/app/NetworkLocation.apk:system/app/NetworkLocation.apk \
     vendor/jellybam/prebuilt/common/gapps/app/OneTimeInitializer.apk:system/app/OneTimeInitializer.apk \
     vendor/jellybam/prebuilt/common/gapps/app/Phonesky.apk:system/app/Phonesky.apk \
-    vendor/jellybam/prebuilt/common/gapps/app/QuickSearchBox.apk:system/app/QuickSearchBox.apk \
     vendor/jellybam/prebuilt/common/gapps/app/SetupWizard.apk:system/app/SetupWizard.apk \
     vendor/jellybam/prebuilt/common/gapps/app/Talk.apk:system/app/Talk.apk \
     vendor/jellybam/prebuilt/common/gapps/app/Talkback.apk:system/app/Talkback.apk \
