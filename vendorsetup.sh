@@ -1,2 +1,7 @@
 # Samsung
 add_lunch_combo jellybam_i9100-userdebug
+add_lunch_combo jellybam_i9100g-userdebug
+add_lunch_combo jellybam_i9300-userdebug
+add_lunch_combo jellybam_n7000-userdebug
+add_lunch_combo jellybam_n7100-userdebug
+
