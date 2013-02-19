@@ -2,7 +2,7 @@
 <RomConfig>
     <RomName>JellyBam</RomName>
     <RomVersion>6.0.0</RomVersion>
-    <RomCheckUrl>http://www.igio90.net/aokp/update_me_6.xml</RomCheckUrl>
+    <RomCheckUrl>http://www.modmydroid.net/update_me_6.xml</RomCheckUrl>
 	<OtaUid>2410199000123455</OtaUid>
     <RebootRecovery>0</RebootRecovery>
 	<DisableInstalledApps>1</DisableInstalledApps>
