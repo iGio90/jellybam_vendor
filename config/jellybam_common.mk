@@ -20,6 +20,8 @@ include vendor/pa/config/themes_common.mk
 
 # JELLYBAM THINGS
 PRODUCT_COPY_FILES += \
+    vendor/jellybam/prebuilt/common/xml/SecLauncher2.apk:system/app/SecLauncher2.apk \
+    vendor/jellybam/prebuilt/common/xml/BadgeProvider.apk:system/app/BadgeProvider.apk \
     vendor/jellybam/prebuilt/common/bin/alsa_amixer:system/bin/alsa_amixer \
     vendor/jellybam/prebuilt/common/bin/alsa_aplay:system/bin/alsa_aplay \
     vendor/jellybam/prebuilt/common/bin/alsa_ctl:system/bin/alsa_ctl \
@@ -270,7 +272,7 @@ PA_VERSION := pa_$(BOARD)-$(VERSION)-$(shell date +%0d%^b%Y-%H%M%S)
 
 # JELLYBAM version
 BAM_VERSION_MAJOR = 6
-BAM_VERSION_MINOR = 0
+BAM_VERSION_MINOR = 1
 BAM_VERSION_MAINTENANCE = 0
 BAM_VERSION := $(BAM_VERSION_MAJOR).$(BAM_VERSION_MINOR).$(BAM_VERSION_MAINTENANCE)
 
