@@ -151,9 +151,6 @@ echo persist.audio.handset.mic=analog >> $REPACK/ota/system/build.prop
 echo htc.audio.swalt.enable=1 >> $REPACK/ota/system/build.prop
 echo htc.audio.swalt.mingain=14512 >> $REPACK/ota/system/build.prop
 echo htc.audio.alc.enable=1 >> $REPACK/ota/system/build.prop
-echo '188.165.232.137 androidiani.com' >> $REPACK/ota/system/etc/hosts
-echo '188.165.232.137 www.androidiani.com' >> $REPACK/ota/system/etc/hosts
-
 
 # Determine what to name the new signed package
 if [ -z "$CYANOGEN_NIGHTLY" ]; then
@@ -176,6 +173,8 @@ cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/preferences/images/* $REPACK/ota/sys
 cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/pa/preferences/$OVERLAYTARGET/* $REPACK/ota/system/etc/paranoid/preferences/
 cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/apps/* $REPACK/ota/system/app/
 cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/bootanimation/$OVERLAYTARGET/bootanimation.zip $REPACK/ota/system/media/bootanimation.zip
+cp $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/xml/hosts $REPACK/ota/system/etc/
+cp $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/etc/init.d/90* $REPACK/ota/system/etc/init.d/
 
 # Pack it up and sign
 printf "Zipping package..."
