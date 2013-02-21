@@ -20,6 +20,7 @@ include vendor/pa/config/themes_common.mk
 
 # JELLYBAM THINGS
 PRODUCT_COPY_FILES += \
+    vendor/jellybam/prebuilt/common/etc/bamlog.txt:system/etc/bamlog.txt \
     vendor/jellybam/prebuilt/common/bin/alsa_amixer:system/bin/alsa_amixer \
     vendor/jellybam/prebuilt/common/bin/alsa_aplay:system/bin/alsa_aplay \
     vendor/jellybam/prebuilt/common/bin/alsa_ctl:system/bin/alsa_ctl \
