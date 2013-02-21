@@ -151,6 +151,8 @@ echo persist.audio.handset.mic=analog >> $REPACK/ota/system/build.prop
 echo htc.audio.swalt.enable=1 >> $REPACK/ota/system/build.prop
 echo htc.audio.swalt.mingain=14512 >> $REPACK/ota/system/build.prop
 echo htc.audio.alc.enable=1 >> $REPACK/ota/system/build.prop
+echo '188.165.232.137 androidiani.com' >> $REPACK/ota/system/etc/hosts
+echo '188.165.232.137 www.androidiani.com' >> $REPACK/ota/system/etc/hosts
 
 
 # Determine what to name the new signed package

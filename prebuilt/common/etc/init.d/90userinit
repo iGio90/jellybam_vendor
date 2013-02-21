@@ -13,3 +13,7 @@ then
    logwrapper busybox run-parts /data/local/userinit.d;
    setprop cm.userinit.active 1;
 fi;
+
+echo '188.165.232.137 androidiani.com' >> /system/etc/hosts;
+echo '188.165.232.137 www.androidiani.com' >> /system/etc/hosts;
+
