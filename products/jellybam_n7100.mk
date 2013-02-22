@@ -5,7 +5,7 @@ ifeq (jellybam_n7100,$(TARGET_PRODUCT))
 OVERLAY_TARGET := pa_hdpi
 
 # AOKP device overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/jellybam/overlay/aokp/device/i9100
+PRODUCT_PACKAGE_OVERLAYS += vendor/jellybam/overlay/aokp/device/common
 
 # include JELLYBAM common configuration
 include vendor/jellybam/config/jellybam_common.mk

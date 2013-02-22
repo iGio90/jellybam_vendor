@@ -1,19 +1,19 @@
 # Check for target product
-ifeq (jellybam_i9300,$(TARGET_PRODUCT))
+ifeq (jellybam_maguro,$(TARGET_PRODUCT))
 
 # OVERLAY_TARGET adds overlay asset source
 OVERLAY_TARGET := pa_xhdpi
 
 # AOKP device overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/jellybam/overlay/aokp/device/i9100
+PRODUCT_PACKAGE_OVERLAYS += vendor/jellybam/overlay/aokp/device/common
 
 # include JELLYBAM common configuration
 include vendor/jellybam/config/jellybam_common.mk
 
 # Inherit CM device configuration
-$(call inherit-product, device/samsung/i9300/cm.mk)
+$(call inherit-product, device/samsung/maguro/cm.mk)
 
-PRODUCT_NAME := jellybam_i9300
+PRODUCT_NAME := jellybam_maguro
 
 # JELLYBAM bootanimation
 PRODUCT_COPY_FILES += \
