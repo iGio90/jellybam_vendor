@@ -16,6 +16,7 @@ CHANGELOG
 
  Contacts: Fix call grouping* Authoreb by maniac103
  Contacts: Improve T9 name normalization code* Authoreb by maniac103
+ Contacts: Add missing space* Authored by therbom
 
  Settings: Fix safe headset fcs on enable/disable* Authored by iGio90
  Settings: Port: Option to disable fullscreen keyboard from Root-Box (Credits Bajee11) (2/2)* Authored by iGio90
@@ -30,6 +31,7 @@ CHANGELOG
  Framework: Port: Option to disable fullscreen keyboard from Root-Box (Credits Bajee11) (1/2)* Authored by iGio90
  Framework: Disable Low Battery Warning (2/2)* Authored by iGio90
  Framework: PIE: animation revamped (back to the first draft), style changes* Authored by drcmda
+ Framework: Remove duplicate if statement* Authored by iGio90
 
  Android Build: PerformanceControl removed from prebuilt. We will build from sources* Authored by iGio90
 
