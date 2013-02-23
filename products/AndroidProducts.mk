@@ -1,3 +1,15 @@
+ifeq (jellybam_d2att,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_d2att.mk
+endif
+ifeq (jellybam_d2spr,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_d2spr.mk
+endif
+ifeq (jellybam_d2tmo,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_d2tmo.mk
+endif
+ifeq (jellybam_d2vzw,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_d2vzw.mk
+endif
 ifeq (jellybam_i9100,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_i9100.mk
 endif
