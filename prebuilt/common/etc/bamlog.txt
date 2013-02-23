@@ -1,9 +1,35 @@
 JellyBam
 ===============
 
-visit us at www.modmydroid.net
+Visit us at http://www.modmydroid.net
+
+Also, if you are interested in more detailed changelog related to stock CyanogenMod apps (That are not listed here) you should visit http://changelog.bbqdroid.org/
 
 CHANGELOG
 ---------
 
-* Initial. We will begin from the next release
+ ROMControl: Corrected NavBar enable note* Authored by iGio90
+ ROMControl: fixed strings typo* Authored by iGio90
+
+ Camera: HDR: only show slide animation after final shot* Authoreb by jt1134
+ Camera: Util: Disable software HDR if the camera HAL actually supports it
+
+ Contacts: Fix call grouping* Authoreb by maniac103
+ Contacts: Improve T9 name normalization code* Authoreb by maniac103
+
+ Settings: Fix safe headset fcs on enable/disable* Authored by iGio90
+ Settings: Port: Option to disable fullscreen keyboard from Root-Box (Credits Bajee11) (2/2)* Authored by iGio90
+ Settings: JellyBam Settings: Disable Low Battery Warning (1/2)* Authored by iGio90
+ Settings: Temp hack: should fixmissing Tethering preferences* Authored by iGio90
+
+ Paranoid Vendor: re-enabled navbar to prevent systemui fc loop* Authored by iGio90
+
+ JellyBam Vendor: Tracking 6.3.0* Authored by iGio90
+ JellyBam Vendor: Build AOKP PerformanceControl from sources* Authored by iGio90
+
+ Framework: Port: Option to disable fullscreen keyboard from Root-Box (Credits Bajee11) (1/2)* Authored by iGio90
+ Framework: Disable Low Battery Warning (2/2)* Authored by iGio90
+ Framework: PIE: animation revamped (back to the first draft), style changes* Authored by drcmda
+
+ Android Build: PerformanceControl removed from prebuilt. We will build from sources* Authored by iGio90
+
