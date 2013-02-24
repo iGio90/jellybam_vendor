@@ -13,4 +13,5 @@ add_lunch_combo jellybam_i9300-userdebug
 add_lunch_combo jellybam_maguro-userdebug
 add_lunch_combo jellybam_n7000-userdebug
 add_lunch_combo jellybam_n7100-userdebug
+add_lunch_combo jellybam_n8000-userdebug
 add_lunch_combo jellybam_quincyatt-userdebug
