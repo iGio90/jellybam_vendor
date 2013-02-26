@@ -1,12 +1,13 @@
-# GOOGLE
-add_lunch_combo jellybam_crespo-userdebug
-add_lunch_combo jellybam_crespo4g-userdebug
-add_lunch_combo jellybam_mako-userdebug
 # HTC
 add_lunch_combo jellybam_evita-userdebug
 add_lunch_combo jellybam_endeavoru-userdebug
+add_lunch_combo jellybam_pyramid-userdebug
 add_lunch_combo jellybam_ville-userdebug
+# LGE
+add_lunch_combo jellybam_mako-userdebug
 # Samsung
+add_lunch_combo jellybam_crespo-userdebug
+add_lunch_combo jellybam_crespo4g-userdebug
 add_lunch_combo jellybam_d2att-userdebug
 add_lunch_combo jellybam_d2spr-userdebug
 add_lunch_combo jellybam_d2tmo-userdebug
