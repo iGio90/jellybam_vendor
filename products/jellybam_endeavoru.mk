@@ -15,6 +15,10 @@ $(call inherit-product, device/htc/endeavoru/cm.mk)
 
 PRODUCT_NAME := jellybam_endeavoru
 
+# LIBWPA FIX
+PRODUCT_COPY_FILES += \
+    vendor/jellybam/prebuilt/endeavoru/system/lib/libwpa_client.so:system/lib/libwpa_client.so
+
 # JELLYBAM bootanimation
 PRODUCT_COPY_FILES += \
     vendor/jellybam/prebuilt/common/bootanimation/xhdpi.zip:system/media/bootanimation.zip
