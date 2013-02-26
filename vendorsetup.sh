@@ -1,3 +1,7 @@
+# GOOGLE
+add_lunch_combo jellybam_crespo-userdebug
+add_lunch_combo jellybam_crespo4g-userdebug
+add_lunch_combo jellybam_mako-userdebug
 # HTC
 add_lunch_combo jellybam_evita-userdebug
 add_lunch_combo jellybam_endeavoru-userdebug
