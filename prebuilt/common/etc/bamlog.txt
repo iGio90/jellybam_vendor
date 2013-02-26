@@ -8,30 +8,33 @@ Also, if you are interested in more detailed changelog related to stock Cyanogen
 CHANGELOG
 ---------
 
- ROMControl: Corrected NavBar enable note* Authored by iGio90
- ROMControl: fixed strings typo* Authored by iGio90
+ Framework: hardware rendering for statusbarmanager and pie* Authored by drcmda
+ Framework: PIE: option for Pie to maintain its position, disregarding orientation changes (useful for gaming)* Authored by drcmda
+ Framework: allow widgets to minimize in extended desktop* Authored by drcmda
+ Framework: PIE: narrow down inner arcs for even gaps* Authored by drcmda
+ Framework: Profiles: add PROFILES_STATE_CHANGED_ACTION broadcast intent* Authored by iGio90
+ Framework: Make the colors themable instead of hard-coded (Seems broken too)* Authored by daxxmax
+ Framework: Big Pie update. Added PIE Colors, new dynamics and chevron! (1/2)* Authored by iGio90
+ Framework: Dual Pane Settings* Authored by gmillz
+ Framework: Framework: Notification Shortcuts (1/2)* Authored by corcoran
+ Framework: Frameworks: Add PNG.S for Notfication and Lockscreen shortcuts* Authored by kufikugel
+ Framework: PIE: improved touchhandling, no emptyangle, better animations* Authored by drcmda
+ Framework: PIE: compressed layout, stubs, new defaults* Authored by iGio90
+ Framework: Notification shortcuts spacing and tablet transition fix* Authored by iGio90
+ Framework: Quick Settings: Swipe to switch* Authored by ThiagoVinicius
 
- Camera: HDR: only show slide animation after final shot* Authoreb by jt1134
- Camera: Util: Disable software HDR if the camera HAL actually supports it
+ Settings: new pie options* Authored by drcmda
+ Settings: Settings: fix profiles TabManager* Authoreb by jruesga
+ Settings: es_ES: Updated spanish translations* Authoreb by djMesias
+ Settings: Big pie update. Added colors and many new options (2/2)* Authored by iGio90
+ Settings: JellyBam UI Settings: Dual Pane Settings* Authored by iGio90
+ Settings: JellyBam Quick Settings: Added quick setting with initial fast toggle swipe enabler! we need a new icon for this* Authored by iGio90
+ Settings: Added Notification toggle icons and re-arranged notification panel settings* Authored by iGio90
+ Settings: This should fix brightness panel, let.s see what happend after tests* Authored by iGio90
+ Settings: PIE: new defaults* Authored by iGio90
+ Settings: New icons and strings* Authored by bliss91
+ Settings: New settings_bampaper Icon* Authored by bliss91
+ Settings: Prevent cursor from causing global reference leaks* Authored by iGio90
 
- Contacts: Fix call grouping* Authoreb by maniac103
- Contacts: Improve T9 name normalization code* Authoreb by maniac103
- Contacts: Add missing space* Authored by therbom
-
- Settings: Fix safe headset fcs on enable/disable* Authored by iGio90
- Settings: Port: Option to disable fullscreen keyboard from Root-Box (Credits Bajee11) (2/2)* Authored by iGio90
- Settings: JellyBam Settings: Disable Low Battery Warning (1/2)* Authored by iGio90
- Settings: Temp hack: should fixmissing Tethering preferences* Authored by iGio90
-
- Paranoid Vendor: re-enabled navbar to prevent systemui fc loop* Authored by iGio90
-
- JellyBam Vendor: Tracking 6.3.0* Authored by iGio90
- JellyBam Vendor: Build AOKP PerformanceControl from sources* Authored by iGio90
-
- Framework: Port: Option to disable fullscreen keyboard from Root-Box (Credits Bajee11) (1/2)* Authored by iGio90
- Framework: Disable Low Battery Warning (2/2)* Authored by iGio90
- Framework: PIE: animation revamped (back to the first draft), style changes* Authored by drcmda
- Framework: Remove duplicate if statement* Authored by iGio90
-
- Android Build: PerformanceControl removed from prebuilt. We will build from sources* Authored by iGio90
-
+ Build: build: recovery: disable ro.adb.secure* Authoreb by pawitp
+ Build: build: recovery: fully strip ro.adb.secure* Authoreb by pawitp
