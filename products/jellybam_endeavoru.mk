@@ -36,8 +36,8 @@ PRODUCT_COPY_FILES += \
     vendor/jellybam/prebuilt/endeavoru/system/lib/libbt-aptx-4.0.3.so:system/lib/libbt-aptx-4.0.3.so \
     vendor/jellybam/prebuilt/endeavoru/system/lib/libhtccamera.so:system/lib/libhtccamera.so \
     vendor/jellybam/prebuilt/endeavoru/system/lib/libnvcpud_client.so:system/lib/libnvcpud_client.so \
-    venndor/jellybam/prebuilt/endeavoru/system/lib/libolaworks.so:system/lib/libolaworks.so \
-    vendor/jellybam/prebuilt/endeavoru/system/lib/libscaladoutil.so:system/lib/libscaladoutil.so \		
+    vendor/jellybam/prebuilt/endeavoru/system/lib/libolaworks.so:system/lib/libolaworks.so \
+    vendor/jellybam/prebuilt/endeavoru/system/lib/libscaladoutil.so:system/lib/libscaladoutil.so \
     vendor/jellybam/prebuilt/endeavoru/system/lib/libwvdrm_L1.so:system/lib/libwvdrm_L1.so \
     vendor/jellybam/prebuilt/endeavoru/system/lib/libcapsjava.so:system/lib/libcapsjava.so \
     vendor/jellybam/prebuilt/endeavoru/system/lib/libhtc-opt2.so:system/lib/libhtc-opt2.so \
