@@ -5,6 +5,9 @@ add_lunch_combo jellybam_pyramid-userdebug
 add_lunch_combo jellybam_ville-userdebug
 # LGE
 add_lunch_combo jellybam_mako-userdebug
+add_lunch_combo jellybam_p930-userdebug
+add_lunch_combo jellybam_p970-userdebug
+add_lunch_combo jellybam_p990-userdebug
 # Samsung
 add_lunch_combo jellybam_crespo-userdebug
 add_lunch_combo jellybam_crespo4g-userdebug
@@ -22,3 +25,6 @@ add_lunch_combo jellybam_n7000-userdebug
 add_lunch_combo jellybam_n7100-userdebug
 add_lunch_combo jellybam_n8000-userdebug
 add_lunch_combo jellybam_quincyatt-userdebug
+# Sony
+add_lunch_combo jellybam_mint-userdebug
+
