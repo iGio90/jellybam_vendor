@@ -1,6 +1,7 @@
 # HTC
 add_lunch_combo jellybam_evita-userdebug
 add_lunch_combo jellybam_endeavoru-userdebug
+add_lunch_combo jellybam_jewel-userdebug
 add_lunch_combo jellybam_pyramid-userdebug
 add_lunch_combo jellybam_ville-userdebug
 # LGE
