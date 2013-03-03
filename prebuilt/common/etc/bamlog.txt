@@ -8,33 +8,40 @@ Also, if you are interested in more detailed changelog related to stock Cyanogen
 CHANGELOG
 ---------
 
- Framework: hardware rendering for statusbarmanager and pie* Authored by drcmda
- Framework: PIE: option for Pie to maintain its position, disregarding orientation changes (useful for gaming)* Authored by drcmda
- Framework: allow widgets to minimize in extended desktop* Authored by drcmda
- Framework: PIE: narrow down inner arcs for even gaps* Authored by drcmda
- Framework: Profiles: add PROFILES_STATE_CHANGED_ACTION broadcast intent* Authored by iGio90
- Framework: Make the colors themable instead of hard-coded (Seems broken too)* Authored by daxxmax
- Framework: Big Pie update. Added PIE Colors, new dynamics and chevron! (1/2)* Authored by iGio90
- Framework: Dual Pane Settings* Authored by gmillz
- Framework: Framework: Notification Shortcuts (1/2)* Authored by corcoran
- Framework: Frameworks: Add PNG.S for Notfication and Lockscreen shortcuts* Authored by kufikugel
- Framework: PIE: improved touchhandling, no emptyangle, better animations* Authored by drcmda
- Framework: PIE: compressed layout, stubs, new defaults* Authored by iGio90
- Framework: Notification shortcuts spacing and tablet transition fix* Authored by iGio90
- Framework: Quick Settings: Swipe to switch* Authored by ThiagoVinicius
+ System core: mkbootimg:allow pagesize up to 131072* Authored by garwedgess
+ System core: init: Check for symlinks with lstat() not open()* Authored by Entropy512
 
- Settings: new pie options* Authored by drcmda
- Settings: Settings: fix profiles TabManager* Authoreb by jruesga
- Settings: es_ES: Updated spanish translations* Authoreb by djMesias
- Settings: Big pie update. Added colors and many new options (2/2)* Authored by iGio90
- Settings: JellyBam UI Settings: Dual Pane Settings* Authored by iGio90
- Settings: JellyBam Quick Settings: Added quick setting with initial fast toggle swipe enabler! we need a new icon for this* Authored by iGio90
- Settings: Added Notification toggle icons and re-arranged notification panel settings* Authored by iGio90
- Settings: This should fix brightness panel, let.s see what happend after tests* Authored by iGio90
- Settings: PIE: new defaults* Authored by iGio90
- Settings: New icons and strings* Authored by bliss91
- Settings: New settings_bampaper Icon* Authored by bliss91
- Settings: Prevent cursor from causing global reference leaks* Authored by iGio90
+ Framework: SystemUI: Fix dock battery icons for phablet UI* Authored by PierreBateau
+ Framework: fixed inconsistant define values with android_nfc.h* Authored by doug yeager
+ Framework: Framework: AOSP Fix - starting window memory leak* Authored by Mathias Jeppsson
+ Framework: PIE: support for expandable notifications* Authored by iGio90
+ Framework: This should fix Fast Toggle and Pie expanded notification* Authored by iGio90
+ Framework: view:added support for xPlay Touchpads* Authored by garwedgess
+ Framework: BAMControl: Spen options (1/2)* Authored by iGio90
+ Framework: Fixing vibrations pattern* Authored by iGio90
+ Framework: AwesomeAction: Performance update* Authored by iGio90
+ Framework: PIE: /// is ready for prime time* Authored by iGio90
+ Framework: PIE: header with time and date (+///) for both panels* Authored by drcmda
 
- Build: build: recovery: disable ro.adb.secure* Authoreb by pawitp
- Build: build: recovery: fully strip ro.adb.secure* Authoreb by pawitp
+ Settings: BAMControl: SPen option (2/2)* Authored by iGio90
+ Settings: Fix vibrations and lockscreens* Authored by iGio90
+ Settings: Bam Settings icon 2.0* Authored by bliss91
+ Settings: SPen settings icon HDPI _ XHDPI* Authored by bliss91
+ Settings: BAM Control!* Authored by iGio90
+ Settings: Notification settings icon HDPI-XHDPI* Authored by bliss91
+ Settings: Vibrations: add more stock custom vibrations.* Authored by iGio90
+ Settings: Added back fast toggle* Authored by iGio90
+ Settings: BAMControl: Support for x7 custom NavBar target* Authored by iGio90
+ Settings: Custom BamSettings icons* Authored by bliss91
+ Settings: Settings icons for PowerMenu and BamControl* Authored by bliss91
+ Settings: New settings icons (1/2)* Authored by bliss91
+ Settings: Settings icons for NavBar* Authored by bliss91
+
+ JellyBam Vendor: Added pa n7100 and i9300 custom preferences* Authored by iGio90
+ JellyBam Vendor: tracking aokp build 4* Authored by iGio90
+ JellyBam Vendor: TouchWiz 5* Authored by iGio90
+ JellyBam Vendor: Update gapps to 20130301* Authored by iGio90
+ JellyBam Vendor: Paranoid update to 3.1.0* Authored by iGio90
+
+ Paranoid Vendor: Update Paranoid Preferences App* Authored by iGio90
+

@@ -7,13 +7,12 @@
 list_files() {
 cat <<EOF
 app/ChromeBookmarksSyncAdapter.apk
+app/ConfigUpdater.apk
 app/GenieWidget.apk
-app/Gmail2.apk
 app/GmsCore.apk
 app/GoogleBackupTransport.apk
 app/GoogleCalendarSyncAdapter.apk
 app/GoogleContactsSyncAdapter.apk
-app/GoogleEars.apk
 app/GoogleFeedback.apk
 app/GoogleLoginService.apk
 app/GooglePartnerSetup.apk
