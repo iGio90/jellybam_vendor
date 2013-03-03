@@ -98,6 +98,8 @@ PRODUCT_COPY_FILES += \
     vendor/jellybam/prebuilt/common/etc/init.d/AwesomeBeats:system/etc/init.d/AwesomeBeats \
     vendor/jellybam/prebuilt/common/etc/init.d/Beats:system/etc/init.d/Beats \
     vendor/jellybam/prebuilt/common/etc/permissions/com.sonyericsson.audioeffectif.xml:system/etc/permissions/com.sonyericsson.audioeffectif.xml \
+    vendor/jellybam/prebuilt/common/etc/permissions/touchwiz.xml:system/etc/permissions/touchwiz.xml \
+    vendor/jellybam/prebuilt/common/etc/permissions/vtmanager_library.xml:system/etc/permissions/vtmanager_library.xml \
     vendor/jellybam/prebuilt/common/etc/soundimage/srs_bypass.cfg:system/etc/soundimage/srs_bypass.cfg \
     vendor/jellybam/prebuilt/common/etc/soundimage/srs_geq10.cfg:system/etc/soundimage/srs_geq10.cfg \
     vendor/jellybam/prebuilt/common/etc/soundimage/srs_global.cfg:system/etc/soundimage/srs_global.cfg \
@@ -153,9 +155,6 @@ PRODUCT_COPY_FILES += \
     vendor/jellybam/prebuilt/common/etc/be_movie:system/etc/be_movie \
     vendor/jellybam/prebuilt/common/etc/be_photo:system/etc/be_photo \
     vendor/jellybam/prebuilt/common/xml/features.xml:system/etc/permissions/features.xml \
-    vendor/jellybam/prebuilt/common/xml/vtmanager_library.xml:system/etc/permissions/vtmanager_library.xml \
-    vendor/jellybam/prebuilt/common/xml/touchwiz.xml:system/etc/permissions/touchwiz.xml \
-    vendor/jellybam/prebuilt/common/xml/vtmanager_library.xml:system/etc/permissions/vtmanager_library.xml \
     vendor/jellybam/prebuilt/common/xml/com.sonyericsson.audioeffectif.xml:system/etc/permissions/com.sonyericsson.audioeffectif.xml \
     vendor/jellybam/prebuilt/common/xml/com.sonyericsson.android.SwIqiBmp.xml:system/etc/permissions/com.sonyericsson.android.SwIqiBmp.xml \
     vendor/jellybam/prebuilt/common/xml/twframework.jar:system/framework/twframework.jar \
