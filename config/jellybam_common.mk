@@ -4,16 +4,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.config.notification_sound=Proxima.ogg \
   ro.config.alarm_alert=Cesium.ogg
 
-# Copy specific ROM files
-PRODUCT_COPY_FILES += \
-    vendor/pa/prebuilt/common/apk/SuperSU.apk:system/app/SuperSU.apk \
-    vendor/pa/prebuilt/common/xbin/su:system/xbin/su
-
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/pa/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
     vendor/pa/prebuilt/common/bin/50-backupScript.sh:system/addon.d/50-backupScript.sh
+
+#Embed superuser into settings 
+SUPERUSER_EMBEDDED := true
 
 # T-Mobile theme engine
 include vendor/pa/config/themes_common.mk
