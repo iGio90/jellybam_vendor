@@ -26,7 +26,7 @@ ifeq (jellybam_galaxysmtd,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_galaxysmtd.mk
 endif
 ifeq (jellybam_jewel,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_jel.mk
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_jewel.mk
 endif
 ifeq (jellybam_i777,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_i777.mk
