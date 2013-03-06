@@ -30,13 +30,6 @@
     {
         "remote":       "github",
         "account":      "Floatshow",
-        "repository":   "android_frameworks_opt_telephony",
-        "target_path":  "frameworks/opt/telephony",
-        "revision":     "jb42"
-    },
-    {
-        "remote":       "github",
-        "account":      "Floatshow",
         "repository":   "android_frameworks_native",
         "target_path":  "frameworks/native",
         "revision":     "jellybean"
