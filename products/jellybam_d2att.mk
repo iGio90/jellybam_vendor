@@ -15,10 +15,6 @@ $(call inherit-product, device/samsung/d2att/cm.mk)
 
 PRODUCT_NAME := jellybam_d2att
 
-# JELLYBAM bootanimation
-PRODUCT_COPY_FILES += \
-    vendor/jellybam/prebuilt/common/bootanimation/xhdpi.zip:system/media/bootanimation.zip
-
 # Update local_manifest.xml
 GET_PROJECT_RMS := $(shell vendor/jellybam/tools/removeprojects.py $(PRODUCT_NAME))
 GET_PROJECT_ADDS := $(shell vendor/jellybam/tools/addprojects.py $(PRODUCT_NAME))
