@@ -11,6 +11,7 @@ CHANGELOG
  CM Vendor: Removed SuperUser* Authored by iGio90
  PA Vendor: PA Prefs: Fix restore and backup preferences* Authored by iGio90
  JELLYBAM Vendor: Embed SuperUser into settings* Authored by iGio90
+ JELLYBAM Vendor: New bootanimation by Iluha Tsuprun!* Authored by iGio90
  System core: add 32K 64K and 128K pagesizes in bootimage* Authored by championswimmer
  System core: init: create mountpoint for fuse* Authored by codeworkx
  Framework: PIE: one finger swipe-up for notifications* Authored by iGio90
@@ -21,6 +22,7 @@ CHANGELOG
  Framework: BAMControl: NavRing additions* Authored by iGio90
  Framework: FM Radio: avoid deadlock when disabling RDS* Authored by iGio90
  Framework: BAMControl: Notification custom wallpaper alpha and wallpaper. 1/2* Authored by iGio90
+ Framework: More awesome actions* Authored by iGio90
  Framework: Applying ChannelScrolling to remove calculateDragAngle* Authored by kiwon
  Framework: Account malloc mmaped pages as native heap.* Authored by Ian Rogers
  Framework: Track stack memory in MemoryInfo.* Authored by Ian Rogers
