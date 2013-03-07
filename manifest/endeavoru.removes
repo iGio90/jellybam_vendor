@@ -8,6 +8,10 @@
         "path":     "frameworks/native"
     },
     {
+        "name":     "iGio90/android_frameworks_base",
+        "path":     "frameworks/base"
+    },
+    {
         "name":     "CyanogenMod/android_hardware_libhardware_legacy",
         "path":     "hardware/libhardware_legacy"
     },

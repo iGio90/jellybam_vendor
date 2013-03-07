@@ -8,6 +8,13 @@
     },
     {
         "remote":       "github",
+        "account":      "iGio90",
+        "repository":   "android_frameworks_base",
+        "target_path":  "frameworks/base",
+        "revision":     "bam6-endeavoru"
+    },
+    {
+        "remote":       "github",
         "account":      "CyanogenMod",
         "repository":   "android_kernel_htc_endeavoru",
         "target_path":  "kernel/htc/endeavoru",
