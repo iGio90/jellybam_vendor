@@ -22,6 +22,12 @@ endif
 ifeq (jellybam_evita,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_evita.mk
 endif
+feq (jellybam_fascinatemtd,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_fascinatemtd.mk
+endif
+feq (jellybam_fireball,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_fireball.mk
+endif
 ifeq (jellybam_galaxysmtd,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_galaxysmtd.mk
 endif
@@ -36,6 +42,9 @@ ifeq (jellybam_i9100,$(TARGET_PRODUCT))
 endif
 ifeq (jellybam_i9100g,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_i9100g.mk
+endif
+ifeq (jellybam_i9103,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_i9103.mk
 endif
 ifeq (jellybam_i9300,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_i9300.mk
