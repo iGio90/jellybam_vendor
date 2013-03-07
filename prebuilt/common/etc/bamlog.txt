@@ -8,40 +8,48 @@ Also, if you are interested in more detailed changelog related to stock Cyanogen
 CHANGELOG
 ---------
 
- System core: mkbootimg:allow pagesize up to 131072* Authored by garwedgess
- System core: init: Check for symlinks with lstat() not open()* Authored by Entropy512
-
- Framework: SystemUI: Fix dock battery icons for phablet UI* Authored by PierreBateau
- Framework: fixed inconsistant define values with android_nfc.h* Authored by doug yeager
- Framework: Framework: AOSP Fix - starting window memory leak* Authored by Mathias Jeppsson
- Framework: PIE: support for expandable notifications* Authored by iGio90
- Framework: This should fix Fast Toggle and Pie expanded notification* Authored by iGio90
- Framework: view:added support for xPlay Touchpads* Authored by garwedgess
- Framework: BAMControl: Spen options (1/2)* Authored by iGio90
- Framework: Fixing vibrations pattern* Authored by iGio90
- Framework: AwesomeAction: Performance update* Authored by iGio90
- Framework: PIE: /// is ready for prime time* Authored by iGio90
- Framework: PIE: header with time and date (+///) for both panels* Authored by drcmda
-
- Settings: BAMControl: SPen option (2/2)* Authored by iGio90
- Settings: Fix vibrations and lockscreens* Authored by iGio90
- Settings: Bam Settings icon 2.0* Authored by bliss91
- Settings: SPen settings icon HDPI _ XHDPI* Authored by bliss91
- Settings: BAM Control!* Authored by iGio90
- Settings: Notification settings icon HDPI-XHDPI* Authored by bliss91
- Settings: Vibrations: add more stock custom vibrations.* Authored by iGio90
- Settings: Added back fast toggle* Authored by iGio90
- Settings: BAMControl: Support for x7 custom NavBar target* Authored by iGio90
- Settings: Custom BamSettings icons* Authored by bliss91
- Settings: Settings icons for PowerMenu and BamControl* Authored by bliss91
- Settings: New settings icons (1/2)* Authored by bliss91
- Settings: Settings icons for NavBar* Authored by bliss91
-
- JellyBam Vendor: Added pa n7100 and i9300 custom preferences* Authored by iGio90
- JellyBam Vendor: tracking aokp build 4* Authored by iGio90
- JellyBam Vendor: TouchWiz 5* Authored by iGio90
- JellyBam Vendor: Update gapps to 20130301* Authored by iGio90
- JellyBam Vendor: Paranoid update to 3.1.0* Authored by iGio90
-
- Paranoid Vendor: Update Paranoid Preferences App* Authored by iGio90
-
+ CM Vendor: Removed SuperUser* Authored by iGio90
+ PA Vendor: PA Prefs: Fix restore and backup preferences* Authored by iGio90
+ JELLYBAM Vendor: Embed SuperUser into settings* Authored by iGio90
+ System core: add 32K 64K and 128K pagesizes in bootimage* Authored by championswimmer
+ System core: init: create mountpoint for fuse* Authored by codeworkx
+ Framework: PIE: one finger swipe-up for notifications* Authored by iGio90
+ Framework: A way to fix navigation bar systemui fc loop* Authored by iGio90
+ Framework: core/jni/android/graphics: Cache copy of pre-scaled Bitmaps* Authored by iGio90
+ Framework: NavRing rework* Authored by iGio90
+ Framework: Include android.permission.ACCESS_SUPERUSER permission in the base API* Authored by iGio90
+ Framework: BAMControl: NavRing additions* Authored by iGio90
+ Framework: FM Radio: avoid deadlock when disabling RDS* Authored by iGio90
+ Framework: BAMControl: Notification custom wallpaper alpha and wallpaper. 1/2* Authored by iGio90
+ Framework: Applying ChannelScrolling to remove calculateDragAngle* Authored by kiwon
+ Framework: Account malloc mmaped pages as native heap.* Authored by Ian Rogers
+ Framework: Track stack memory in MemoryInfo.* Authored by Ian Rogers
+ Framework: frameworks/base: vectorize Bitmap operations* Authored by Lucas Crowthers
+ Framework: Enable vecorized bitmaps for all devices* Authored by aaronpoweruser
+ Framework: FIX Null Pointer Exception on dialog cancel* Authored by amitkec123
+ Framework: Update QuickSettings* Authored by drcmda
+ Framework: restore transparent bluetooth for xhdpi & mdpi* Authored by drcmda
+ Framework: SysUI: Add fullscreen/PIE toggle, change global action string* Authored by drcmda
+ Framework: PIE: Restart launcher* Authored by drcmda
+ Framework: PIE: slightly smaller as default* Authored by drcmda
+ Framework: pie toggle, rootbox icons* Authored by drcmda
+ Framework: PWM: disable HW overlays for PIE* Authored by drcmda
+ Framework: simplify pie toggle icons* Authored by drcmda
+ Framework: circle battery* Authored by drcmda
+ Framework: circle battery bugfixes, margins, per-app-color* Authored by drcmda
+ Settings: BAMControl: enable/disable stylus pointer* Authored by iGio90
+ Settings: BAMControl: New navring settings* Authored by iGio90
+ Settings: New navring layout* Authored by iGio90
+ Settings: move superuser up* Authored by iGio90
+ Settings: Fixed LockScreen auto rotate* Authored by iGio90
+ Settings: New CMDProcessor* Authored by iGio90
+ Settings: Rewrite tiles and toggles. Merged into BAMControl* Authored by iGio90
+ Settings: fullscreen toggle* Authored by iGio90
+ Settings: New PIE Option: Restart launcher* Authored by iGio90
+ Settings: PIE: slightly smaller as default* Authored by iGio90
+ Settings: BAMControl: Notification background alpha and custom wallpaper 2/2 and NavRing cleanup* Authored by iGio90
+ Settings: Switch to new Superuser* Authored by koush
+ Settings: explicitly specify the dark theme* Authored by koush
+ Settings: Fix up concurrent su request handling* Authored by koush
+ Settings: Superuser & Rom Control Navigation Ring settings icons* Authored by bliss91
+ Settings: Add superuser permision to settings* Authored by aaronpoweruser
