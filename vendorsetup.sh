@@ -31,4 +31,4 @@ add_lunch_combo jellybam_n8000-userdebug
 add_lunch_combo jellybam_quincyatt-userdebug
 # Sony
 add_lunch_combo jellybam_mint-userdebug
-
+add_lunch_combo jellybam_tsubasa-userdebug
