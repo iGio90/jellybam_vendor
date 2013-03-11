@@ -8,50 +8,36 @@ Also, if you are interested in more detailed changelog related to stock Cyanogen
 CHANGELOG
 ---------
 
- CM Vendor: Removed SuperUser* Authored by iGio90
- PA Vendor: PA Prefs: Fix restore and backup preferences* Authored by iGio90
- JELLYBAM Vendor: Embed SuperUser into settings* Authored by iGio90
- JELLYBAM Vendor: New bootanimation by Iluha Tsuprun!* Authored by iGio90
- System core: add 32K 64K and 128K pagesizes in bootimage* Authored by championswimmer
- System core: init: create mountpoint for fuse* Authored by codeworkx
- Framework: PIE: one finger swipe-up for notifications* Authored by iGio90
- Framework: A way to fix navigation bar systemui fc loop* Authored by iGio90
- Framework: core/jni/android/graphics: Cache copy of pre-scaled Bitmaps* Authored by iGio90
- Framework: NavRing rework* Authored by iGio90
- Framework: Include android.permission.ACCESS_SUPERUSER permission in the base API* Authored by iGio90
- Framework: BAMControl: NavRing additions* Authored by iGio90
- Framework: FM Radio: avoid deadlock when disabling RDS* Authored by iGio90
- Framework: BAMControl: Notification custom wallpaper alpha and wallpaper. 1/2* Authored by iGio90
- Framework: More awesome actions* Authored by iGio90
- Framework: Applying ChannelScrolling to remove calculateDragAngle* Authored by kiwon
- Framework: Account malloc mmaped pages as native heap.* Authored by Ian Rogers
- Framework: Track stack memory in MemoryInfo.* Authored by Ian Rogers
- Framework: frameworks/base: vectorize Bitmap operations* Authored by Lucas Crowthers
- Framework: Enable vecorized bitmaps for all devices* Authored by aaronpoweruser
- Framework: FIX Null Pointer Exception on dialog cancel* Authored by amitkec123
- Framework: Update QuickSettings* Authored by drcmda
- Framework: restore transparent bluetooth for xhdpi & mdpi* Authored by drcmda
- Framework: SysUI: Add fullscreen/PIE toggle, change global action string* Authored by drcmda
- Framework: PIE: Restart launcher* Authored by drcmda
- Framework: PIE: slightly smaller as default* Authored by drcmda
- Framework: pie toggle, rootbox icons* Authored by drcmda
- Framework: PWM: disable HW overlays for PIE* Authored by drcmda
- Framework: simplify pie toggle icons* Authored by drcmda
- Framework: circle battery* Authored by drcmda
- Framework: circle battery bugfixes, margins, per-app-color* Authored by drcmda
- Settings: BAMControl: enable/disable stylus pointer* Authored by iGio90
- Settings: BAMControl: New navring settings* Authored by iGio90
- Settings: New navring layout* Authored by iGio90
- Settings: move superuser up* Authored by iGio90
- Settings: Fixed LockScreen auto rotate* Authored by iGio90
- Settings: New CMDProcessor* Authored by iGio90
- Settings: Rewrite tiles and toggles. Merged into BAMControl* Authored by iGio90
- Settings: fullscreen toggle* Authored by iGio90
- Settings: New PIE Option: Restart launcher* Authored by iGio90
- Settings: PIE: slightly smaller as default* Authored by iGio90
- Settings: BAMControl: Notification background alpha and custom wallpaper 2/2 and NavRing cleanup* Authored by iGio90
- Settings: Switch to new Superuser* Authored by koush
- Settings: explicitly specify the dark theme* Authored by koush
- Settings: Fix up concurrent su request handling* Authored by koush
- Settings: Superuser & Rom Control Navigation Ring settings icons* Authored by bliss91
- Settings: Add superuser permision to settings* Authored by aaronpoweruser
+ JELLYBAM Vendor: Removed awesomebeats causing conflicts with incall audio volume* Authored by iGio90
+ JELLYBAM Vendor: Default jellybam notifications ringtone* Authored by iGio90
+ Framework: Navring: fix NPE if app uninstalled and in Navring* Authored by Stevespear426
+ Framework: circlebattery bugfixes* Authored by drcmda
+ Framework: revert to old data/signal null icons* Authored by drcmda
+ Framework: MMS Breath (2/3)* Authored by Bajee11
+ Framework: Alternative RootBox Battery Icons (2/2)* Authored by Bajee11
+ Framework: NavBar and battery fixes* Authored by iGio90
+ Framework: RootBox SquareMod Battery (1/2)* Authored by Bajee11
+ Framework: Some more awesome action* Authored by iGio90
+ Framework: SPen Gestures, fix and cleanup* Authored by iGio90
+ Framework: Awesome Actions fixes* Authored by iGio90
+ Framework: Fix statusbar clock short/long/double click actions* Authored by iGio90
+ Framework: update preloaded-classes* Authored by hopemini
+ Framework: 4pie toggle state* Authored by drcmda
+ Framework: Enable Copy/Paste in Google Talk* Authored by iGio90
+ Framework: Make Camera shutter follow device sound setting* Authored by mnm9994u
+ Framework: Disable usage of WAL in DatabaseHelper* Authored by Yevgen Pronenk
+ Framework: add reply.writeNoException() for quick response* Authored by hopemini
+ Framework: Clear loaders array after they are destroyed.* Authored by roman-mazur
+ Framework: Potential NPE in SQLiteConnection* Authored by Sylvain Becuw
+ Framework: Keep native callbacks when primary SQLiteConnection is recreated* Authored by Niklas Brunlid
+ Framework: Fix PointerCoords Parcel incorrectly storing values as Int32* Authored by daio
+ Framework: Handle hotplug events as described instead of rescanning* Authored by mnm9994u
+ Framework: Process all display events in order* Authored by mnm9994u
+ Framework: MediaStore.Audio.Media.getContentUriForPath() returns unexpected content* Authored by mnm9994u
+ Settings: MMS Breath (3/3)* Authored by iGio90
+ Settings: Alternative RootBox Battery icons (1/2)* Authored by iGio90
+ Settings: Removed screenshoot from navbar* Authored by iGio90
+ Settings: RootBox battery + QuickSettings fixes* Authored by iGio90
+ Settings: Fix custom carrier label* Authored by iGio90
+ Settings: LockscreenPattern: Fix toggle dots/error pattern visibility* Authored by iGio90
+ Mms: MMS Breath (1/3)* Authored by Bajee11
