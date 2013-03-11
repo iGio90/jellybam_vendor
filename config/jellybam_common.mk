@@ -1,7 +1,7 @@
 # use AOSP default sounds
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.config.ringtone=Themos.ogg \
-  ro.config.notification_sound=Proxima.ogg \
+  ro.config.notification_sound=Jellybam.ogg \
   ro.config.alarm_alert=Cesium.ogg
 
 # Backup Tool
@@ -18,6 +18,7 @@ include vendor/pa/config/themes_common.mk
 
 # JELLYBAM THINGS
 PRODUCT_COPY_FILES += \
+    vendor/jellybam/prebuilt/common/media/audio/notifications/JellyBam.ogg:system/media/audio/notifications/Jellybam.ogg \
     vendor/jellybam/prebuilt/common/etc/bamlog.txt:system/etc/bamlog.txt \
     vendor/jellybam/prebuilt/common/etc/permissions/com.sonyericsson.audioeffectif.xml:system/etc/permissions/com.sonyericsson.audioeffectif.xml \
     vendor/jellybam/prebuilt/common/etc/permissions/touchwiz.xml:system/etc/permissions/touchwiz.xml \
