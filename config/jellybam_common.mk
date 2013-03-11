@@ -1,6 +1,6 @@
 # use AOSP default sounds
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.config.ringtone=Themos.ogg \
+  ro.config.ringtone=ModernBam.wav \
   ro.config.notification_sound=Jellybam.ogg \
   ro.config.alarm_alert=Cesium.ogg
 
@@ -18,6 +18,8 @@ include vendor/pa/config/themes_common.mk
 
 # JELLYBAM THINGS
 PRODUCT_COPY_FILES += \
+    vendor/jellybam/prebuilt/common/media/audio/ringtones/ClassicBam.mp3:system/media/audio/ringtones/ClassicBam.mp3 \
+    vendor/jellybam/prebuilt/common/media/audio/ringtones/ModernBam.wav:system/media/audio/ringtones/ModernBam.wav \
     vendor/jellybam/prebuilt/common/media/audio/notifications/Jellybam.ogg:system/media/audio/notifications/Jellybam.ogg \
     vendor/jellybam/prebuilt/common/etc/bamlog.txt:system/etc/bamlog.txt \
     vendor/jellybam/prebuilt/common/etc/permissions/com.sonyericsson.audioeffectif.xml:system/etc/permissions/com.sonyericsson.audioeffectif.xml \
