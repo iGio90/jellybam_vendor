@@ -17,6 +17,7 @@ add_lunch_combo jellybam_crespo4g-userdebug
 add_lunch_combo jellybam_d2att-userdebug
 add_lunch_combo jellybam_d2spr-userdebug
 add_lunch_combo jellybam_d2tmo-userdebug
+add_lunch_combo jellybam_d2usc-userdebug
 add_lunch_combo jellybam_d2vzw-userdebug
 add_lunch_combo jellybam_fascinatemtd-userdebug
 add_lunch_combo jellybam_i777-userdebug
