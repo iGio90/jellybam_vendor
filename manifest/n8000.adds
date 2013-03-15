@@ -1,0 +1,9 @@
+[
+    {
+        "remote":       "github",
+        "account":      "iGio90",
+        "repository":   "android_device_samsung_n8000",
+        "target_path":  "device/samsung/n8000",
+        "revision":     "bam6"
+    }
+]
