@@ -30,6 +30,8 @@ add_lunch_combo jellybam_maguro-userdebug
 add_lunch_combo jellybam_n7000-userdebug
 add_lunch_combo jellybam_n7100-userdebug
 add_lunch_combo jellybam_n8000-userdebug
+add_lunch_combo jellybam_p5100-userdebug
+add_lunch_combo jellybam_p5110-userdebug
 add_lunch_combo jellybam_quincyatt-userdebug
 # Sony
 add_lunch_combo jellybam_mint-userdebug
