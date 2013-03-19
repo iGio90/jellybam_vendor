@@ -1,43 +1,228 @@
-JellyBam
-===============
+JELLYBAM Project name: android_frameworks_native
+  .Naseer Ahmed - ui: Allocate the custom buffer size in the failure case also
 
-Visit us at http://www.modmydroid.net
+JELLYBAM Project name: android_frameworks_base
+  .igio90 - Typo
+  .sethyx - NFC Polling Mode (3/3)
+  .davros - Add circle gear to display options [2/2]
+  .igio90 - Tracking new v7 default wallpaper
+  .Matthew Redman - enable usb audio hot plugging
+  .igio90 - Correct the target app token for input method window The root cause is: There is a defect in window manager service: When a new activity that can be ime target is added into window manager but the Z order of input method window don't need to be changed, then the target app token of input method window would not be updated to new one. This defect may cause that the layer of input method window is calculated incorrectly.
+  .Kroz - Dark RB: include static blue missed call
+  .Jurijs Oniscuks - Fix race condition in ActivityThread.completeRemoveProvider()
+  .nuclearmistake - Kill chromium's bread and butter, spannablestringbuilder runtimeexceptions WITH FIRE
+  .Nils Holmström - Fix NPE when pasting non-text from Clipboard
+  .Mats H Carlsson - "[+>" more icon was never shown in PhoneStatusBar
+  .Tanguy Pruvot - LockscreenPattern : missing public @hide
+  .Jorge Ruesga - Profiles: add PROFILES_STATE_CHANGED_ACTION broadcast intent
+  .igio90 - ServiceState: add support for DCHSPAP
+  .igio90 - Revert "Phablet navigation bar update"
+  .igio90 - Phablet navigation bar update
+  .igio90 - derp
+  .igio90 - derp
+  .Kroz - Dark RootBox: More icons!
+  .Bajee11 - Missed Call Breath (2/3)
+  .Kroz - Update Volume Toggle icons
+  .Lars Greiss - Frameworks: Add new configuration qualifier for UI change on the fly (1/3)
 
-Also, if you are interested in more detailed changelog related to stock CyanogenMod apps (That are not listed here) you should visit http://changelog.bbqdroid.org/
+CyanogenMod Project name: proprietary_vendor_motorola
+  .dhacker29 - OMAP4: libsensorhub_jni is device specific
+  .dhacker29 - OMAP4: Use device specific akmd8975
+  .Hashcode - OMAP4: pvr bins from omapzoom: IMG DDK 1.9@2166536
+  .dhacker29 - OMAP4: Use common props from spyder 98.72.16 JB 4.1.2 ota
 
-CHANGELOG
----------
+JELLYBAM Project name: jellybam_vendor
+  .igio90 - Reduced bootanimation fps (hdpi)
+  .igio90 - Cleanup
+  .igio90 - P5100 and P5110
+  .igio90 - Added ROMStats
+  .igio90 - it's 7.0.0 time!
+  .igio90 - n8000: track own device tree
+  .igio90 - Optimized tablet pa layout
+  .igio90 - New touchwiz: Multi resolution (XHDPI) and menu button alive
 
- JELLYBAM Vendor: Removed awesomebeats causing conflicts with incall audio volume* Authored by iGio90
- JELLYBAM Vendor: Default jellybam notifications ringtone* Authored by iGio90
- Framework: Navring: fix NPE if app uninstalled and in Navring* Authored by Stevespear426
- Framework: circlebattery bugfixes* Authored by drcmda
- Framework: revert to old data/signal null icons* Authored by drcmda
- Framework: MMS Breath (2/3)* Authored by Bajee11
- Framework: Alternative RootBox Battery Icons (2/2)* Authored by Bajee11
- Framework: NavBar and battery fixes* Authored by iGio90
- Framework: RootBox SquareMod Battery (1/2)* Authored by Bajee11
- Framework: Some more awesome action* Authored by iGio90
- Framework: SPen Gestures, fix and cleanup* Authored by iGio90
- Framework: Awesome Actions fixes* Authored by iGio90
- Framework: Fix statusbar clock short/long/double click actions* Authored by iGio90
- Framework: update preloaded-classes* Authored by hopemini
- Framework: 4pie toggle state* Authored by drcmda
- Framework: Enable Copy/Paste in Google Talk* Authored by iGio90
- Framework: Make Camera shutter follow device sound setting* Authored by mnm9994u
- Framework: Disable usage of WAL in DatabaseHelper* Authored by Yevgen Pronenk
- Framework: add reply.writeNoException() for quick response* Authored by hopemini
- Framework: Clear loaders array after they are destroyed.* Authored by roman-mazur
- Framework: Potential NPE in SQLiteConnection* Authored by Sylvain Becuw
- Framework: Keep native callbacks when primary SQLiteConnection is recreated* Authored by Niklas Brunlid
- Framework: Fix PointerCoords Parcel incorrectly storing values as Int32* Authored by daio
- Framework: Handle hotplug events as described instead of rescanning* Authored by mnm9994u
- Framework: Process all display events in order* Authored by mnm9994u
- Framework: MediaStore.Audio.Media.getContentUriForPath() returns unexpected content* Authored by mnm9994u
- Settings: MMS Breath (3/3)* Authored by iGio90
- Settings: Alternative RootBox Battery icons (1/2)* Authored by iGio90
- Settings: Removed screenshoot from navbar* Authored by iGio90
- Settings: RootBox battery + QuickSettings fixes* Authored by iGio90
- Settings: Fix custom carrier label* Authored by iGio90
- Settings: LockscreenPattern: Fix toggle dots/error pattern visibility* Authored by iGio90
- Mms: MMS Breath (1/3)* Authored by Bajee11
+CyanogenMod Project name: proprietary_vendor_samsung
+  .Shareef Ali - d2: upgrade adreno fw to 2.5.1 release
+  .codeworkx - i777, i9100: update RIL to LSJ
+  .codeworkx - smdk4412: remove prebuilt mr0 hostapd
+
+CyanogenMod Project name: proprietary_vendor_sony
+  .Giulio Cervera - blue: update libacdbloader
+
+JELLYBAM Project name: platform_manifest
+  .igio90 - tracking own NFC
+  .igio90 - tracking own prebuilts misc
+  .igio90 - derp
+  .igio90 - derp
+  .igio90 - tracking own LatinIME
+  .igio90 - Tracking changelog gen
+  .igio90 - derp
+  .igio90 - rebase
+  .igio90 - another update
+  .igio90 - Another one
+  .igio90 - derp
+  .igio90 - Update manifest
+  .igio90 - Track own calendar and email
+  .igio90 - tracking own calculator
+  .igio90 - derp
+  .igio90 - Tracking own Gallery2 and DeskClock
+
+CyanogenMod Project name: Superuser
+  .Koushik Dutta - The reason for the original commit is flawed: some languages were not part of AOSP.
+  .Koushik Dutta - rev version;
+  .Koushik Dutta - rev version;
+  .Koushik Dutta - fix up x86 detection during in app system install
+
+JELLYBAM Project name: platform_manifest
+  .igio90 - tracking own NFC
+  .igio90 - tracking own prebuilts misc
+  .igio90 - derp
+  .igio90 - derp
+  .igio90 - tracking own LatinIME
+  .igio90 - Tracking changelog gen
+  .igio90 - derp
+  .igio90 - rebase
+  .igio90 - another update
+  .igio90 - Another one
+  .igio90 - derp
+  .igio90 - Update manifest
+  .igio90 - Track own calendar and email
+  .igio90 - tracking own calculator
+  .igio90 - derp
+  .igio90 - Tracking own Gallery2 and DeskClock
+
+JELLYBAM Project name: misc
+  .Ivan Krakhmalyuk (LifeDJIK, lifedj27) - Updated ccache to 3.1.9
+
+CyanogenMod Project name: android_kernel_samsung_smdk4210
+  .codeworkx - bcmdhd: disable GAN_LITE_NAT_KEEPALIVE_FILTER
+  .codeworkx - bcmdhd: reenable IPv6, disable multicast in suspend
+
+CyanogenMod Project name: jellybam
+  .igio90 - derp
+  .igio90 - Added Changelog generator - Credits to AOKP
+
+CyanogenMod Project name: android_bootable_recovery
+  .Kenny Root - Remove HAVE_SELINUX guards
+  .Nathan Grebowiec - Store CWM Recovery Version Number
+
+JELLYBAM Project name: android_packages_apps_Calculator
+  .Lars Greiss - Calculator: TRDS goes Slim
+
+JELLYBAM Project name: android_packages_apps_Gallery2
+  .Muhammed Nazim - Gallery2: TRDS goes Slim
+
+CyanogenMod Project name: android_packages_apps_Apollo
+  .Danny Baumann - Improve translability of some items.
+  .Danny Baumann - Remove unused strings.
+  .Jorge Ruesga - Apollo: Don't reduce visibility of hasDividerBeforeChildAt
+  .Marco Brohet - Apollo: update resources
+
+JELLYBAM Project name: packages_apps_Contacts
+  .Bajee11 - Remove ugly dialer texture in Dark RootBox
+  .Lars Greiss - Contacts: TRDS goes Slim
+
+CyanogenMod Project name: android_packages_apps_DSPManager
+  .Marco Brohet - DSPManager: Dutch translations
+
+CyanogenMod Project name: android_packages_apps_LockClock
+  .DvTonder - cLock: Change Calendar default lookahead to two weeks
+  .DvTonder - cLock: Hide the calendar panel if there are no events to show
+  .tompopielarczyk - LockClock: Updated Polish language for font colors
+  .Nicolai Ehemann - cLock: minor code cleanups (remove unused imports/variables/dead code, explicit usage of default locale)
+  .Nicolai Ehemann - cLock: Make the list of calendar entries scrollable (max. 10 entries)
+
+JELLYBAM Project name: android_packages_apps_DeskClock
+  .Or Harambam - DeskClock: Hebrew translation updates
+  .Muhammed Nazim - Ugly gray to beautiful black
+
+JELLYBAM Project name: android_packages_apps_Calendar
+  .kroz - Dark RootBox
+
+JELLYBAM Project name: android_packages_apps_Settings
+  .igio90 - derp
+  .igio90 - cleanup
+  .sethyx - NFC Polling Mode (2/3)
+  .Andros Rosa - Gear Battery
+  .drcmda - pa easteregg
+  .igio90 - Typo + cleanup
+  .Domenico - updated about_jb hdpi
+  .Domenico - updated about_jb hdpi
+  .igio90 - Holo bam HDPI icon 2
+  .Domenico - Fixed bamcontrol hdpi icon
+  .igio90 - Fixed typo
+  .Domenico - fixed about holo icons
+  .Domenico - fixed lockscreen icon
+  .Domenico - inverted hdpi icon
+  .Domenico - hdpi inverted
+  .Domenico - hybrid icon test 1
+  .igio90 - BAMControl: Fix custom bootanimation
+  .Jorge Ruesga - Settings: fix profiles TabManager
+  .igio90 - Moved SuperUser on bottom
+  .igio90 - Holo BAM: Restart SystemUI after checked
+  .igio90 - Fix PL translations
+  .igio90 - Setting + BAMControl: Merged PL translations
+  .igio90 - QuickSettings: Fix load default tiles (CYAN-541)
+  .igio90 - Fix about jellybam holo icon
+  .Domenico - Holobam icon final
+  .Domenico - Holobam v2 XHDPI
+  .igio90 - Track new holo bam icon
+  .Domenico - Added HoloBam icon XHDPI
+  .igio90 - Battery holo icons
+  .Domenico - Added inverted settings icons (2/2) HDPI
+  .Domenico - Added inverted settings icons
+  .igio90 - Remove performance preferences, leaving performancecontrol
+  .igio90 - Another cleanup
+  .igio90 - derp
+  .igio90 - Cleanup
+  .igio90 - Settings: Add Missed Call Breath icon
+  .Kroz - Dark RootBox: Add more icons
+  .igio90 - BAMControl: Missed Call Breath (3/3) Credits: @Kroz for the icons and idea!
+  .Lars Greiss - Settings: Add new configuration qualifier for UI change on the fly (3/3)
+
+JELLYBAM Project name: android_packages_apps_Email
+  .kroz - Dark RootBox
+  .igio90 - Force close_crash happened when add new mail from Email widget rootcause: The widget store a email account id when Launcher add a email widget. If the email account is removed, but the widget acount id is still exsit.
+  .igio90 - email: "Exchange Services has stopped" - Rain of Exchange Javacrashes Cleanup some nasty records containing NULL fields.
+
+JELLYBAM Project name: android_packages_apps_Phone
+  .DelPETER - Phone : add french translation
+  .kroz - Dark RootBox: More icons!
+  .Bajee11 - Missed Call Breath (1/3)
+  .Lars Greiss - Phone: TRDS goes Slim
+
+JELLYBAM Project name: android_packages_apps_Mms
+  .igio90 - Update pl translations
+  .codeworkx - mms: values-pl: fix mismatched tag
+  .Lars Greiss - Mms: TRDS goes Slim
+
+CyanogenMod Project name: android_packages_apps_Camera
+  .codeworkx - camera: add support for 2.1, 9 and 13MP picture sizes
+  .codeworkx - camera: add support for 6.4 and 2.5MP (16:9) picture sizes
+  .jt1134 - Camera: separate settings for color effects and jpeg quality
+
+JELLYBAM Project name: android_packages_apps_Nfc
+  .sethyx - NFC polling mode (1/3)
+
+CyanogenMod Project name: android_packages_apps_CMFileManager
+  .djMesias - es_ES: Add spanish translations
+  .Francesco - CMFileManager: Update italian translation
+  .Jorge Ruesga - CMFM: Fix checksum java command
+  .Tamás Tóth - Added hungarian translation
+  .Gustavo - PT-BR: Update translations
+  .Jorge Ruesga - CMFM: CYAN-200 - Archiving and Extracting .ZIP files in CM File Manager
+  .Jorge Ruesga - CMFM: CYAN-285 - Add ability to calculate file checksums
+
+JELLYBAM Project name: packages_apps_jellybam_papers
+  .Domenico - Added Galaxy S4 FullHD Wallpaper
+
+CyanogenMod Project name: android_packages_apps_Trebuchet
+  .Vavooon - Trebuchet: UK translations
+
+JELLYBAM Project name: android_packages_input_LatinIME
+  .kroz - Dark RootBox
+
+CyanogenMod Project name: android_device_samsung_galaxys2-common
+  .codeworkx - galaxys2: camera: add missing picture size
+  .codeworkx - galaxys2: volume rocker wake
+
