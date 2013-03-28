@@ -144,7 +144,7 @@ CM_BUILD := $(BOARD)
 # Add PA release version
 PA_VERSION_MAJOR = 3
 PA_VERSION_MINOR = 1
-PA_VERSION_MAINTENANCE = 0
+PA_VERSION_MAINTENANCE = 5
 PA_PREF_REVISION = 1
 VERSION := $(PA_VERSION_MAJOR).$(PA_VERSION_MINOR)$(PA_VERSION_MAINTENANCE)
 PA_VERSION := pa_$(BOARD)-$(VERSION)-$(shell date +%0d%^b%Y-%H%M%S)
@@ -167,7 +167,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.pa.family=$(PA_CONF_SOURCE) \
     ro.pa.version=$(VERSION) \
     ro.papref.revision=$(PA_PREF_REVISION) \
-    ro.aokp.version=$(BOARD)_jb-mr1_build-4 \
+    ro.aokp.version=$(BOARD)_jb-mr1_build-6 \
     ro.romstats.url=http://www.bam-android.com/stats/ \
     ro.romstats.name=jellybam
     ro.romstats.version=$(BAM_VERSION) \
