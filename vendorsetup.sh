@@ -1,5 +1,7 @@
 # ASUS
 add_lunch_combo jellybam_grouper-userdebug
+add_lunch_combo jellybam_tf300t-userdebug
+add_lunch_combo jellybam_tf700t-userdebug
 add_lunch_combo jellybam_tilapia-userdebug
 # HTC
 add_lunch_combo jellybam_evita-userdebug
