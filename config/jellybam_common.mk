@@ -10,6 +10,11 @@ PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
     vendor/pa/prebuilt/common/bin/50-backupScript.sh:system/addon.d/50-backupScript.sh
 
+# Installer
+PRODUCT_COPY_FILES += \
+    vendor/jellybam/prebuilt/common/bin/persist.sh:install/bin/persist.sh \
+    vendor/jellybam/prebuilt/common/etc/persist.conf:system/etc/persist.conf
+
 #Embed superuser into settings 
 SUPERUSER_EMBEDDED := true
 
