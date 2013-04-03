@@ -1,424 +1,156 @@
 JELLYBAM Project name: android_build
-  .Chirayu Desai - envsetup: export ANDROID_BUILD_TOP earlier
-  .Chirayu Desai - CM on Emulator [ARM]
-  .igio90 - derp
-  .Chirayu Desai - Allow disabling DroidDoc build.
-  .Chirayu Desai - envsetup: include bash completion script from vendor/cm
-
-CyanogenMod Project name: android_frameworks_opt_telephony
-  .Michael Bestas - RIL: Add SEMC 7x30 RIL
-
-CyanogenMod Project name: android_frameworks_av
-  .David Daynard - MediaScanner: Ignore dirs with .noscanandnomtp
+  .igio90 - BamSizer -> BamCleaner Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .igio90 - Building BamSizer from sources
+  .igio90 - Port forward: [1/3] Install persistence support
 
 JELLYBAM Project name: android_frameworks_base
-  .igio90 - Port forward: Framework: Add Home/Back buttons available for rebinding (1/2) Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Fix issue with hardware keys KEY ACTION comparisons. Menu unlock now works properly.
-  .blk_jack - Port forward: More options added to hardware key rebinding (1/2)
-  .igio90 - Port forward: FW: Reboot power widget (1/2) Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Port forward: FW: Reboot Tile [1/2] Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .D4rKn3sSyS - Moar style fixes
-  .D4rKn3sSyS - Some style fixes
-  .aaronpoweruser - Bug #14 disable pie on lockscreen
-  .igio90 - Frameworks SystemUI: give proper permission for new superuser
-  .drcmda - SystemUI: awful hack until Google fixes MDP
-  .D4rKn3sSyS - Specific catch block
-  .drcmda - HToggle: collapse after longpress
-  .drcmda - bigint
-  .drcmda - outlines for hybrid toggle swatches
-  .igio90 - Revert "Frameworks: fix volume button swap for tablets (1/2)"
-  .Lars Greiss - Frameworks: fix volume button swap for tablets (1/2)
-  .Lars Greiss - Frameworks: airplane_mode_on moved to global google and CM :p
-  .Lars Greiss - Fix: AUTO_TIME and AUTO_TIME_ZONE moved to Global google :p
-  .Muhammed Nazim - Power'full' Sleep [1/2]
-  .igio90 - FlingTracker can divide by zero and hang StatusBar in an infinite loop if 2 events have the same timestamp then FlingTracker in PanelView will divide by zero causing NaNs. the bug is usually triggered by rapid StatusBar up/down dragging activity and updateCarrierLabelVisibility can then loop indefinitely looking at NaNs. the user visible symptom is that StatusBar refuses to pull down and is burning cpu time.
-  .Danesh Mondegarian - IME : Fix sym key regression
-  .igio90 - Allow theming of lockscreen
-  .igio90 - SystemUI: Fixed signal icons with no data.
-  .igio90 - derp
-  .igio90 - Tracking own AwesomeAction
-  .Alexandre Dumont - Prevent Sym key from showing the IME picker
-  .Chirayu Desai - Revert "makefile changes for gcm javadocs"
-  .Oleg Smirnov - [HTML5] Implementation of WebSockets (framework).
-  .YuanQY - Fix resource leak: When call MediaMetadataRetriever.setDataSource or getFrameAtTime should ensure call release in finally to avoid resource leak                    Patch set 2: Remove unnecessary white spaces
-  .Michael Bestas - Lockscreen: Fix mdpi layout issues
-  .ciwrl - Add keymapping for select BT headsets
-  .aaronpoweruser - TABUI: Apply redraw fix
-  .D4rKn3sSyS - Fix long tap
-  .D4rKn3sSyS - Super nitpick
-  .aaronpoweruser - Fix touch issue using 0% navbar
-  .drcmda - HT: quickapply, activity flags
-  .Pawit Pornkitprasan - Make "SD Card removed" notification dismissible if the removed SD Card is not the primary storage
-  .D4rKn3sSyS - Fix build
-  .D4rKn3sSyS - Code cleanup
-  .drcmda - SysUI/HybridToggle: do not launch with default intent
-  .drcmda - SysUI: createAsSharedAcrossUsers multiuser crash
-  .Jesús David - Caps
-  .D4rKn3sSyS - Make package of paprefs a final variable
-  .Jesús David - Derp
-  .Jesús David - Open paprefs on long-press
-  .drcmda - prevent viewpager from sneaking in
-  .igio90 - Background alpha aokp shit
-  .drcmda - Custom view for hybrid toggle
-  .drcmda - Hybrid toggle
-  .D4rKn3sSyS - Dismiss recents when hybrid option is clicked
-  .drcmda - statusbar freeze fix (hopefully)
-  .aaronpoweruser - PIE: fix stuck pixel on screen redraw
-  .igio90 - Missing AOKP Navbar stuff
-  .Bruno Randolf - Wifi: Add IBSS supported method
-  .Bruno Randolf - Wifi: Enable Ad-Hoc (IBSS) network configuration
-  .Steve Kondik - am: Allow more hidden apps on devices with lots of RAM
-  .Jorge Ruesga - Wi-Fi: Pass default country code to driver
-  .Jorge Ruesga - Wi-Fi: Ping the driver for wifi-only devices
+  .igio90 - HoloBam Tile: Toggle label on status change
+  .igio90 - FW: Holobam Tile 1/2
+  .Domenico - Add Holobam Tiles
   .igio90 - Cleanup
-  .Andrew Dodd - wifi: Allow Settings to retrieve country code
-  .igio90 - FW : Fix Tablet Layout (Clock & Notification) When Center clock was chosen as an RC option, the clock would dissapear from the StatusBar and Notification curtain in tablet mode.  Also StatusBar notification icons were not aligned with clock & signal icons.
-  .igio90 - Revert "FW : Fix  Tablet Layout (Clock & Notification)"
-  .Zaphod - FW : Fix  Tablet Layout (Clock & Notification)
-  .Stevespear426 - FW: Lockscreen rework WIP
-  .igio90 - Fixed profile RingMode
-  .igio90 - Overhaul NavBar buttons UI
-  .igio90 - Revert "FW : Rework NavBar UI in ROMControl."
-  .Zaphod - FW : Rework NavBar UI in ROMControl.
-  .Roman Birg - add option to daydream on wireless charger (1/2)
-  .YULIANGMAX - Updated simplified Chinese translations
-  .Lars Greiss - Revert "Switch keystore to binder"
-  .mnazim - Fix DateUtils.formatElapsedTime.
-  .Stefan Wysocki - Fix for truncated sentence in "Find on Page" field
-  .Sungmin Choi - show SELECT ALL icon with text in landscape mode
-  .Danny Baumann - Decrease lag generated by autorotation on
-  .Magnus Hallqvist - Sensors could be disabled by any application
-  .Kenny Root - Switch keystore to binder
-  .Johan Redestig - Make transactGetSockaddr locale safe
-  .Sangkyu Lee - Ensure running mTouchModeReset when AbsListView is detached
-  .Emma Sajic - Make implementation of isEmpty consistent with implementation of getCount in HeaderListViewAdapter
-  .Ki-Hwan Lee - Fix ViewRootImpl to find missing focus using D-pad.
-  .Roger Chen - Audio continue to played even if paused manually
-  .bmc08gt - GlobalActions: Add null checks to onServiceStateChanged
-  .DvTonder - Framework: Call Ring mode what Google calls it, not Silent mode (2 of 2)
-  .Muhammed Nazim - Handle nested folder case
-  .zobject - Fix NullpointException problem in onMenuItemSelected
-  .zobject - Fix EventLog string class problem in onOptionMenuSelected
+  .Quarx2k - Add UsbDebuggingManager and UsbDebuggingActivity to LegacyUsbManager
+  .Zaphod - SysUI : Fix opacity of LastApp Icon
+  .Zaphod - SysUI:  Prevent Kill-Task from killing SystemUI.
+  .Guobin Zhang - Two REMOVE_PROVIDER messages caused by race condition.
+  .Wei Zou - Remove opaque check in GLRenderer when preparing dirty region.
+  .Jeff Sharkey - Tighten enforcement of file modes.
+  .igio90 - Fix up and missing res for Sleep tile Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
 
-CyanogenMod Project name: proprietary_vendor_motorola
-  .dhacker29 - OMAP4: Remove duplicate files
-  .dhacker29 - OMAP4: Add imgtec License file
-  .Hashcode - Maserati: 98.72.18 binary update
-
-JELLYBAM Project name: vendor_pa
-  .igio90 - paprefs 5.3
-  .igio90 - Update pa prefs to 5.2
+JELLYBAM Project name: android_vendor_htc
+  .igio90 - pyramid: copy camera.default.so as vendor-camera.default.so as per camerawrapper.
 
 JELLYBAM Project name: jellybam_vendor
-  .igio90 - BAMModder v1.0
-  .igio90 - Add TMOUS LTE APN
-  .igio90 - Version bump
-  .igio90 - GAPPS Update
-  .Chirayu Desai - add bash completion script for repo
-  .D4rKn3sSyS - Exclude default vendors from device tree script
-  .igio90 - Tracking v7.1.0
-  .igio90 - Removed n8000 local manifest removes
+  .igio90 - New supported device hercules - Samsung Galaxy S2 T-Mobile
+  .igio90 - New supported device mesmerizemtd - Samsung Mesmerize
+  .igio90 - New supported device p760 - LG Optimus L9
+  .igio90 - New supported device Skyrocket - Samsung Galaxy S2 ATT LTE
+  .igio90 - New supported device t0lte - Samsung Galaxy Note 2 LTE
+  .igio90 - New supported device Vibrantmtd - Samsung Vibrant
+  .igio90 - New supported device LG VS920 - LG Spectrum
+  .igio90 - BAMModder v2
+  .igio90 - Persist: Added paranoid preferences
+  .igio90 - Port forward: [2/3] Install persistence support
+  .igio90 - Bum to 7.2
+  .igio90 - Updating ville manifests
+  .igio90 - Removed touchwiz launcher, passed as option into bammodder
+  .igio90 - Added tf300t, tf700t
 
-CyanogenMod Project name: proprietary_vendor_samsung
-  .codeworkx - t0ltecdma: use qcom gps hal
-  .codeworkx - i9305: use qcom gps hal
-  .codeworkx - t0lte: use qcom gps hal
-  .Alan Orth - smk4210-tab: Update Mali blobs to r3p1-01rel1
-  .Alan Orth - smdk4210-tab: Switch to open source libsecion
-  .jt1134 - p1-common: use opensource libGLES_android.so
-  .codeworkx - smdk4412: add SlimISP_BH camera fw
+JELLYBAM Project name: platform_manifest
+  .igio90 - BamSizer -> BamCleaner Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .igio90 - Tracking BamSizer
 
-CyanogenMod Project name: proprietary_vendor_sony
-  .Giulio Cervera - fusion3: add prebuild GPS
-  .Giulio Cervera - yuga: updated blob from 10.1.A.1.434 release
-  .Giulio Cervera - blue: use prebuilt GPS blob
-  .ChampionSwimmer - hayabusa: update blob to 9.1.A.0.489
-
-CyanogenMod Project name: android_external_bluetooth_bluedroid
-  .tbalden - a2dp hw: adding a2dp tuning through bdroid_buildcfg.h
-
-CyanogenMod Project name: android_hardware_libhardware_legacy
-  .Mingming Yin - qcom-fm: audio: add support for FM feature
-
-CyanogenMod Project name: android_hardware_libhardware
-  .Ricardo Cerqueira - Fix the QCOM_BSP ifdef
+JELLYBAM Project name: platform_manifest
+  .igio90 - BamSizer -> BamCleaner Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .igio90 - Tracking BamSizer
 
 CyanogenMod Project name: android_hardware_qcom_display-caf
+  .Ricardo Cerqueira - gralloc: Let gralloc_priv.h be overloaded by device trees
+  .Giulio Cervera - display: fix "Use cache invalidate and clean correctly" merge
+  .Steve Kondik - Tiny changes to support media codecs with vanilla driver.
+  .Naseer Ahmed - display: Use cache invalidate and clean correctly
+  .Saurabh Shah - hwc: Configure pipe for FB even if we exceed max layers
+  .Arun Kumar K.R - libcopybit: Use blending parameters passed by HWC
+  .Sravan Kumar D.V.N - hwc: Configure FbUpdate only when needed
+  .Arun Kumar K.R - libexternal: disable HPD during initialization.
+  .Arun Kumar K.R - hwc: fix dst calculations for right mixer
+  .Ping Li - libqservice: Change the permission for SCREEN_REFRESH
+  .Jeykumar Sankaran - display: Remove framebuffer HAL usage
+  .Naseer Ahmed - gralloc: Stride information fix
+  .Saurabh Shah - hwc/ov: Fix MDP orientation flags and values.
+  .Saurabh Shah - hwc: qclient: Subscribe to mediaplayer death later.
+  .Prabhanjan Kandula - libhwcomposer: add dynamic thresold support for copybit.
+  .Sravan Kumar D.V.N - hwc: Use correct z-order in video overlay
+  .Saurabh Shah - hwc/overlay: Video on 4k2k external, 4k2k rotation.
+  .Ramkumar Radhakrishnan - gralloc: Override gralloc calculated size only if bufferSize is greater.
+  .Amara Venkata Mastan Manoj Kumar - hwc: Handle WFD Pause/Resume usecase
   .Arun Kumar K.R - libcopybit: Remove usage of C2D_NO_BILINEAR_BIT
   .Naseer Ahmed - hwc: Add support for clearing with c2d
-  .Naseer Ahmed - hwc: Check vsync state before sending it up
-  .Sravan Kumar D.V.N - hwc: Fix alpha downscale check for mdp composition
 
 CyanogenMod Project name: android_hardware_qcom_media
-  .Arne Coucheron - Don't build for qcom legacy
+  .Steve Kondik - Tiny fixes for building on vanilla display driver.
 
-CyanogenMod Project name: lge-kernel-iproj
-  .Tom Marshall - Reduce logspam.
-  .Tom Marshall - bcmdhd: Enable packet filter for apsta and p2p firmware modes.
-  .Kuogee Hsieh - msm_fb: display: check FB_ACTIVATE_VBL bit only
-  .Carl Vanderlip - video: msm: Unlock mutex before update notify
-  .Padmanabhan Komanduru - msm_fb: Use an exclusive semaphore for Vsync IOCTL
-  .Kalyan Thota - msm_fb: Check for panel power on after Unblank.
-  .Naseer Ahmed - msm: fb: make the pan task interruptible
-  .Ricardo Cerqueira - msm: fb: Fix patch merge failure
-  .Devin Kim - msm_fb: call the backlight control before FB_BLANK_POWERDOWN
-  .Iliyan Malchev - msm_fb: unlock semaphore on error
-
-CyanogenMod Project name: android_kernel_samsung_aries
-  .Bruno Randolf - bcmdhd: Enable Ad-Hoc (IBSS) mode
-  .jt1134 - cypress-touchkey: new attempts at working around phantom keypress issue
+CyanogenMod Project name: android_hardware_qcom_audio-caf
+  .Daniel Hillenbrand - alsa: make pcm debug flag optional
 
 CyanogenMod Project name: android_kernel_samsung_d2
-  .Steve Kondik - Revert "Make using open-source drivers such as Freedreno possible."
-  .detule - M2: otg: fix runaway wakelock
-  .Scott Warner - Enable RTC write
-  .Steve Kondik - Revert "Revert "M2: (FIXUP): msm: pm: Update spm retention sequence to support per core retention""
-  .Greg Kroah-Hartman - Linux 3.4.37
-  .YOSHIFUJI Hideaki - 6lowpan: Fix endianness issue in is_addr_link_local().
-  .Mathias Krause - dcbnl: fix various netlink info leaks
-  .Mathias Krause - rtnl: fix info leak on RTM_GETLINK request for VF devices
-  .Hannes Frederic Sowa - ipv6: stop multicast forwarding to process interface scoped addresses
-  .Cristian Bercaru - bridging: fix rx_handlers return code
-  .Paul Moore - netlabel: correctly list all the static label mappings
-  .Vlad Yasevich - macvlan: Set IFF_UNICAST_FLT flag to prevent unnecessary promisc mode.
-  .Eric Dumazet - tun: add a missing nf_reset() in tun_net_xmit()
-  .Neal Cardwell - tcp: fix double-counted receiver RTT when leaving receiver fast path
-  .Lorenzo Colitti - net: ipv6: Don't purge default router if accept_ra=2
-  .Cong Wang - rds: limit the size allocated by rds_message_alloc()
-  .Guillaume Nault - l2tp: Restore socket refcount when sendmsg succeeds
-  .Stéphane Marchesin - drm/i915: Increase the RC6p threshold.
-  .Guo Chao - loopdev: remove an user triggerable oops
-  .Guo Chao - loopdev: fix a deadlock
-  .Guo Chao - block: use i_size_write() in bd_set_size()
-  .Ben Hutchings - hwmon: (sht15) Fix memory leak if regulator_enable() fails
-  .Dmitry Rogozhkin - drm/i915: EBUSY status handling added to i915_gem_fault().
-  .Johan Hovold - atmel_lcdfb: fix 16-bpp modes on older SOCs
-  .Eric Sandeen - btrfs: use rcu_barrier() to wait for bdev puts at unmount
-  .Heiko Carstens - s390/mm: fix flush_tlb_kernel_range()
-  .Martin Schwidefsky - s390: critical section cleanup vs. machine checks
-  .David Rientjes - perf,x86: fix link failure for non-Intel configs
-  .Linus Torvalds - perf,x86: fix wrmsr_on_cpu() warning on suspend/resume
-  .Dan Carpenter - selinux: use GFP_ATOMIC under spin_lock
-  .Benjamin Herrenschmidt - powerpc: Fix cputable entry for 970MP rev 1.0
-  .Benjamin Herrenschmidt - powerpc: Fix STAB initialization
-  .Marcin Jurkowski - w1: fix oops when w1_search is called from netlink connector
-  .Axel Lin - hwmon: (lineage-pem) Add missing terminating entry for pem_[input|fan]_attributes
-  .Guenter Roeck - hwmon: (pmbus/ltc2978) Fix temperature reporting
-  .Takashi Iwai - ALSA: seq: Fix missing error handling in snd_seq_timer_open()
-  .Stephane Eranian - perf,x86: fix kernel crash with PEBS/BTS after suspend/resume
-  .Jiri Slaby - TTY: do not reset master's packet mode
-  .Paul Bolle - tty: serial: fix typo "ARCH_S5P6450"
-  .Wang YanQing - serial: 8250_pci: add support for another kind of NetMos Technology PCI 9835 Multi-I/O Controller
-  .Lars-Peter Clausen - ext3: Fix format string issues
-  .Kees Cook - signal: always clear sa_restorer on execve
-  .Malcolm Priestley - staging: vt6656: Fix oops on resume from suspend.
-  .Alan Stern - USB: EHCI: don't check DMA values in QH overlays
-  .Bjørn Mork - USB: storage: fix Huawei mode switching regression
-  .Steve Conklin - usb: serial: Add Rigblaster Advantage to device table
-  .Christian Schmiedl - USB: added support for Cinterion's products AH6 and PLS8
-  .Matwey V. Kornilov - usb: cp210x new Vendor/Device IDs
-  .Oliver Neukum - USB: cdc-wdm: fix buffer overflow
-  .Bjørn Mork - USB: option: add Huawei E5331
-  .Amit Shah - virtio: rng: disallow multiple device registrations, fixes crashes
-  .Konrad Rzeszutek Wilk - xen/pciback: Don't disable a PCI device that is already disabled.
-  .Dan Williams - qcaux: add Franklin U600
-  .Steve Kondik - Revert "M2: (FIXUP): msm: pm: Update spm retention sequence to support per core retention"
-  .Todd Poynor - cpufreq: interactive: fix crash on error paths in get_tokenized_data
-  .Lianwei Wang - cpufreq: interactive: add io_is_busy interface
-  .Minsung Kim - cpufreq: interactive: allow arbitrary speed / delay mappings
-  .Steve Kondik - msm_sdcc: Re-add bus bandwidth vote for BCM4334
+  .Dan Pasanen - video: msm: re-enable framebuffer splash screen
+  .Steve Kondik - Revert "Revert "msm_fb: display: remove background invert alpha option for alpha drop pipe""
 
 CyanogenMod Project name: android_kernel_samsung_smdk4412
-  .Justin - smdk4412: mali: merge with r3p1 driver from note8
-
-CyanogenMod Project name: android_kernel_samsung_n1
-  .Adam77Root - Revert 'mpu3050: enable accelerometer calibration'
-  .Adam77Root - mpu3050: enable accelerometer calibration
-  .Adam77Root - bcmdhd: Enable Ad-Hoc (IBSS) mode
-  .Adam77Root - make code nicer
+  .Daniel Hillenbrand - smdk4412: enable sio iosched
+  .Daniel Hillenbrand - block: add sio iosched
+  .Daniel Hillenbrand - smdk4412: enable row iosched
+  .Daniel Hillenbrand - block: add row iosched
 
 CyanogenMod Project name: android_kernel_samsung_smdk4210
-  .codeworkx - smdk4210: mali: merge with r3p1 driver from note8
-
-CyanogenMod Project name: android_kernel_sony_msm8x60
-  .ChampionSwimmer - hayabusa: fix build
-  .ChampionSwimmer - msm8x60: import hayabusa board
-  .ChampionSwimmer - msm8x60: add defconfig for hayabusa
-  .Stepan Moskovchenko - ARM: proc: Add Krait proc info
+  .Daniel Hillenbrand - i777, i9100, n7000: enable row io scheduler
+  .Andrew Dodd - mali: 3-step gpu DVFS control
 
 CyanogenMod Project name: jellybam
-  .igio90 - Removed duplicates and added ville to HTC release script
-
-CyanogenMod Project name: android_bootable_recovery
-  .Chirayu Desai - nandroid: backup: save recovery log
-  .Nick Kralevich - minadbd: remove unnecessary header files.
-  .Nathan Grebowiec - Add external_sd and efs to /etc/fstab generated by recovery
+  .igio90 - Updating release script with the new devices
+  .igio90 - Added the new devices to the release scripts
 
 CyanogenMod Project name: android_packages_apps_Apollo
-  .Buga Dániel - Fix notification widget start
+  .Jorge Ruesga - Apollo: Fix afrikaans aapt warning
 
-JELLYBAM Project name: android_packages_apps_Contacts
-  .Muhammed Nazim - Fix Widget display
-  .Lars Greiss - Contacts: airplane_mode_on moved to global google
-  .Muhammed Nazim - Fix light pop up
-  .gwindlord - First Russian translation of Contacts package
+JELLYBAM Project name: android_packages_apps_BamCleaner
+  .igio90 - Tracking default settings icons
+  .igio90 - derp
+  .igio90 - Update README
+  .igio90 - BamSizer -> Bam Cleaner Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .igio90 - Initial
 
 CyanogenMod Project name: android_packages_apps_LockClock
-  .DvTonder - cLock: Bump version
-  .DvTonder - cLock: Fix FC when using monochrome icons with an unknown condition code
-  .pvolkov - Update Russian Translation-LockClock-CM10.1
-  .djMesias - es_ES: Add spanish translations
-
-CyanogenMod Project name: packages_apps_PerformanceControl
-  .Jonathan Steadman - PerformanceControl: declare new superuser permission
+  .DelPETER - LockClock : reorganize and add french translation
 
 JELLYBAM Project name: android_packages_apps_Settings
-  .igio90 - Updated BAM Control support string
-  .Mark van Osch - BAMModder: Added fonts icons and edited graphics
-  .Mark van Osch - BAMModder: Added fonts icons
-  .Domenico - Settings icon v2
-  .igio90 - Fuck, i have to sleep a bit more....
-  .igio90 - Fix up everythings
-  .igio90 - derrrrrrrrrrrrrp
-  .igio90 - Added missing strings
-  .igio90 - Port Forward: BAMControl: More Hardware Keys rebindings options Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Port forward: BAMControl: Reboot power widget (2/2) Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Port forward: BAMControl: Reboot tile (2/2) Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .fuzz - Bug #8 fix tile reorder
-  .igio90 - BAMModder Sounds: Added Galaxy S4 Ringtones
-  .igio90 - BAMModder Sounds: Added ClearAudio addon
-  .igio90 - BAMModder: Upload patchset 8!
   .igio90 - Fixed typo
-  .igio90 - Moved fonts icons to the right place
-  .igio90 - BAMModder: Upload patchset 8
-  .Mark van Osch - BAMModder: Added fonts icons
-  .Mark van Osch - BAMModder: Changed graphic and support icons
+  .igio90 - Tracking the new BAMCleaner icons
+  .igio90 - BAMControl: HoloBam tile 2/3
+  .Mark van Osch - Settings: Added BAMcleaner icons beta
+  .igio90 - BAM Persistence: Persist PA prefs
+  .igio90 - BamSizer -> Bam Cleaner Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .igio90 - Tracking new persistence icons and some strings re-order!
+  .Mark van Osch - Settings: Added persistence icons
+  .igio90 - BAM Persistence: Summary and headers!
+  .igio90 - Missing re-order ids
+  .igio90 - Settings re-order Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .igio90 - Overhaul CMDProcessor to fix deadlock and allow redirection
+  .igio90 - Port forward: [3/3] Install persistence support
   .igio90 - BAMModder: Fixed typo
-  .Mark van Osch - BAMModder: Changed graphics and support icons
-  .igio90 - BAMModder: upload patchset 7 * Added transparent trebuchet graphics mod
-  .Mark van Osch - BAMModder: Changed graphics and support icons
-  .Mark van Osch - BAMModder: Added graphics icons
-  .igio90 - Tracking new support us icons
-  .Mark van Osch - Added playstore icons
-  .igio90 - derp
-  .igio90 - Added MVODESIGN in About ROM + Added applications and fonts to BAMModder
-  .Domenico - New settings icon
-  .igio90 - BAM Modder: Upload patchset 6 * Added applications preference * Added fonts preference * Corrected some layout issues * Adjusted some icons * Adjusted some strings
-  .igio90 - Power'full' Sleep [2/2] Change the 'Go to Sleep' button to perform activities similar to the physical power button. This change affects both the power widgets and the quick settings.
-  .igio90 - BAMModder: Uploaded patchset 5
-  .igio90 - BAM Modder: Upload patchset 4
-  .igio90 - BAM Modder: Upload patchset 3
-  .igio90 - BAM Modder: Upload patchset 2: * Main layout finished * Added Donate APP Link * Initial bring up of launchers panel. (WIP) I'm to tired for finish it now.
-  .igio90 - WIP: Introducing the initial commit of BAM Modder.
-  .Domenico - new bammodder icons 2
-  .Domenico - new bammodder icons
-  .Gergely Szell (sethyx) - Refactor Lockscreen fragment layouts
-  .Dirk Rettschlag - Lockscreen: fix GlowPad overlapping the lower switches
-  .Jesús David - Reuse string
-  .drcmda - Hybrid toggle
-  .igio90 - BAMControl: LockScreen settings rework
-  .igio90 - derp
-  .igio90 - cleanup
-  .Bruno Randolf - Wifi: Enable IBSS options only if IBSS is supported
-  .Bruno Randolf - Wifi: Allow configuration of Ad-Hoc (IBSS) networks
-  .igio90 - Cleanup
-  .Andrew Dodd - wifi: Allow configuration of country code for wifi
-  .Stevespear426 - Settings: Lockscreen rework WIP
-  .Andrew Xie - Fix FC when trying to adjust radio band via *#*#4636#*#* dialer code.
+  .igio90 - BAMModder apps: Samsung S-Note
+  .igio90 - BAMModder Apps: Samsung Task Manager
+  .igio90 - BAMModder fonts: Added asap and avenir
+  .igio90 - RC New unlock logic for lockscreen
+  .igio90 - Amend singleChoiceItems where it is not a permanent/visible choice
+  .igio90 - SECURITY FIX: Fix package uids being reused between uninstall and reinstall of different packages
+  .igio90 - Fixup donate app intent
+  .igio90 - Tracking bammodder donor app
 
 CyanogenMod Project name: android_packages_apps_SamsungServiceMode
-  .codeworkx - SamsungServiceMode: higher number of lines to support jellybean radios
-
-JELLYBAM Project name: android_packages_apps_Email
-  .Jorge Ruesga - Issue 6748: Unable to download ZIP (and many other filetypes) files attached to emails
-  .Muhammed Nazim - Enable Email lockscreen widget
-
-JELLYBAM Project name: android_packages_apps_Phone
-  .igio90 - Add option to mark user-rejected calls as missed
-  .Matanya Elchanani - Phone: Add Ring Delay feature (port forward)
-  .igio90 - Revert "Derp"
-  .igio90 - Derp
-  .djMesias - es_ES: Add spanish translation
-  .Danny Baumann - Indicate call wait state in call title instead of only showing a toast.
-  .Lars Greiss - Phone : airplane_mode_on moved to global google
-  .Stevespear426 - Phone: Fix LTEToggle for t0ltecdma
-  .Danny Baumann - Make going to call log after call optional.
+  .Pawit Pornkitprasan - SamsungServiceMode: dynamic line count
 
 JELLYBAM Project name: android_packages_apps_Mms
-  .Lars Greiss - Mms TRDS: Respect themes
-  .Roger Chen - Process inactive msgs if Mms app is relaunched
-  .Muhammed Nazim - We don't really need this!
-  .Muhammed Nazim - Fix up recipient selector
-  .Muhammed Nazim - Sign Quick Replies
-  .igio90 - Rebase everything, merged SlimROM Message app with some new features
+  .Muhammed Nazim - Small visibility fix
+  .Jiri Tyr - Option to strip all unicode characters from SMS
 
-JELLYBAM Project name: android_packages_apps_Nfc
-  .Lars Greiss - NFC: airplane_mode_on moved to global google
+CyanogenMod Project name: android_packages_apps_Camera
+  .Tamás Tóth - Added hungarian translation
+  .Ricardo Cerqueira - Fix picture size tables
 
 CyanogenMod Project name: android_packages_apps_CMFileManager
-  .Jorge Ruesga - CMFM: Editor initial highlight support + props syntax processor + others features
+  .Marco Brohet - CMFM: NL translation reorganization
   .Francesco - CMFileManager: Update italian translation
-  .Tamás Tóth - Added hungarian translation
-  .Gustavo - PT-BR: Update translations
-  .pvolkov - Update Russian Translation-CMFileManager-CM10.1
   .djMesias - es_ES: Add spanish translations
-  .Jorge Ruesga - CMFM: Display hex format when open a binary file
-  .Jorge Ruesga - CMFM: Add audio/flac mimetype
-  .Jorge Ruesga - CMFM: Use holo style progress bar
+  .DelPETER - CMFileManager : reorganize and new french translation
+  .jackmu95 - CMFileManager: Update German translation
+  .Tamás Tóth - Added hungarian translation
+  .Jorge Ruesga - CMFM: Fix reflection call in ColorPickerView
+  .Jorge Ruesga - CMFM: Fix hex viewer dark theme
 
 CyanogenMod Project name: android_packages_apps_Browser
-  .Chirayu Desai - Allow enabling WebSockets from Labs Preferences
-
-CyanogenMod Project name: android_packages_apps_Trebuchet
-  .David Marble - Trebuchet: Add overlayable config for tablet workspace grid size
-  .Veeti Paananen - Fix market & overflow button paddings
-  .xavihernandez - Trebuchet: fix coherence in French translation
-
-CyanogenMod Project name: android_packages_apps_Bluetooth
-  .László Dávid - Accidentally removed bugfix in BluetoothMasObexServer
-
-JELLYBAM Project name: android_packages_input_LatinIME
-  .Muhammed Nazim - Show more stuff on keyboard
-
-CyanogenMod Project name: android_device_lge_p920
-  .berni987654321 - damn "0" looks like an "O"
-  .Bernhard Roth - add bdroid configuration and bt vendor config
-  .berni987654321 - try some bt stuff
-
-CyanogenMod Project name: android_device_lge_iprj-common
-  .Ricardo Cerqueira - Temp: Workaround the delay in stopping the bootanimation
-
-CyanogenMod Project name: android_device_htc_endeavoru
-  .tbalden - Settings overlay: freq cap sysfs path set to correct one
+  .Chirayu Desai - labs: websockets: fix typo in preference key
 
 CyanogenMod Project name: android_device_samsung_i9103
-  .Adam77Root - Add DeviceSettings
-  .Adam77Root - Minor updates
-  .Adam77Root - Fix Sound Recorder
-  .Adam77Root - Remove CameraWrapper
-  .Adam77Root - Enable useProfileVideoSize
-  .Adam77Root - Add mms overlay
-  .Adam77Root - Update TWRP parameters
-
-CyanogenMod Project name: android_device_samsung_smdk4412-common
-  .codeworkx - smdk4412-common: add SlimISP_BH camera firmware
-
-CyanogenMod Project name: android_device_samsung_i9300
-  .codeworkx - i9300: audio config cleanup
-  .codeworkx - i9300: fix dock audio
-  .codeworkx - i9300: add SamsungServiceMode
-
-CyanogenMod Project name: android_device_samsung_fascinatemtd
-  .jt1134 - fascinatemtd: use open source libGLES_android.so
-
-CyanogenMod Project name: android_device_sony_mint
-  .Alin Jerpelea - mint: switch to DASH jellybean branch
-  .Giulio Cervera - mint: use prebuilt GPS blob
-
-CyanogenMod Project name: android_device_sony_blue-common
-  .Andrew Dodd - blue: use blobs for GPS
-
-CyanogenMod Project name: android_device_sony_tsubasa
-  .Alin Jerpelea - tsubasa: switch to DASH jellybean branch
-  .Giulio Cervera - tsubasa: use prebuilt GPS blob
+  .Adam77Root - Various fixes
 
