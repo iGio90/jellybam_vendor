@@ -16,6 +16,7 @@ add_lunch_combo jellybam_p920-userdebug
 add_lunch_combo jellybam_p930-userdebug
 add_lunch_combo jellybam_p970-userdebug
 add_lunch_combo jellybam_p990-userdebug
+add_lunch_combo jellybam_vs920-userdebug
 # Samsung
 add_lunch_combo jellybam_crespo-userdebug
 add_lunch_combo jellybam_crespo4g-userdebug
