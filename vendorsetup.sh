@@ -12,6 +12,7 @@ add_lunch_combo jellybam_pyramid-userdebug
 add_lunch_combo jellybam_ville-userdebug
 # LGE
 add_lunch_combo jellybam_mako-userdebug
+add_lunch_combo jellybam_p760-userdebug
 add_lunch_combo jellybam_p920-userdebug
 add_lunch_combo jellybam_p930-userdebug
 add_lunch_combo jellybam_p970-userdebug
