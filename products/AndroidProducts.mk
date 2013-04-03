@@ -115,6 +115,12 @@ endif
 ifeq (jellybam_tsubasa,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_tsubasa.mk
 endif
+ifeq (jellybam_vibrantmtd,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_vibrantmtd.mk
+endif
 ifeq (jellybam_ville,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_ville.mk
+endif
+ifeq (jellybam_vs920,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_vs920.mk
 endif
