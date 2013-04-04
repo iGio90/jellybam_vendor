@@ -54,3 +54,4 @@ add_lunch_combo jellybam_vibrantmtd-userdebug
 # Sony
 add_lunch_combo jellybam_mint-userdebug
 add_lunch_combo jellybam_tsubasa-userdebug
+add_lunch_combo jellybam_yuga-userdebug
