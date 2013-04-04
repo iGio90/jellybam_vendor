@@ -9,6 +9,9 @@ add_lunch_combo jellybam_endeavoru-userdebug
 add_lunch_combo jellybam_fireball-userdebug
 add_lunch_combo jellybam_jewel-userdebug
 add_lunch_combo jellybam_pyramid-userdebug
+add_lunch_combo jellybam_shooter-userdebug
+add_lunch_combo jellybam_shooteru-userdebug
+add_lunch_combo jellybam_shootervm-userdebug
 add_lunch_combo jellybam_ville-userdebug
 # LGE
 add_lunch_combo jellybam_mako-userdebug

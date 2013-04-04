@@ -115,6 +115,15 @@ endif
 ifeq (jellybam_quincyatt,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_quincyatt.mk
 endif
+ifeq (jellybam_shooter,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_shooter.mk
+endif
+ifeq (jellybam_shooteru,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_shooteru.mk
+endif
+ifeq (jellybam_shootervm,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_shootervm.mk
+endif
 ifeq (jellybam_skyrocket,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_skyrocket.mk
 endif
