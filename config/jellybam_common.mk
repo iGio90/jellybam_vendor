@@ -115,8 +115,30 @@ PRODUCT_COPY_FILES += \
 ### AOKP ###
 # AOKP Packages
 PRODUCT_PACKAGES += \
-    PerformanceControl \
-    ROMControl
+    PerformanceControl
+
+# Extra tools in CM
+PRODUCT_PACKAGES += \
+    openvpn \
+    e2fsck \
+    mke2fs \
+    tune2fs \
+    bash \
+    vim \
+    nano \
+    htop \
+    powertop \
+    lsof
+
+# Openssh
+PRODUCT_PACKAGES += \
+    scp \
+    sftp \
+    ssh \
+    sshd \
+    sshd_config \
+    ssh-keygen \
+    start-ssh
 
 # AOKP Overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/jellybam/overlay/aokp/common
