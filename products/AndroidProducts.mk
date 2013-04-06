@@ -46,6 +46,9 @@ endif
 ifeq (jellybam_hercules,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_hercules.mk
 endif
+ifeq (jellybam_i605,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_i605.mk
+endif
 ifeq (jellybam_i777,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_i777.mk
 endif
@@ -60,6 +63,9 @@ ifeq (jellybam_i9103,$(TARGET_PRODUCT))
 endif
 ifeq (jellybam_i9300,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_i9300.mk
+endif
+ifeq (jellybam_i9305,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_i9305.mk
 endif
 ifeq (jellybam_maguro,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_maguro.mk
