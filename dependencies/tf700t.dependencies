@@ -1,0 +1,8 @@
+]
+    {
+        "account":      "bam",
+        "repository":   "android_device_asus_tf700t",
+        "target_path":  "device/asus/tf700t",
+        "revision":     "bam6"
+    }
+]
