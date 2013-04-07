@@ -17,10 +17,4 @@
         "target_path":  "device/htc/msm8960-common",
         "revision":     "cm-10.1"
     },
-    {
-        "account":      "atrus5",
-        "repository":   "vendor_htc_ville",
-        "target_path":  "vendor/htc/ville",
-        "revision":     "master"
-    }
 ]
