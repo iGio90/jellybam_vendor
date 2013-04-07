@@ -2,6 +2,20 @@
     {
         "remote":       "github",
         "account":      "Team-Hydra",
+        "repository":   "android_device_htc_shooter",
+        "target_path":  "device/htc/shooter",
+        "revision":     "cm-10.1"
+    },
+    {
+        "remote":       "github",
+        "account":      "Team-Hydra",
+        "repository":   "android_device_htc_shooteru",
+        "target_path":  "device/htc/shooteru",
+        "revision":     "cm-10.1"
+    },
+    {
+        "remote":       "github",
+        "account":      "Team-Hydra",
         "repository":   "android_device_htc_shootervm",
         "target_path":  "device/htc/shootervm",
         "revision":     "cm-10.1"
