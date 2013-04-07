@@ -10,7 +10,7 @@
         "remote":       "github",
         "account":      "iGio90",
         "repository":   "android_frameworks_native",
-        "target_path":  "frameworks_native",
+        "target_path":  "frameworks/native",
         "revision":     "bam6-pyramid"
     },
     {
