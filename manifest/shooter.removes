@@ -13,6 +13,6 @@
     },
     {
         "name":   "CyanogenMod/android_hardware_libhardware-legacy",
-        "path":  "hardware/libhardware-legacy"
+        "path":  "hardware/libhardware_legacy"
     }
 ]
