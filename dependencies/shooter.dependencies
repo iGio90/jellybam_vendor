@@ -31,7 +31,7 @@
         "remote":       "github",
         "account":      "Team-Hydra",
         "repository":   "linaro",
-        "target_path":  "/var/pyramid/prebuilt/linux-x86/toolchain/linaro",
+        "target_path":  "prebuilt/linux-x86/toolchain/linaro",
         "revision":     "cm-10.1"
     },
     {
