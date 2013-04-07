@@ -47,12 +47,5 @@
         "repository":   "android_hardware_qcom_media-legacy",
         "target_path":  "hardware/qcom/media-legacy",
         "revision":     "cm-10.1"
-    },
-    {
-        "remote":       "github",
-        "account":      "Team-Hydra",
-        "repository":   "android_hardware_libhardware-legacy",
-        "target_path":  "hardware/qcom/libhardware-legacy",
-        "revision":     "cm-10.1"
     }
 ]
