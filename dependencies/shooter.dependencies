@@ -1,26 +1,9 @@
 [
-   {
-        "name":  "Team-Hydra/android_device_htc_shooter",
-        "path":  ""
-    },
-    { 
-        "name":  "CyanogenMod/android_frameworks_native",
-        "path":  "frameworks/native"
-    },
-    { 
-        "name":  "CyanogenMod/android_hardware_qcom_media",
-        "path":  "hardware/qcom/media"
-    },
     {
-        "name":   "CyanogenMod/android_hardware_qcom_audio-caf",
-        "path":  "hardware/qcom/audio-caf"
-    },
-	{
-        "name":   "CyanogenMod/android_hardware_libhardware",
-        "path":  "hardware/libhardware"
-    },
-    {
-        "name":   "CyanogenMod/android_hardware_libhardware_legacy",
-        "path":  "hardware/libhardware_legacy"
+        "remote":       "github",
+        "account":      "Team-Hydra",
+        "repository":   "android_packages_apps_CMWimaxSettings",
+        "target_path":  "packages/apps/CMWimaxSettings",
+        "revision":     "cm-10.1"
     }
 ]
