@@ -1,0 +1,18 @@
+[
+    {
+        "name":   "CyanogenMod/android_hardware_qcom_media",
+        "path":  "hardware/qcom/media"
+    },
+    {
+        "name":   "CyanogenMod/android_hardware_qcom_audio-caf",
+        "path":  "hardware/qcom/audio-caf"
+    },
+    {
+        "name":   "CyanogenMod/android_hardware_libhardware",
+        "path":  "hardware/libhardware"
+    },
+    {
+        "name":   "CyanogenMod/android_hardware_libhardware_legacy",
+        "path":  "hardware/libhardware-legacy"
+    }
+]

@@ -1,5 +1,5 @@
 # Check for target product
-ifeq (jellybam_vs920,$(TARGET_PRODUCT))
+ifeq (jellybam_su640,$(TARGET_PRODUCT))
 
 # OVERLAY_TARGET adds overlay asset source
 OVERLAY_TARGET := pa_xhdpi
@@ -11,9 +11,9 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/jellybam/overlay/aokp/device/common
 include vendor/jellybam/config/jellybam_common.mk
 
 # Inherit CM device configuration
-$(call inherit-product, device/lge/vs920/cm.mk)
+$(call inherit-product, device/lge/su640/cm.mk)
 
-PRODUCT_NAME := jellybam_vs920
+PRODUCT_NAME := jellybam_su640
 
 # Update local_manifest.xml
 GET_PROJECT_RMS := $(shell vendor/jellybam/tools/removeprojects.py $(PRODUCT_NAME))
