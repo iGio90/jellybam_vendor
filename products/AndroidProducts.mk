@@ -124,6 +124,9 @@ endif
 ifeq (jellybam_quincyatt,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_quincyatt.mk
 endif
+ifeq (jellybam_r950,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_r950.mk
+endif
 ifeq (jellybam_ruby,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_ruby.mk
 endif
