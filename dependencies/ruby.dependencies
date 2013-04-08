@@ -1,0 +1,20 @@
+[
+    {
+        "account":      "Sportsstar89",
+        "repository":   "android_device_htc_ruby",
+        "target_path":  "device/htc/ruby",
+        "revision":     "cm-10.1"
+    },
+    {        
+        "account":      "Sportsstar89",
+        "repository":   "android_device_htc_msm8660-common",
+        "target_path":  "device/htc/msm8660-common",
+        "revision":     "cm-10.1"
+    },
+	{        
+        "account":      "Sportsstar89",
+        "repository":   "android_kernel_htc_ruby",
+        "target_path":  "kernel/htc/msm8660",
+        "revision":     "working"
+    }	
+]

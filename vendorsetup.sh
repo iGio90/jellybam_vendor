@@ -4,11 +4,13 @@ add_lunch_combo jellybam_tf300t-userdebug
 add_lunch_combo jellybam_tf700t-userdebug
 add_lunch_combo jellybam_tilapia-userdebug
 # HTC
+add_lunch_combo jellybam_ace-userdebug
 add_lunch_combo jellybam_evita-userdebug
 add_lunch_combo jellybam_endeavoru-userdebug
 add_lunch_combo jellybam_fireball-userdebug
 add_lunch_combo jellybam_jewel-userdebug
 add_lunch_combo jellybam_pyramid-userdebug
+add_lunch_combo jellybam_ruby-userdebug
 add_lunch_combo jellybam_shooter-userdebug
 add_lunch_combo jellybam_shooteru-userdebug
 add_lunch_combo jellybam_shootervm-userdebug

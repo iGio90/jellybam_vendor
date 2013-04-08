@@ -1,3 +1,6 @@
+ifeq (jellybam_ace,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_ace.mk
+endif
 ifeq (jellybam_crespo,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_crespo.mk
 endif
@@ -120,6 +123,9 @@ ifeq (jellybam_pyramid,$(TARGET_PRODUCT))
 endif
 ifeq (jellybam_quincyatt,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_quincyatt.mk
+endif
+ifeq (jellybam_ruby,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_ruby.mk
 endif
 ifeq (jellybam_shooter,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_shooter.mk
