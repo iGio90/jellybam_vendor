@@ -1,8 +1,0 @@
-]
-    {
-        "account":      "CyanogenMod",
-        "repository":   "android_device_lge_iprj-common",
-        "target_path":  "device/lge/iprj-common",
-        "revision":     "cm-10.1"
-    }
-]
