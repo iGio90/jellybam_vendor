@@ -3,6 +3,6 @@
         "account":      "github",
         "repository":   "CyanogenMod/android_device_lge_iprj-common",
         "target_path":  "device/lge/iprj-common",
-        "revision":     "bam6"
+        "revision":     "cm-10.1"
     }
 ]
