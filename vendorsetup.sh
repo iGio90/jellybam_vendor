@@ -49,6 +49,8 @@ add_lunch_combo jellybam_n7100-userdebug
 add_lunch_combo jellybam_n8000-userdebug
 add_lunch_combo jellybam_p3100-userdebug
 add_lunch_combo jellybam_p3110-userdebug
+add_lunch_combo jellybam_p4-userdebug
+add_lunch_combo jellybam_p4wifi-userdebug
 add_lunch_combo jellybam_p5100-userdebug
 add_lunch_combo jellybam_p5110-userdebug
 add_lunch_combo jellybam_quincyatt-userdebug
