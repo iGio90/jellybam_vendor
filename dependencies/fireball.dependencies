@@ -1,0 +1,44 @@
+[
+    {
+        "remote":       "github",
+        "account":      "mdmower",
+        "repository":   "android_device_htc_fireball",
+        "target_path":  "device/htc/shooter",
+        "revision":     "cm-10.1"
+    },
+    {
+        "remote":       "github",
+        "account":      "htc-msm8960",
+        "repository":   "android_device_htc_msm8960-common",
+        "target_path":  "device/htc/msm8960-common",
+        "revision":     "cm-10.1"
+    },
+    {
+        "remote":       "github",
+        "account":      "htc-msm8960",
+        "repository":   "android_kernel_htc_msm8960",
+        "target_path":  "kernel/htc/msm8960",
+        "revision":     "cm-10.1"
+    },
+    {
+        "remote":       "github",
+        "account":      "Team-Hydra",
+        "repository":   "linaro",
+        "target_path":  "prebuilt/linux-x86/toolchain/linaro",
+        "revision":     "cm-10.1"
+    },
+    {
+        "remote":       "github",
+        "account":      "Team-Hydra",
+        "repository":   "android_hardware_qcom_display-legacy",
+        "target_path":  "hardware/qcom/display-legacy",
+        "revision":     "cm-10.1"
+    },
+    {
+        "remote":       "github",
+        "account":      "Team-Hydra",
+        "repository":   "android_hardware_qcom_media-legacy",
+        "target_path":  "hardware/qcom/media-legacy",
+        "revision":     "cm-10.1"
+    }
+]
