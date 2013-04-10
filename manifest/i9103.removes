@@ -1,0 +1,6 @@
+[
+    {
+        "name":   "android_bootable_recovery",
+        "path":   "bootable/recovery"
+    }
+]
