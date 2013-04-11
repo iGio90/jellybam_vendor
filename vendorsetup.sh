@@ -57,6 +57,8 @@ add_lunch_combo jellybam_quincyatt-userdebug
 add_lunch_combo jellybam_r950-userdebug
 add_lunch_combo jellybam_skyrocket-userdebug
 add_lunch_combo jellybam_t0lte-userdebug
+add_lunch_combo jellybam_t0lteatt-userdebug
+add_lunch_combo jellybam_t0ltetmo-userdebug
 add_lunch_combo jellybam_vibrantmtd-userdebug
 # Sony
 add_lunch_combo jellybam_mint-userdebug
