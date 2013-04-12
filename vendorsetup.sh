@@ -1,3 +1,6 @@
+# AMAZON
+add_lunch_combo jellybam_otter-userdebug
+add_lunch_combo jellybam_otter2-userdebug
 # ASUS
 add_lunch_combo jellybam_grouper-userdebug
 add_lunch_combo jellybam_tf300t-userdebug

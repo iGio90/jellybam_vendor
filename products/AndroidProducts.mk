@@ -91,6 +91,12 @@ endif
 ifeq (jellybam_n8000,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_n8000.mk
 endif
+ifeq (jellybam_otter,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_otter.mk
+endif
+ifeq (jellybam_otter2,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_otter2.mk
+endif
 ifeq (jellybam_p760,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/jellybam_p760.mk
 endif
