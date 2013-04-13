@@ -1,210 +1,194 @@
 JELLYBAM Project name: android_build
-  .igio90 - Cleanup!
-  .igio90 - Revert "build/core: Build in ISOC++11 mode if possible"
-  .Eugene San (eugenesan) - fix graphite optimization support
-  .nocoast - Added more of the original linaro optimizations to default
-  .Daniel MM - Carbon power
-  .franco-c - Don't build emulator
-  .aaronpoweruser - Graphite optimizatoin flags
-  .aaronpoweruser - Make gcc 4.6 default and non O3
-  .Bernhard Rosenkraenzer - build/core: Build in ISOC++11 mode if possible
-  .Steve Spear - Add strict_aliasing.
-  .Stevespear426 - GCC 4.7 O3 and aliasing Optimizations
-  .Stevespear426 - Use GCC 4.7 from google
-  .Nick Kralevich - x86: enable FORTIFY_SOURCE
-  .Ben Cheng - Export TARGET_GCC_VERSION as an env variable.
-  .Ben Cheng - [ARM] Extend the usage of TARGET_GCC_VERSION for gdb and arm-eabi-*.
-  .Andrew Hsieh - Add TARGET_GCC_VERSION
+  .igio90 - BamLauncher everywhereeeee Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .igio90 - Build bamlauncher on all devices Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
 
 JELLYBAM Project name: android_frameworks_native
-  .igio90 - Revert "Merge commit 'fb5cb4e' into bam6-pyramid"
-  .Bernhard Rosenkraenzer - frameworks/base: Make sure Singleton instantiations are exported
+  .Steven Luo - Forward-port surface dithering from CM10
+  .Krylon360 - SurfaceFlinger: Removal of NO_RGBX_8888 flag for OMAP3
 
-CyanogenMod Project name: android_frameworks_av
-  .Haynes Mathew George - libstagefright: Squashed audio fixes from CodeAurora
-  .Steve Kondik - Silence error when DASH player isn't present
+CyanogenMod Project name: android_frameworks_opt_telephony
+  .Steve Kondik - Revert "RIL.java - add DCHSPAP"
+  .Matthias Bosc - RIL.java - add DCHSPAP
+  .Tom Marshall - Allow disabling radio with property persist.ril.enable.
 
 JELLYBAM Project name: android_frameworks_base
-  .igio90 - FIx: PhabletUI NavBar in landscape
-  .igio90 - services: don't clear wallpaper when SystemUI disconnects. When we restart SystemUI (or the user), sometimes the wallpaper would get cleared. This patch just captures its originating component and if that is our SystemUI component, ignore the event. Change-Id: I3e159dc2c013e7d7e552e3c0cef55e3ab970ca87
-  .Ian Rogers - Recognize odex files in memory accounting.
-  .Elliott Hughes - Remove the fixed-length buffer in DdmHandleNativeHeap.getLeakInfo.
-  .PrimeDirective - remove hardcoded -fno-strict-aliasing from F/B/core/jni
-  .Nick Kralevich - convert jint to uint32_t.
-  .You Kim - StringBlock_nativeCreate: Possible Leak
-  .You Kim - Leak in ToneGenerator_native_setup
+  .igio90 - Notification panel rewrite Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .David Daynard - QwertyKeyListener: Add support for www and .com key
+  .Thomas Wendt - wifi: Fix StringIndexOutOfBoundsException for incorrectly encoded SSIDs
+  .Kenny Root - Correct executable bit for source files
+  .Bruno Randolf - Wifi: Get the list of supported channels
+  .Jostein Kjønigsen - Fix Photosphere/Camera FCs
+  .tbalden - keyboard: adding functional alt/shift lights
+  .Andrew Neal - Remove unnecessary updateSurfaceScreenOn call.
+  .igio90 - Various fixes 2 Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .igio90 - Various fixes
+  .igio90 - 'Resize text to fit on tile size adjusted' Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .igio90 - Fixup quick pulldown behaviors Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .xLaMbChOpSx - Quick Pulldown, Pulldown settings & hide QuickSettings patch.
+  .Muhammed Nazim - Hide QS Panel Toggle [1/2]
+  .Rick C - Quick Settings Pulldown: Left or Right side option (1/2)
+  .Lars Greiss - Frameworks: Quick Settings pulldown without notifications (1/2)
+  .Ian Rogers - Port forward: Configurable tiles rows Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .Takuo Kitame - Japanese: Update Japanese translation.
+  .Michael Bestas - Frameworks/SystemUI: Update Greek translations
+  .tompopielarczyk - Core: Updated Polish translation
+  .Andrew Jiang - SystemUI: Simplified Chinese Translations
+  .Vavooon - Add power-off menu Uk translation
+  .igio90 - SystemUI: Fix issue that shown double clock on tablet UI Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .igio90 - Missing tabletUI dimens
+
+CyanogenMod Project name: proprietary_vendor_lge
+  .Ricardo Cerqueira - Add e975 blobs
+
+CyanogenMod Project name: proprietary_vendor_motorola
+  .dhacker29 - umts_spyder: update with 982.124.14 blobs
+  .Hashcode - solana: fix missing files from device merges
+
+JELLYBAM Project name: vendor_pa
+  .igio90 - Revert "Update pa prefs to 5.2"
+  .igio90 - Revert "paprefs 5.3"
 
 JELLYBAM Project name: android_vendor_htc
-  .igio90 - RUBY Everywhere
-  .Dorian Snyder - shooter/shootervm: don't copy thermald and mpdecision
-  .igio90 - we need libDxOAF for jewel too!
-  .igio90 - Moving libDxOAF to the right place
+  .igio90 - Ville: Missing lib Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
 
 JELLYBAM Project name: jellybam_vendor
-  .igio90 - Fix pa prefs icons
-  .igio90 - OMG!
-  .igio90 - N8000: various fixes Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - N8000 fix dependencies Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Mako: Track paranoidandroid kernel Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - p4 and p4wifi Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Updating tf300t and tf700t pa overlays Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - BAMModder: New touchwiz and samsung keyboard (2/2)
-  .igio90 - r950 aka US Cellular Note 2
-  .igio90 - Ace and ruby.. where? everywhere! Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Bump to 7.4
-  .igio90 - tf700t and tf300t fixup
-  .igio90 - su640: typo everywhere
-  .igio90 - su640: the right branch :S
-  .igio90 - su640 dependencies
-  .igio90 - p5110: fix typo
-  .igio90 - Pyramid: Manifest and dependencies
-  .igio90 - Tracking new libhardware for shooter*
-  .igio90 - typo
-  .igio90 - Custom frameworks av and native for shooter builds
-  .igio90 - We should use their camera and gallery!
-  .igio90 - Tracking all shooter device tree
-  .igio90 - Shooteru/vm: fix typo Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Shooteru, Shootervm and initial su640 Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - cleanup
-  .igio90 - n800, p920, tf300t and tf700t custom device track Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Shooter: i need to sleep a bit more
-  .igio90 - Shooter: Another typo fix
-  .igio90 - Revert "Shooter: Moving libhardware-legacy to dependencies"
-  .igio90 - Shooter: Moving libhardware-legacy to dependencies
-  .igio90 - Fix typo
-  .igio90 - Shooter: cleanup
-  .igio90 - Ville: derp
-  .igio90 - Shooooooter final manifest and deps Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Shooter everywhere
+  .igio90 - Otter2: initial dependencies Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .igio90 - Update GMail Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .igio90 - Bump to 7.5
+  .igio90 - Amazon kindle fire and amazon kindle fire HD Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .igio90 - t0lteatt and t0ltetmo Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .igio90 - i9103: Using stock recovery... can't use ours :( Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .igio90 - Various fix Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .igio90 - fireball: initial Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
 
 CyanogenMod Project name: proprietary_vendor_samsung
-  .Steve Kondik - Revert "d2: Update Adreno driver"
-  .Steve Kondik - Add t0lteatt/t0ltetmo blobs
+  .Daniel Hillenbrand - i9300: use opensource libril
+
+CyanogenMod Project name: proprietary_vendor_sony
+  .Giulio Cervera - tsubasa: update blob
+  .Giulio Cervera - mint: update blob
+  .Giulio Cervera - odin: update blob
+  .Daniel Hillenbrand - yuga: add camera blobs
+  .Chirayu Desai - qcom-common, fusion3-common: regenerate
 
 JELLYBAM Project name: platform_manifest
-  .igio90 - Tracking own recovery
-  .igio90 - Tracking own trebuchet
-  .igio90 - missing remote
-  .igio90 - We need this for gcc 4.7
-  .igio90 - Moving custom devices to vendors deps
+  .igio90 - tracking new amazon release scripts Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .igio90 - Track back cm qcom display and display legacy
+  .igio90 - tracking own launcher
+
+CyanogenMod Project name: android_external_wpa_supplicant_8
+  .Bruno Randolf - wpa_supplicant: Add get_capability freq
+
+CyanogenMod Project name: android_external_libusb
+  .Ricardo Cerqueira - Make the pregenerated config.h adapt to linux/darwin depending on host
 
 JELLYBAM Project name: platform_manifest
-  .igio90 - Tracking own recovery
-  .igio90 - Tracking own trebuchet
-  .igio90 - missing remote
-  .igio90 - We need this for gcc 4.7
-  .igio90 - Moving custom devices to vendors deps
+  .igio90 - tracking new amazon release scripts Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .igio90 - Track back cm qcom display and display legacy
+  .igio90 - tracking own launcher
+
+CyanogenMod Project name: android_hardware_qcom_display-caf
+  .Steve Kondik - display: Use actual kernel headers for all builds
+  .desterly - Revert "hwc: Configure pipe for FB even if we exceed max layers"
+
+CyanogenMod Project name: android_hardware_qcom_camera
+  .Seth Shelnutt - camera.$(TARGET_DEVICE): FPSRange gets defined twice for devices which use the qcom camera hal and the QCOM_HARDWARE define. It is also defined in frameworks/av/include/camera/CameraParameters.h . QCameraParameters.h includes that header, so FPSRange should only be defined here if not defined already.
+
+CyanogenMod Project name: android_hardware_qcom_media
+  .Steve Kondik - mm-video: Use actual kernel headers for all builds
+
+CyanogenMod Project name: android_hardware_qcom_audio-caf
+  .Matt Filetto - Fix VOIP audio routing issue and add usb audio hal profile
+  .Arne Coucheron - audio/msm8660: Squashed set of updates
+  .Sunil Joseph - audio/msm7630: Fix for back to back VOIP calls failure
+  .Kalyani polepeddy - audio/msm7630: Add latency support for LPA
+  .Vineela Tummalapalli - audio/msm7630: Fix to enable TTY device
+  .Steve Kondik - msm8660: Add dependency on kernel headers
+
+CyanogenMod Project name: android_hardware_ril
+  .Chirayu Desai - ril.h: sync RIL_RadioTechnology with framework
 
 CyanogenMod Project name: jellybam
-  .igio90 - Added r950 to the toolchain
-  .igio90 - Pyramid: we can buil it up in the chain! yeah
-  .igio90 - su640: build with toolchain
-  .igio90 - Build shooter, shooteru and shootervm with toolchain
-  .igio90 - Updating release scripts
+  .igio90 - Added amazon release, always sync repoes before build! Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .igio90 - t0lte and t0lteatt to the chain Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
 
 JELLYBAM Project name: android_bootable_recovery
-  .Domenico - First BAM modded image (experimental)
+  .Koushik Dutta - allow sideload to be triggered via /cache/recovery command for eat
+  .Koushik Dutta - Allow cancelation of adb sideload.
 
-JELLYBAM Project name: android_packages_apps_Calculator
-  .DelPETER - Calculator : reorganize and add french translation
-  .Ondrej Zima - Czech: fixed tranlation, fixed string order, added missing and fixed order again
-  .Michael Bestas - Calculator: Reorganize Greek translations
+CyanogenMod Project name: android_sdk
+  .Ying Wang - Delete duplicate files
+
+CyanogenMod Project name: android_packages_apps_Apollo
+  .Gustavo - PT-BR: Update translation
+
+JELLYBAM Project name: android_packages_apps_Contacts
+  .isimobile - Afrikaans: Fix spelling mistake
+  .pvolkov - Contacts: RU translations
+  .djMesias - Contacts: ES translations
+  .fbonache - Contacts: Update Spanish Translations
+  .Francesco - Contacts: Update italian translation
+  .tompopielarczyk - Contacts: Update Polish translation
+  .igio90 - Merge: https://github.com/SlimRoms/packages_apps_Contacts/ Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .DvTonder - Contacts: Add support for Blacklist
+
+CyanogenMod Project name: android_packages_apps_LegacyCamera
+  .djMesias - LegacyCamera: ES translations
 
 CyanogenMod Project name: android_packages_apps_DSPManager
-  .Michael Bestas - DSPManager: Reorganize Greek translations
-
-JELLYBAM Project name: android_packages_apps_DeskClock
-  .Andrew Jiang - DeskClock: Simplified Chinese Translations
-  .Andrew Neal - Add empty view when no alarms are set
-  .djMesias - es_ES: Add spanish translation
-  .Tamás Tóth - Added hungarian translation for no_alarms
-  .tompopielarczyk - DeskClock: Update Polish language
-  .Jacob Overgaard Madsen - DeskClock: New Danish string and adjustment
-  .Gustavo - PT-BR: Update translations
-  .xavihernandez - DeskClock: update French translation
-  .pvolkov - Update Russian Translation-DeskClock-CM10.1
-  .isimobile - Afrikaans translations: Added missing items
-  .Danny Baumann - Update German translation.
-  .Marco Brohet - DeskClock: NL translations
-  .Francesco - DeskClock: Update italian translation
-  .Ondrej Zima - Czech: added missing strings, changed translation strings order
-  .Takuo Kitame - DeskClock: update Japanese translation
-  .Michael Bestas - DeskClock: Reorganize Greek translations
-
-JELLYBAM Project name: android_packages_apps_Calendar
-  .Marco Brohet - Calendar: NL translations
-  .DelPETER - Calendar : add french translation
-  .Michael Bestas - Calendar: Reorganize Greek translations
+  .Ondrej Zima - Czech: merge from CM10
 
 JELLYBAM Project name: android_packages_apps_Settings
-  .igio90 - Port forward: Lockscreen camera widget on/off Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - BAMModder: New touchwiz and samsung keyboard (1/2)
-  .igio90 - Call our helpers!
-  .igio90 - HoloBam: Restart trebuchet on toggle change (1/2)
-  .igio90 - Typo
-  .igio90 - Tracking the new bam-android.com website
-  .igio90 - Restart SystemUI to change Signal/WiFi clusters when text selected
-  .igio90 - QuickSettings : Use stock layouts / fix userTile
-  .igio90 - ROMStats: fix up preview screen Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .jt1134 - DataUsageSummary: fix mobile data usage display for sim-less devices
+  .Bruno Randolf - Wifi: Add frequency selection for new IBSS
+  .igio90 - Missing arrays Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .igio90 - cleanup Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .igio90 - Missing strings Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .igio90 - BamControl: Update NL Strings Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .igio90 - BAMControl: Moar notification panel preferences:
+  .igio90 - Port forward: BAMControl: Quick pulldown preferences, ability to hide tiles panel and more (2/2) Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+
+CyanogenMod Project name: android_packages_apps_SamsungServiceMode
+  .Gustavo - PT-BR: Update translation
 
 JELLYBAM Project name: android_packages_apps_Email
-  .Danny Baumann - Update German translation.
-  .DelPETER - Email : reorganize and add french translation
+  .muzbit.kim - Fix a Cursor leak
+  .Jack Bates - Fix SMTP RFC violation for better interoperability
+  .Sylvain Becuwe - Potential NPE in Account.
+  .yang yang - Turkish characters show problem in addressList and subject
 
 JELLYBAM Project name: android_packages_apps_Phone
-  .igio90 - String update and cleanup Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .Danny Baumann - Indicate call wait state in call title instead of only showing a toast.
-  .djMesias - es_ES: Add spanish translation
-  .Tamás Tóth - Added hungarian translation
-  .tompopielarczyk - Phone: Update Polish translation
-  .rheeze - Phone: Update italian translation
-  .Gustavo - PT-BR: Update translations
-  .pvolkov - Update Russian Translation-Phone-CM10.1
-  .isimobile - Afrikaans translations: Added missing items
-  .Marco Brohet - Phone: Dutch translations
-  .DelPETER - Phone : reorganize and add french translation
-  .Vavooon - Fix wrong Phone captions
-  .Quarx2k - Add support for proprietary libaudio voice quality filter
-  .igio90 - Phone: Fixup settings NPE
+  .Jacob Overgaard Madsen - Phone: Danish for latest merges
+  .igio90 - Phone: Ru translation
+  .pvolkov - Phone: RU translations
+  .Bajee11 - Missed Call Breath (1/3)
+  .igio90 - Merge: https://github.com/SlimRoms/packages_apps_Phone.git Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .DvTonder - Phone: Add Blacklist functionality
 
 JELLYBAM Project name: android_packages_apps_Mms
-  .igio90 - String cleanup Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .djMesias - es_ES: Update spanish translations
-  .Gustavo - PT-BR: Update translation
-  .tompopielarczyk - MMS: Update Polish language
-  .Vladimir Belkov - Update Russian translation: Mms
-  .Tamás Tóth - Added hungarian translation
-  .DelPETER - Mms : reorganize and add french translation
-  .Francesco - Mms: Update italian translation
-  .DvTonder - Mms: Updated 'Mark as read' notification action icon
-
-JELLYBAM Project name: android_packages_apps_Camera
-  .djMesias - es_ES: Add spanish translations
-  .rheeze - Camera: Update italian translation
-  .Michael Bestas - Camera: Reorganize Greek translations
-  .Muhammed Nazim - Add Danish Translations
-  .Muhammed Nazim - Add French Translations
-  .Muhammed Nazim - Add German Translations
-  .Konstantinas Arefjevas - Add Lithuanian Translations
-  .Muhammed Nazim - Add Polish Translations
-  .jt1134 - Camera: add additional picture resolutions
+  .DelPETER - Mms: fr translation (separation file custom/AOSP)
+  .djMesias - Mms: ES translations
 
 CyanogenMod Project name: android_packages_apps_CMFileManager
-  .Michael Bestas - CMFM: Reorganize Greek translations
-  .Junwen Sun - CMFM: Protect AssociationsDialog from NPE
+  .Vavooon - Add CMFileManager ukrainian translation
 
-CyanogenMod Project name: android_packages_apps_Browser
-  .Michael Bestas - Browser: Reorganize Greek translations
+JELLYBAM Project name: android_packages_apps_BamLauncher
+  .igio90 - first commit
 
-JELLYBAM Project name: android_packages_apps_Trebuchet
-  .Jorge Ruesga - Revert "Wallpapers update"
-  .igio90 - Wallpapers update
-  .drcmda - 4.2.2 cleanup
-  .Veeti Paananen - Show the uninstall button by default when dragging from the app drawer
-  .Matthias Bosc - Trebuchet Settings: add setDisplayHomeAsUpEnabled
-  .Jorge Ruesga - Trebuchet: force close in dock (Trebuchet) with raised default page count
-  .Jorge Ruesga - Trebuchet: Default workspace fixes
+CyanogenMod Project name: android_packages_apps_Exchange
+  .Conley Owens - Avoid searching non-existent dir
 
-CyanogenMod Project name: android_packages_apps_Bluetooth
-  .Michael Bestas - Bluetooth: Reorganize Greek translations
+JELLYBAM Project name: android_packages_input_LatinIME
+  .DelPETER - LatinIME : add french translation
+
+CyanogenMod Project name: android_dalvik
+  .Jeff Hao - Remove dead instruction in common_exceptionThrown.
+  .Elliott Hughes - Fix a tracked reference leak in dvmGenerateProxyClass.
+  .Elliott Hughes - Remove stray references to non-existent opcodes.
+  .Elliott Hughes - Fix a Field.isAnnotationPresent crash.
+  .Elliott Hughes - Dump native stacks for all threads in native code.
+  .You Kim - Fix a minor leak in handleVM_CreateString
+  .You Kim - Fix a minor leaks caused by failed initializations.(typo)
+  .You Kim - Fix a leak in Dalvik_dalvik_system_DexFile_openDexFile
+  .You Kim - Tiny optimization for complier templates for arm.
 
