@@ -12,9 +12,9 @@
         "revision":     "cm-10.1"
     },
 	{        
-        "account":      "Sportsstar89",
-        "repository":   "android_kernel_htc_ruby",
+        "account":      "Team-Hydra",
+        "repository":   "android_kernel_htc_msm8660",
         "target_path":  "kernel/htc/msm8660",
-        "revision":     "working"
+        "revision":     "cm-10.1"
     }	
 ]
