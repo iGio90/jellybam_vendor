@@ -8,6 +8,7 @@ add_lunch_combo jellybam_tf700t-userdebug
 add_lunch_combo jellybam_tilapia-userdebug
 # HTC
 add_lunch_combo jellybam_ace-userdebug
+add_lunch_combo jellybam_doubleshot-userdebug
 add_lunch_combo jellybam_evita-userdebug
 add_lunch_combo jellybam_endeavoru-userdebug
 add_lunch_combo jellybam_fireball-userdebug
