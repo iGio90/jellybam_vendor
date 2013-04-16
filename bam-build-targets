@@ -27,7 +27,9 @@ jellybam_p930-userdebug bam6
 jellybam_p970-userdebug bam6
 jellybam_p990-userdebug bam6
 jellybam_su640-userdebug bam6
-# Samsung
+# MOTOROLA
+jellybam_maserati-userdebug bam6
+# SAMSUNG
 jellybam_crespo-userdebug bam6
 jellybam_crespo4g-userdebug bam6
 jellybam_d2att-userdebug bam6
