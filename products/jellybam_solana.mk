@@ -11,7 +11,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/jellybam/overlay/aokp/device/common
 include vendor/jellybam/config/jellybam_common.mk
 
 # Inherit CM device configuration
-$(call inherit-product, device/motorola/solana/cm.mk)
+$(call inherit-product, device/moto/solana/cm.mk)
 
 PRODUCT_NAME := jellybam_solana
 
