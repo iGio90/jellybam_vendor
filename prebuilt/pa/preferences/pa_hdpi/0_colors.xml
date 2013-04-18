@@ -4,7 +4,7 @@
             This preset will color a couple of apps. Keep in mind this is only a preset, define your own colors app per app if you like.
         ]]></description>
         <setting type="Hybrid" target="com.skype.raider.colors" value="FFFFFFFF|B200C1FF|FFFFD400|FF145879|FF33B5E5"/>
-        <setting type="Hybrid" target="com.cyanogenmod.trebuchet.colors" value="AA000000|B2FFFFFF|FFFFFFFF|B0000000|FF33B5E5"/>
+        <setting type="Hybrid" target="com.cyanogenmod.trebuchet.colors" value="AA000000|FF000000|FFFFFFFF|B0000000|FF33B5E5"/>
         <setting type="Hybrid" target="com.sand.airdroid.colors" value="FF6B9900|B2FFFFFF|FFFFFFFF|FF000000|FFFFFFFF"/>
         <setting type="Hybrid" target="com.android.browser.colors" value="FF2C2C2C|B2FFFFFF|FFFFFFFF|FF000000|FF33B5E5"/>
         <setting type="Hybrid" target="com.android.calendar.colors" value="FFC2DB00|B2FFFFFF|FFFFFFFF|FF000000|FF44B9E5"/>
@@ -22,7 +22,7 @@
         <setting type="Hybrid" target="pl.solidexplorer.colors" value="FF4CA4C0|B2FFFFFF|FFFFFFFF|FF000000|FFC91313"/>
         <setting type="Hybrid" target="com.soundcloud.android.colors" value="FFFF5100|B2FFFFFF|FFFFFFFF|FF000000|93FFFFFF"/>
         <setting type="Hybrid" target="com.verge.android.colors" value="FFE00C0C|B2FFFFFF|FFFFFFFF|FFAE0000|FF33B5E5"/>
-        <setting type="Hybrid" target="com.google.android.youtube.colors" value="FF000000|B2FF0000|FFFFFFFF|FF9f0000|FFC91313"/>
+        <setting type="Hybrid" target="com.google.android.youtube.colors" value="FF000000|B2FFFFFF|FFFFFFFF|FF9f0000|FFC91313"/>
         <setting type="Hybrid" target="com.google.android.talk.colors" value="FF464646|B2FFFFFF|FFFFFFFF|FF000000|B2FF8801"/>
         <setting type="Hybrid" target="com.whatsapp.colors" value="FF2E9E00|B2FFFFFF|FFFFFFFF|FF000000|B294B829"/>
         <setting type="Hybrid" target="com.twitter.android.colors" value="FF009ECB|B2FFFFFF|FFFFFFFF|FF000000|93FFFFFF"/>
