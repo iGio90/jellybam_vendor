@@ -27,7 +27,6 @@
         <setting type="Hybrid" target="com.whatsapp.colors" value="FF2E9E00|B2FFFFFF|FFFFFFFF|FF000000|B294B829"/>
         <setting type="Hybrid" target="com.twitter.android.colors" value="FF009ECB|B2FFFFFF|FFFFFFFF|FF000000|93FFFFFF"/>
         <setting type="Hybrid" target="com.android.contacts.colors" value="FF101010|B200C0FF|FFFFFFFF|FF000000|FF44B9E5"/>
-        <setting type="Hybrid" target="com.android.settings.colors" value="FF0D0D0D|B200C3FF|FFFFFFFF|FF076184|FF44B9E5"/>
         <setting type="Hybrid" target="com.android.mms.colors" value="FF222222|B2FFFFFF|FFFFFFFF|FF555555|B294B829"/>
         <setting type="Hybrid" target="com.google.android.apps.currents.colors" value="FFFFFFFF|FFFF4444|FFFF4444|FFFFFFFF|FFFF4444"/>
 
