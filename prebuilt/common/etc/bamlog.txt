@@ -1,172 +1,22 @@
-JELLYBAM Project name: android_build
-  .Koushik Dutta - The bash completion stuff is crapping out on darwin. Disabling. Let me know if I am doing something wrong.
-  .igio90 - OpenPdroid 1/5
+- Implement openPdroid compatibility
+- BAMControl: NavigationBar settings: New transparency manager (NavBar and StatusBar transparency)
+- Fixed SystemUI that was causing massive battery drain and mem leak
+- BAMControl: Quick Settings: Tiles custom colors!
+- New NavRing dual panel
+- Some tiles and general images restyle by Bliss91
+- Merged many translations of BAMControl from the various transifex teams
+- New BamLauncher Hotsets and many more fixes
+- BamLauncher is now affected by ParanoidAndroid colors
+- New ParanoidAndroid colors presets!
+- New Phone blacklist functions
+- MMs: General bugfixes and some new features i can't actually remember
+- Camera, Gallery, FileManager and all other apps has been updated with the latest CM revision
+- Many performance improvements
 
-JELLYBAM Project name: android_frameworks_native
-  .Steven Luo - Forward-port surface dithering from CM10
-  .Krylon360 - SurfaceFlinger: Removal of NO_RGBX_8888 flag for OMAP3
+Redesigned HoloBAM:
+- Whole frameworks will now become black!!!!!
+- Gmail, PlayStore, Gtalk and YouTube are now affected by HoloBam
+- New Torch icon
+- New Calculator icon
 
-JELLYBAM Project name: android_frameworks_opt_telephony
-  .igio90 - OpenPdroid 4/5 Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .Steve Kondik - Revert "RIL.java - add DCHSPAP"
-  .Matthias Bosc - RIL.java - add DCHSPAP
-  .Tom Marshall - Allow disabling radio with property persist.ril.enable.
-
-JELLYBAM Project name: android_frameworks_base
-  .igio90 - Bring back lockscreen see trough (1/2) Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Bring back all notification wallpaper alpha things Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - QS/PW: Check for mobile data instead of telephony permissions (1/2) Author:@nemith Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .fezzy - 'Change text color on quicktiles'
-  .igio90 - i miss u Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .BAM-Android - cleanup Signed-off-by: BAM-Android <BAM BAM>
-  .igio90 - cleanup Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Fixed another SystemUI mem leak
-  .blunden - FW: Fix AwesomeAction constants
-  .igio90 - Status bar Auto-Hide [1/2] Credits: https://github.com/mnm9994u Add an option to auto-hide status bar when there are no notifications.
-  .igio90 - OpenPdroid 5/5 Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .singh_dd93 - IME fix
-  .xLaMbChOpSx - Add Date to Status Bar clock (1/2)
-  .igio90 - bring back back key to collapse statusbar
-  .igio90 - Revert "keyboard: adding functional alt/shift lights"
-  .igio90 - Notification panel rewrite Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .David Daynard - QwertyKeyListener: Add support for www and .com key
-  .Thomas Wendt - wifi: Fix StringIndexOutOfBoundsException for incorrectly encoded SSIDs
-  .Kenny Root - Correct executable bit for source files
-  .Bruno Randolf - Wifi: Get the list of supported channels
-  .Jostein Kjønigsen - Fix Photosphere/Camera FCs
-  .tbalden - keyboard: adding functional alt/shift lights
-  .Andrew Neal - Remove unnecessary updateSurfaceScreenOn call.
-  .igio90 - Various fixes 2 Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Various fixes
-  .igio90 - 'Resize text to fit on tile size adjusted' Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-
-CyanogenMod Project name: proprietary_vendor_lge
-  .Ricardo Cerqueira - e975: Switch thermald
-  .Ricardo Cerqueira - Add e975 blobs
-
-JELLYBAM Project name: jellybam_vendor
-  .igio90 - Bumpt to 7.6.0 Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Wingray and Everest (1/2) Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Spyder and umts spyder (1/2) Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - targa (1/2) Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Solana (1/2) Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Maserati (1/2) Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - n8013 (1/2) Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Over 50 devices need this! Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - shooter cleanup Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - More paranoid colors presets!
-  .igio90 - Doubleshot Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Updating official 7.5 changelog Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Otter2: initial dependencies Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-
-JELLYBAM Project name: platform_manifest
-  .igio90 - Tracking own opt telephony Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Tracking own libcore Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Tracking cm camera and gallery Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - No way, track back own display caf and display (qcom) Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - tracking new amazon release scripts Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Track back cm qcom display and display legacy
-
-CyanogenMod Project name: android_external_wpa_supplicant_8
-  .Bruno Randolf - wpa_supplicant: Add get_capability freq
-
-JELLYBAM Project name: platform_manifest
-  .igio90 - Tracking motorola release script Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Tracking own opt telephony Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Tracking own libcore Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Tracking cm camera and gallery Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - No way, track back own display caf and display (qcom) Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - tracking new amazon release scripts Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Track back cm qcom display and display legacy
-
-JELLYBAM Project name: android_hardware_qcom_display-caf
-  .Lars Greiss - display-caf: sony devices do include kernel headers
-  .Steve Kondik - display: Use actual kernel headers for all builds
-  .desterly - Revert "hwc: Configure pipe for FB even if we exceed max layers"
-
-CyanogenMod Project name: android_hardware_qcom_audio-caf
-  .Steve Kondik - msm8660: Fix compilation error for 8660
-  .Matt Filetto - Fix VOIP audio routing issue and add usb audio hal profile
-  .Arne Coucheron - audio/msm8660: Squashed set of updates
-  .Sunil Joseph - audio/msm7630: Fix for back to back VOIP calls failure
-  .Kalyani polepeddy - audio/msm7630: Add latency support for LPA
-  .Vineela Tummalapalli - audio/msm7630: Fix to enable TTY device
-  .Steve Kondik - msm8660: Add dependency on kernel headers
-
-CyanogenMod Project name: jellybam
-  .igio90 - derp Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Added motorola scrip chain Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Doubleshot Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - p4 and p4wifi to the chain
-  .igio90 - Added amazon release, always sync repoes before build! Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-
-JELLYBAM Project name: android_bootable_recovery
-  .Nathan Grebowiec - Bump version to 6.0.3.1
-
-CyanogenMod Project name: android_sdk
-  .Ying Wang - Delete duplicate files
-
-CyanogenMod Project name: android_packages_apps_Gallery2
-  .Gary - Add storage selection (2/2)
-
-JELLYBAM Project name: android_packages_apps_Contacts
-  .isimobile - Afrikaans: Fix spelling mistake
-
-JELLYBAM Project name: android_packages_apps_Settings
-  .igio90 - BAMControl / BAMModder: Portuguese translatn
-  .igio90 - BAMControl / BAMModder: French translation
-  .igio90 - BAMControl / BAMModder: Spanish translation
-  .igio90 - BAMControl / BAMModder: Greek translation
-  .igio90 - BAMControl / BAMModder: German translation Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Strings cleanup
-  .igio90 - Bring back lockscreen see through (2/2)
-  .igio90 - derp Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Cleanup strings Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - QS/PW: Check for mobile data instead of telephony permissions (2/2) Author:@nemith For QuickSettings and Power Widget check if there is ConnectivityManager.TYPE_MOBILE network avaialbe directly instead of relying on a checking for the PackageManager.FEATURE_TELEPHONY permission.  Some devices like tilapia (Nexus 7 GSM) has mobile data but does not set the telephony permission.
-  .igio90 - 'mod to change text color on quicktiles' Credits: @fezzy102 Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .Pawit Pornkitprasan - DataUsageSummary: fix mobile data usage display for GSM devices with no number
-  .igio90 - BAMControl: Fix charging LED and LED brightness settings - Credits: @sethyx
-  .igio90 - Status bar Auto-Hide [2/2] credits: @mnm9994u Add an option to auto-hide status bar when there are no notifications.
-  .igio90 - cleanup Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Add Date to Status Bar clock (2/2) This commit adds the ability to include the date in the Status Bar Clock, it will add the following: 13 April or short version 13 Apr. The motivation for adding this feature was user requests, in particular xda member JokerAce who provided details of a SystemUI hack he was using to implement this post build.
-  .frogfire - Update strings.xml
-  .jt1134 - DataUsageSummary: fix mobile data usage display for sim-less devices
-  .Bruno Randolf - Wifi: Add frequency selection for new IBSS
-  .igio90 - Missing arrays Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - cleanup Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Missing strings Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - BamControl: Update NL Strings Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-
-JELLYBAM Project name: android_packages_apps_Phone
-  .Francesco - Phone blacklist: block private numbers functionality
-  .Jacob Overgaard Madsen - Phone: Danish for latest merges
-
-JELLYBAM Project name: android_packages_apps_Mms
-  .igio90 - Added missing string Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .xavihernandez - Mms: Update template activity to Google UI guidelines
-  .igio90 - OpenPdroid 3/5 Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .DelPETER - Mms: fr translation (separation file custom/AOSP)
-
-CyanogenMod Project name: android_packages_apps_Camera
-  .djMesias - Camera: ES translations
-  .Steve Kondik - Remove dead code
-  .Daniel Hillenbrand - Camera: german translations for picturesize entries
-  .Gary - Add storage selection (1/2)
-
-CyanogenMod Project name: android_packages_apps_Browser
-  .Marco Brohet - Browser: rearrange CM strings
-
-JELLYBAM Project name: android_packages_apps_BamLauncher
-  .Jorge Ruesga - Trebuchet: Fix vertical position of wallpaper when mWallpaperHack is activated
-  .Jorge Ruesga - Trebuchet: Centers vertically the wallpaper
-  .Jorge Ruesga - Trebuchet: Hotseat fixes
-
-JELLYBAM Project name: android_packages_input_LatinIME
-  .DelPETER - LatinIME : add french translation
-
-JELLYBAM Project name: android_libcore
-  .igio90 - OpenPdroid 2/5 Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-
-CyanogenMod Project name: android_device_samsung_i9100
-  .djMesias - i9100: DeviceSettings: ES translations
-
+To be intended that this is a stripped version of the changelog. The full one link is available at our main website!
