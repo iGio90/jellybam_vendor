@@ -115,7 +115,8 @@ PRODUCT_COPY_FILES += \
 ### AOKP ###
 # AOKP Packages
 PRODUCT_PACKAGES += \
-    PerformanceControl
+    PerformanceControl \
+    PermissionsManager
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
