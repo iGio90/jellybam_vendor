@@ -183,14 +183,11 @@ BAM_VERSION_MINOR = 8
 BAM_VERSION_MAINTENANCE = 0
 BAM_VERSION := $(BAM_VERSION_MAJOR).$(BAM_VERSION_MINOR).$(BAM_VERSION_MAINTENANCE)
 
-# JELLYBAM release
-BAM_RELEASE = STABLE
-
 TARGET_CUSTOM_RELEASETOOL := vendor/jellybam/tools/squisher
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.jellybam.version=$(BAM_VERSION) \
-    ro.bamrom.version=jellybam-v$(BAM_VERSION)_$(BOARD)-$(BAM_RELEASE) \
+    ro.bamrom.version=jellybam-v$(BAM_VERSION)_$(BOARD) \
     ro.modversion=$(PA_VERSION) \
     ro.pa.family=$(PA_CONF_SOURCE) \
     ro.pa.version=$(VERSION) \
