@@ -23,6 +23,7 @@ include vendor/pa/config/themes_common.mk
 
 # JELLYBAM THINGS
 PRODUCT_COPY_FILES += \
+    vendor/jellybam/prebuilt/common/bootanimation/sound.ogg:system/media/sound.ogg \
     vendor/jellybam/prebuilt/common/media/audio/ringtones/ClassicBam.mp3:system/media/audio/ringtones/ClassicBam.mp3 \
     vendor/jellybam/prebuilt/common/media/audio/ringtones/ModernBam.wav:system/media/audio/ringtones/ModernBam.wav \
     vendor/jellybam/prebuilt/common/media/audio/notifications/Jellybam.ogg:system/media/audio/notifications/Jellybam.ogg \
