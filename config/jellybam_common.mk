@@ -51,6 +51,7 @@ PRODUCT_COPY_FILES += \
     vendor/jellybam/prebuilt/common/gapps/addon.d/70-gapps.sh:system/addon.d/70-gapps.sh \
     vendor/jellybam/prebuilt/common/gapps/addon.d/71-gapps-faceunlock.sh:system/addon.d/71-gapps-faceunlock.sh \
     vendor/jellybam/prebuilt/common/gapps/etc/g.prop:system/etc/g.prop \
+    vendor/jellybam/prebuilt/common/gapps/etc/resolv.conf:system/etc/resolv.conf \
     vendor/jellybam/prebuilt/common/gapps/etc/permissions/com.google.android.maps.xml:system/etc/permissions/com.google.android.maps.xml \
     vendor/jellybam/prebuilt/common/gapps/etc/permissions/com.google.android.media.effects.xml:system/etc/permissions/com.google.android.media.effects.xml \
     vendor/jellybam/prebuilt/common/gapps/etc/permissions/com.google.widevine.software.drm.xml:system/etc/permissions/com.google.widevine.software.drm.xml \
@@ -66,9 +67,10 @@ PRODUCT_COPY_FILES += \
     vendor/jellybam/prebuilt/common/gapps/lib/libgoogle_recognizer_jni.so:system/lib/libgoogle_recognizer_jni.so \
     vendor/jellybam/prebuilt/common/gapps/lib/libgtalk_jni.so:system/lib/libgtalk_jni.so \
     vendor/jellybam/prebuilt/common/gapps/lib/libgtalk_stabilize.so:system/lib/libgtalk_stabilize.so \
-    vendor/jellybam/prebuilt/common/gapps/lib/libjni_latinime.so:system/lib/libjni_latinime.so \
+    vendor/jellybam/prebuilt/common/gapps/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so \
     vendor/jellybam/prebuilt/common/gapps/lib/libpatts_engine_jni_api.so:system/lib/libpatts_engine_jni_api.so \
-    vendor/jellybam/prebuilt/common/gapps/lib/libspeexwrapper.so:system/lib/libspeexwrapper.so \
+    vendor/jellybam/prebuilt/common/gapps/lib/libspeexwrapper.so:system/lib/libspeexwrapper.so \ 
+    vendor/jellybam/prebuilt/common/gapps/lib/libvideochat_jni.so:system/lib/libvideochat_jni.so \
     vendor/jellybam/prebuilt/common/gapps/lib/libvorbisencoder.so:system/lib/libvorbisencoder.so \
     vendor/jellybam/prebuilt/common/gapps/tts/lang_pico/de-DE_gl0_sg.bin:system/tts/lang_pico/de-DE_gl0_sg.bin \
     vendor/jellybam/prebuilt/common/gapps/tts/lang_pico/de-DE_ta.bin:system/tts/lang_pico/de-DE_ta.bin \
