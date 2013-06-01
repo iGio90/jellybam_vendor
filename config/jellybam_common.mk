@@ -69,7 +69,7 @@ PRODUCT_COPY_FILES += \
     vendor/jellybam/prebuilt/common/gapps/lib/libgtalk_stabilize.so:system/lib/libgtalk_stabilize.so \
     vendor/jellybam/prebuilt/common/gapps/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so \
     vendor/jellybam/prebuilt/common/gapps/lib/libpatts_engine_jni_api.so:system/lib/libpatts_engine_jni_api.so \
-    vendor/jellybam/prebuilt/common/gapps/lib/libspeexwrapper.so:system/lib/libspeexwrapper.so \ 
+    vendor/jellybam/prebuilt/common/gapps/lib/libspeexwrapper.so:system/lib/libspeexwrapper.so \
     vendor/jellybam/prebuilt/common/gapps/lib/libvideochat_jni.so:system/lib/libvideochat_jni.so \
     vendor/jellybam/prebuilt/common/gapps/lib/libvorbisencoder.so:system/lib/libvorbisencoder.so \
     vendor/jellybam/prebuilt/common/gapps/tts/lang_pico/de-DE_gl0_sg.bin:system/tts/lang_pico/de-DE_gl0_sg.bin \
