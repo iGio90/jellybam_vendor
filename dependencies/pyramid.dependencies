@@ -23,8 +23,8 @@
     {
         "remote":       "github",
         "account":      "Team-Hydra",
-        "repository":   "linaro",
-        "target_path":  "prebuilt/linux-x86/toolchain/linaro",
+        "repository":   "linaro-gcc-4.8",
+        "target_path":  "prebuilt/linux-x86/toolchain/linaro-gcc-4.8",
         "revision":     "cm-10.1"
     },
     {
