@@ -1,277 +1,550 @@
-JELLYBAM Project name: android_build
-  .Kilian - Add icelanderus
-  .Kilian - add others
-  .Kilian - Real final
-  .Kilian - Final
-  .Kilian - Add Version, Device, Model
-  .igio90 - Added bam reference to meta inf
-
 JELLYBAM Project name: android_frameworks_native
-  .Lars Greiss - Frameworks_native: TRDS new qualifier push up qualifier number (2/2)
-  .Lars Greiss - Frameworks native: Add new configuration qualifier for UI change on the fly (2/3)
+  .Michael Chock - Abort surface composition if hw surface is invalid
+  .Hyejin Kim - fix mem leak on error handling
+  .Vikash Garodia - native: add support for color-converter
+  .Steve Kondik - Add heap configuration for 1080p phones with 2048m
+  .Steve Kondik - provide overrides for hwui memory limits for xxhdpi phones
+  .Lars Greiss - Frameworks_native: TRDS 2.0 (2/3)
 
 CyanogenMod Project name: android_frameworks_opt_telephony
-  .Ethan Chen - HTCQualcommRIL: squashed set of updates
+  .David Ferguson - SamsungQualcommRIL: evaluate samsungDriverCall in responseCallList()
+  .Shareef Ali - SamsungQualcommRIL: fix race condition when starting phone type.
+  .Shareef Ali - SamsungQualcommRIL: use the advantage of static type.
+  .Steve Kondik - ril: Add Samsung-specific unsolicited commands
+  .Shareef Ali - SamsungQualcommRIL: fix logic order
+  .Shareef Ali - SamsungQcomRIL: New class and get rid of old and outdated codes
+  .Gao Rong - Fix a typo bug.
+  .Bjorn Andersson - RIL: Correct the RIL_REQUEST_DIAL api missmatch
+  .Matthias Bosc - frameworks telephony - add DCHSPAP value
+  .Ethan Chen - HTCQualcommRIL: re-add force LTE modes
+  .Ethan Chen - HTCQualcommRIL: remove unused responseIccCardStatus function
+  .Ethan Chen - Revert "libril: HTC8960RIL: add flag to force CDMA+LTE network mode"
+  .Ethan Chen - HTCQualcommRIL: allow skipping of initial radio power off message
+  .Ethan Chen - HTCQualcommRIL: adaptable signal strength format
 
 CyanogenMod Project name: android_frameworks_av
-  .Daniel Hillenbrand - camera: fixup htc params
+  .Giulio Cervera - Revert "frameworks/av: Add metadata mode changes to LPAPlayer"
+  .Krishnankutty Kolathappilly - frameworks/av: Add metadata mode changes to LPAPlayer
 
 JELLYBAM Project name: android_frameworks_base
-  .igio90 - Rewrite phone constant Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - cleanup Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Option to use volume keys to control media volume anytime (2/2)
-  .igio90 - audio: Add overlay to fix analog docks.
-  .Elliott Hughes - Someone's IDE chose the wrong Date.
-  .Muhammed Nazim - Fix Keyboard Visibility Derp
-  .xLaMbChOpSx - Fix Build Error: Slight correction for Lockscreen SOD Fix
-  .gs2usr - Fix: Lockscreen SOD. Locking device while in lanscape would result in SOD, this commit fixes it. [credits to szlkiev for pointing me in the right direction']
-  .singh_dd93 - BATTERY ICONS:Add the missing battery icons to MDPI
-  .Danesh Mondegarian - PowerMenu : Improve keyguard filtered actions
-  .drcmda - Policy: fix keyguard statusbar showing while in ext desktop, fixes it in apps like currents as well
-  .igio90 - Various fixes! Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .Skrilax_CZ - Keep keyboard lit until the screen is dimmed
-  .Steve Kondik - power: Add panel auto-brightness configuration
-  .tbalden - keyboard: adding functional alt/shift lights
-  .Diego Torres Milano - input: added support for multiple keyevents
-  .Steve Kondik - power: Add panel auto-brightness configuration ***needed for D2 devices.  * Some panel hardware requires that we twiddle some knobs in sysfs to    enable proper display calibration (gamma, etc) when auto-brightness    is enabled. Add a configuration value to handle this.
-  .gs2usr - Batt drawables for mdpi devices. soowwiiee.
-  .igio90 - Revert "FW: Remove ViewRoot.java - Corrects errors with Dolphin Jetpack"
+  .igio90 - Some moear fixes Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .drcmda - PIE: slight style change
+  .drcmda - cut out debugging
+  .drcmda - Revert "PIE: slight style change"
+  .drcmda - black/white list, complete revamp (1/2)
+  .drcmda - dismiss bugfix // pingallowed // cleanup
+  .drcmda - packagename // cleanup // drawables // dismiss
+  .beerbong - Method to scale the floating window as the code was duplicated.
+  .beerbong - Cleaned packages names
+  .beerbong - Clear task when launching from HALO Some apps doesn't close the window when going to idle state. Adding FLAG_ACTIVITY_CLEAR_TASK to the pending intent makes the window to be recreated.
+  .PaulHenschel - fix reversed actions
+  .drcmda - animate overlay
+  .drcmda - fix blacklist (lost settings at reboot)
+  .drcmda - unscheduleSleep // loadLastNotification
+  .drcmda - derp
+  .drcmda - numberpatch
+  .drcmda - oldIconIndex
+  .drcmda - reset icons, dimiss notification by browsing
+  .drcmda - writing halo from scratch, the previous way was a dead end
+  .beerbong - Prevent opening layer when it's system or paranoid The transparent layer seems to cause some system actions close (ie, IME switcher). Also, there's no need to launch the layer when we're launching an activity from halo.
+  .WoH - Bring hdpi/mdpi drawables into line with xhdpi
+  .beerbong - Add transparent layer on HALO click Clicking the HALO will launch a transparent activity for half a second. Windows launched through a service didn't get halo'ed as we couldn't track the pendingIntent to add the floating flag. Now the window gets halo'ed as there's a HALO layer already opened.
+  .drcmda - up & down swipe gestures (dismiss/hide)
+  .drcmda - hidden state - can be woken up by swiping
+  .drcmda - correct halo))) icons
+  .drcmda - cleaner drawables, layou changes
+  .drcmda - precise markers // removing of longpress gesture
+  .drcmda - animation revamp, using objectanimators
+  .WoH - HALO drawables for hdpi/mdpi
+  .drcmda - smaller patch margins
+  .beerbong - Don't finish the activity if the configuration is changing The method performStop can be called in two scenarios: - the activity is being closed - the activity is being restarted The second case is called when the configuration changes (rotation, for example) and the variable mChangingConfigurations is true. In that case we don't have to finish the activity as the halo'ed window would be closed.
+  .Arz - Halo Better Arrays
+  .beerbong - Scale window when configuration changes This makes the floating window become portrait or landscape when rotating the device
+  .drcmda - halo blacklist (1/2) [second half settings!]
+  .drcmda - little derp in activitystack
+  .drcmda - prevent overlapping
+  .drcmda - number patches
+  .drcmda - google now style
+  .drcmda - animations, intro/outro, markers )))
+  .drcmda - interaction
+  .drcmda - drawables
+  .drcmda - ripples // rotate
+  .Arz - Drawables Change - Halo NOW (Yellow Transparanet)
+  .Arz - New Drawables - Halo NOW
+  .drcmda - temporary drawables // red x fix
+  .drcmda - PIE: slight style change
+  .drcmda - do not kill ping, let it fade out on the spot
+  .drcmda - broken longpress handler
+  .drcmda - new animations
+  .drcmda - anim fixes
+  .drcmda - drawables // animations
+  .drcmda - debug // red x frame // magnet x
+  .drcmda - fixing transitions, fixing apps like dropbox and gmusic
+  .drcmda - bugfixes
+  .drcmda - cut out the requests
+  .drcmda - better graphics overall, optimizations
+  .drcmda - text empty bug
+  .drcmda - cleaner text bubbles HALO))) integration
+  .drcmda - small blemish
+  .drcmda - tweaks
+  .drcmda - dim, actual settings
+  .drcmda - preparation for hide and reversed
+  .drcmda - colors, longpress handler
+  .drcmda - donot allow no intent notifications to tick
+  .drcmda - 2 bugs, wrong index and low status icons not shown in tasker
+  .drcmda - style, icons, text wrap�
+  .drcmda - onconfig changed bug
+  .Jesús David - Remove settings provider entry
+  .Jesús David - Remove launcher hack
+  .drcmda - prevent ticker spam,number patch
+  .drcmda - tasker clean up
+  .drcmda - cleaner anims
+  .drcmda - switcher 90% done
+  .drcmda - icon switcher, first working draft
+  .drcmda - switcher preparation
+  .drcmda - style, 9 patch, ontop, dim
+  .drcmda - pointy thingies attached to speech bubbles
+  .drcmda - fix screensize, snapback and animation latency
+  .drcmda - fixes
+  .drcmda - bigger update
+  .drcmda - popups dont go fullscreenstartup any longer
+  .drcmda - pretty much the last severe bug
+  .drcmda - ability to remove halo and add it back
+  .drcmda - better pushback + snap-to-edges for incomming notifications
+  .drcmda - collision
+  .drcmda - removecallbacks
+  .drcmda - pushback
+  .drcmda - effectlayer
+  .drcmda - fixes
+  .drcmda - finetuning
+  .drcmda - faster animations,
+  .drcmda - animations, frame, icons
+  .drcmda - first animations, draghandler stable
+  .drcmda - mw: draghandler
+  .drcmda - mw: ticker
+  .drcmda - mw: ticker
+  .drcmda - mw: mess
+  .drcmda - multiwindow: fixes activitystacksfor onHomePress, GMusic does not stop music
+  .drcmda - multiwindow: multiwindow minds activity/stack life cycle
+  .drcmda - multiwindow: mms doesnot jump home, facebook ends on tap-outside
+  .drcmda - multiwindow: light/dark theming, flags
+  .drcmda - multiwindow: climb through history stack to take care of intents within intents
+  .drcmda - multiwindow: fix some flags to enforce task re-loading
+  .drcmda - multiwindow: correct actionbars, dynamic windowsize depending on screen and portrait/landscape
+  .aaronpoweruser - MultiWindow: halo launcher
+  .drcmda - multiwindow: FLAG_MULTI_WINDOW
+  .drcmda - multiwindow: badparcel exception
+  .drcmda - multiwindow: bugfixes
+  .drcmda - multiwindow: first working draft
+  .drcmda - multiwindow/display apps in dialogs
+  .igio90 - Fix build with cyano device trees
+  .igio90 - Fix holobam tile to work with the new TRDS 2.0 Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .BigBrother1984 - Fix alignment and back to original ellipsize
+  .igio90 - Revert "Frameworks: reduce observer again"
+  .igio90 - Revert "Reduce observers in SystemUI: BatteryBarController"
+  .igio90 - Fixx derp
+  .blk_jack - Camera button rebinding and lockscreen action additions (1/2)
+  .igio90 - Frameworks: reduce observer again thanks Jens for the basic idea
+  .igio90 - Reduce observers in SystemUI: BatteryBarController This is based on the work by Jens Doll for the StatusBarIconView The ContentObserver class will be a singleton, so there is only one observer for all instances.
+  .Andrew Hsieh - Fix AMotionEvent_getHistorical* to take const AInputEvent* motion_event
+  .Magnus Karlsson - Fixing crash in PhoneNumberUtils getNumberFromIntent
+  .Jun Su - framework:base: iterator error in singletone provider
+  .Christian Beck - Add missing ACTION_MEDIA_UNMOUNTED intent
+  .Sangkyu Lee - Bug fix for building the hover target list
+  .Jason Gerecke - Properly rotate full [-pi, +pi] orientation range if available
+  .Hyoseong Kim - Add additional Method that check whether a table is empty or not
+  .joonyoung.cho - Fix wrong log information in DevicePolicyManagerService
+  .Giulio Cervera - Telephony: Add DCHSPAP to getTcpBufferSizesPropName
+  .Danesh Mondegarian - NavigationBar : Only inflate once
+  .xLaMbChOpSx - FW: Menu Overflow Disable - Different Implementation
+  .xLaMbChOpSx - FW: Fix Menu Overflow Disable Option
+  .Danny Baumann - Fix MAP SDP record generation [2/3].
+  .BigBrother1984 - Pie: set Big as default for item gap (2/2)
+  .BigBrother1984 - Pie: updates (2/2) -pie angle: fixes, cleaning and new value (Huge) -pie size defaults -strings updates
+  .BigBrother1984 - Pie: Fix and easy recalculation for Chevron and Pie
+  .BigBrother1984 - Pie: set angle default to 12° (1/2)
+  .BigBrother1984 - Pie: let Chevron adapt itself from pie's angle. > > This make Chevron able to recreate the battery bar when the angle changes.
+  .BigBrother1984 - Pie: Add option to change pie's angle from the attach 2/2
+  .igio90 - Fixup trds Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .Lars Greiss - Frameworks: TRDS 2.0 (1/3)
+  .igio90 - Revert "Frameworks: TRDS 2.0 (1/3)"
+  .igio90 - Revert "[1/2] Power connect/disconnect notification support"
+  .igio90 - Cleanup derp Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .igio90 - Revert "Frameworks: Clean up some possible memory leaks"
+  .Lars Greiss - Frameworks: Clean up some possible memory leaks
+  .Maunik Shah - Framework/base: Added synchronization block to avoid race condition
+  .Ki-Hwan Lee - Fix CalendarView to show the month title properly.
+  .Carsten Hauge - Avoid IllegalArgumentException in Preference.java compareTo()
+  .Sam Mortimer - [1/2] Power connect/disconnect notification support
+  .Lars Greiss - Frameworks: TRDS 2.0 (1/3)
+  .Peter YOON - EthernetDataTracker: Set network available on connected
+  .HardCorePawn - Fix broken TRDS "multi-select" actionbar on hdpi devices
+  .Muhammed Nazim - Fix Logical error
+  .blk_jack - Framework: Option to force keyboard to show enter key (1/2)
+  .igio90 - LockScreen: Fix crash when unlocking twice
+  .Roger Chen - FW: Navring Spen pull arrays from AwesomeConstant
+  .Peter Nilsson - Can not mark the same content of browser page after copy
+  .Skrilax_CZ - Make character picker for QWERTY keyboards use HOLO theme
+  .Thiago Vinícius Freire de Araújo Ribeiro - profiles: Broadcast profile updates
+  .Jorge Ruesga - AudioService: Remove STREAM_NOTIFICATION from ringer mode streams
+  .Chirayu Desai - TelephonyManager: hide NETWORK_TYPE_DCHSPAP
+  .igio90 - Revert "Remove opaque check in GLRenderer when preparing dirty region."
+  .Wei Zou - Remove opaque check in GLRenderer when preparing dirty region.
+  .Steve Kondik - Add heap configuration for 1080p phones with 2048m
+  .Danny Baumann - Fix layout of MultiWaveView and GlowPadView.
+  .Danny Baumann - Fix up notification LED behaviour
+  .BigBrother1984 - SystemUI: Fix Tablet UI Date View
+  .MIRAGE - Fix date line for koreans
+  .matt73300 - Frameworks & SystemUI - additional DC-HSPAP support
+  .BigBrother1984 - SystemUI: fix vertical date not showed while on Pie
+  .BigBrother1984 - SystemUI: show date on 2 lines in status bar This allows showing of the full day of the week, and removes the blank space above the date (which always felt strange to me when clicking it to access the calendar).
+  .igio90 - Fix up notification LED behaviour - Commit 5713307 (in ICS) attempted to   fix the problem that the notification LED wasn't reenabled after   turning off the screen again, but introduced another bug in the   process: If another pending notification with LED at the time when the   notification with the new magic flag introduced by that commit (which   was used by phone and MMS apps) was active, the LED still wouldn't be   turned on at screen off time. Also, this commit didn't handle locking   correctly.   This commit essentially reverts 5713307e and makes sure the LED is   reevaluated when the screen is turned off again.
+  .Danny Baumann - Don't include flags in configuration change if their value hasn't changed.
+  .blunden - SystemUI: Clean up old H+ drawables causing issues on manta
 
 JELLYBAM Project name: android_vendor_cm
-  .igio90 - Trebuchet is back!
-  .igio90 - bump to cm rc2 Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-
-CyanogenMod Project name: proprietary_vendor_motorola
-  .dhacker29 - edison: Use audio libs from spyder JB 4.1 release
-  .dhacker29 - Targa & Solana: Use targa gps lib to match audio.primary
-  .dhacker29 - OMAP4 Devices: Uses device specific 4.1 audio.primary and ap_gain
-  .Hashcode - speakerphone fix
+  .igio90 - bump! Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .igio90 - push cm to rc3 Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
 
 JELLYBAM Project name: jellybam_vendor
-  .igio90 - Fixed bootanimations. now u can merge this xD Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Removed HoloLauncher Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Testing bootanimation with sound. Do not merge yet!
-  .igio90 - JFLTECAN
-  .igio90 - Adding bootanimation sound and the new S4 bootanimaton Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Cleanup
-  .igio90 - Push to 7.8
-  .Chirayu Desai - repo bash completion: _find_repo: improve check
-  .Chirayu Desai - repo.bash: replace with better version
-  .igio90 - Fix S4 dpi Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .igio90 - Not needed anymore Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .igio90 - for real?
+  .igio90 - Updating gapps and added Floating notifications Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .igio90 - Push the bam to 8.0 Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .Kilian - add jfltecan
+  .Kilian - Update ace.dependencies
+  .Kilian - Change to linaro-gcc-4.8
+  .igio90 - Increased stock S4 dpi Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
 
 CyanogenMod Project name: proprietary_vendor_samsung
-  .Andrew Jiang - smdk4412-common: Add ZM camera blob
-  .Mike Kasick - d2-common: Update libloc_api_v02.so to d2spr MD4.
+  .Steve Kondik - d2/jf: Add missing media lib
+  .Shareef Ali - d2: revert adreno firmware
+  .Mike Kasick - jf-common: Update libloc_api_v02.so to jfltespr MDL.
+  .Shareef Ali - d2: update all to MDx RILs.
+  .Steve Kondik - jf: Use stock csd-client library
+  .Dan Pasanen - jfltexx: initial commit of GT-I9505
+  .Dan Pasanen - d2: update to VRBMD3 blobs (d2vzw)
+  .Daniel Hillenbrand - i9305: update libloc_api_v02
+  .Shareef Ali - jf: align with vanilla adreno blobs
+  .sbrissen - t0ltecdma: update props from vzw I605VRAMC3
+  .Shareef Ali - jf: fix naming and update ril to MDL
+  .attn1 - added jflteatt
+  .Shareef Ali - add jflteusc props
+  .Daniel Hillenbrand - i9100g: remove blob libril
+  .Daniel Hillenbrand - p3100, p5100: remove blob libril
+  .Daniel Hillenbrand - Revert "Revert "i777, i9100, n7000: remove rild and libril blobs""
+  .Daniel Hillenbrand - Revert "i777, i9100, n7000: ifdef ril blobs"
+  .Daniel Hillenbrand - i777, i9100, n7000: ifdef ril blobs
+  .Daniel Hillenbrand - Revert "i777, i9100, n7000: remove rild and libril blobs"
+  .Daniel Hillenbrand - galaxys2: remove prebuilt hostapd
+  .Daniel Hillenbrand - i777, i9100, n7000: remove rild and libril blobs
+  .Dan Pasanen - jfltespr: initial commit
+  .Dan Pasanen - jfltevzw: use spr rilblobs
+  .Dan Pasanen - jfltevzw: initial addition
+  .Steve Kondik - qc: New C2D2 library
+  .Mike Grissom - hercules: Update to UVMC6
+  .Daniel Hillenbrand - galaxys2: update mali r3p1-01rel1 BUILD_DATE=Mon May 6 11:20:56 KST 2013
+  .Daniel Hillenbrand - exynos4412: update mali r3p1-01rel1 BUILD_DATE=Mon May 6 11:20:56 KST 2013
+  .Steve Kondik - Revert "qc: Fix copybit"
+  .Steve Kondik - qc: Fix copybit
 
 CyanogenMod Project name: proprietary_vendor_sony
-  .Daniel Hillenbrand - pollux: fix copy of touch firmwares, add some
-  .Giulio Cervera - fusion3: fix thermald
-  .Giulio Cervera - fusion3: update audio blob
+  .Giulio Cervera - pollux_windy: initial blob
+  .Giulio Cervera - fusion3: updated prima firmware
+  .Giulio Cervera - Revert "qcom-common: use c2d2 from jf"
+  .Giulio Cervera - qcom-common: use c2d2 from jf
+  .Giulio Cervera - blue: drop prebuilt qrngd
+  .Giulio Cervera - fusion3: update blob
+  .Giulio Cervera - fusion3: add common firmware
+  .Giulio Cervera - odin: updated blob from 10.1.1.A.1.253
+  .Giulio Cervera - yuga: updated blob from 10.1.1.A.1.253
+  .Giulio Cervera - misc: remove unused file
+  .Giulio Cervera - fusion: blue: cleanup
+  .Giulio Cervera - pollux: update wcd9310 firmware
+  .Giulio Cervera - pollux: fix and cleanup
+  .Daniel Hillenbrand - pollux: update blobs from 10.1.1.A.1.253
 
 CyanogenMod Project name: proprietary_vendor_asus
-  .Aaron Echols - tf700t: remove ASUS exfat and ntfs support
+  .Aaron Echols - tf700t: update blobs to 10.6.1.15.3
 
-CyanogenMod Project name: android_development
-  .Danny Baumann - Update classpath for dashclock API in CMUpdater.
-  .Koushik Dutta - Fix up Windows cross compile detection and error handling on Darwin.
-  .Koushik Dutta - Add support for cross compiling Windows tools on Darwin.
+CyanogenMod Project name: android_bionic
+  .Steve Kondik - libm: These optimizations are only for Krait
+  .Lucas Crowthers - libm: sqrt and sqrtf via ARM vsqrt instruction.
+  .Lucas Crowthers - libm: optimistic pow calling
 
 JELLYBAM Project name: platform_manifest
-  .igio90 - Track back cm trebuchet Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .igio90 - track back qcom display from CM Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
 
 CyanogenMod Project name: Widgets
-  .Koushik Dutta - Fix ensureHeader with index
+  .Koushik Dutta - build.gradle
+  .Koushik Dutta - android studio
+  .Koushik Dutta - android studio
 
-CyanogenMod Project name: android_external_openssh
-  .Chirayu Desai - sshd: add null check
+CyanogenMod Project name: android_external_bluetooth_bluedroid
+  .Danny Baumann - Fix MAP SDP record generation [1/3]
 
-CyanogenMod Project name: android_external_libncurses
-  .Chirayu Desai - set a dependency on $(ACP)
+CyanogenMod Project name: android_external_libnfc-nci
+  .Steve Kondik - nfc_nci: Allow passing in the HAL suffix as a variable
+
+CyanogenMod Project name: android_external_skia
+  .Henrik Smiding - Add optimized S32A_D565_Opaque_Dither blitter.
+  .Henrik Smiding - Add optimization of Skia S32A_Blend blitter
+  .Henrik Smiding - Add optimization of Skia S32A_Opaque blitter
+  .Henrik Smiding - Modify sample buffer size for larger displays.
+  .Henrik Smiding - Add optimized S16_opaque_D32_nofilter_DX blitter.
+  .Henrik Smiding - Add shader for Clamp_S32_Opaque_D32_nofilter_DX.
+  .Henrik Smiding - Add shader for Repeat_SI8_opaque_D32_filter_DX.
+  .Henrik Smiding - Add shader for Clamp_SI8_opaque_D32_filter_DX.
+  .Henrik Smiding - Add shader for Clamp_S32_Opaque_D32_filter_DX.
+  .Evan McClain - Revert "Neon optimized implementation of S16_opaque_D32_nofilter_DX"
 
 JELLYBAM Project name: platform_manifest
-  .igio90 - Track back cm trebuchet Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .igio90 - track back qcom display from CM Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+
+CyanogenMod Project name: android_hardware_qcom_display-caf
+  .Prabhanjan Kandula - liboverlay : unset basepipe on overlay intialization.
+  .Giulio Cervera - Revert "liboverlay : unset basepipe on overlay intialization."
 
 CyanogenMod Project name: android_hardware_qcom_audio-caf
-  .Arne Coucheron - audio/msm7x30: #ifdef teh things
-  .Arne Coucheron - Revert "audio/8655: Enabling LPA playback by adding AudioSessionOutLPA class"
-  .Tiziano Carotti - audio/msm7x30: fix a crash on audio initialize
-  .Giulio Cervera - audio/msm7x30: Change fallback route to speaker
-  .Giulio Cervera - audio/msm7x30: fix voice volume on first call
-  .Ethan Chen - audio/msm7x30: set mRecordState in AudioInputStreamMSM72xx::set
-  .Giulio Cervera - audio/msm7x30: device enum debug
-  .Ethan Chen - audio/msm7x30: perform null checks when calling libhtc_acoustic functions
-  .Giulio Cervera - audio/msm7x30: port forwarding HTC code from gb
+  .ehgrace.kim - audio: modify the SPEAKER_RX_ACDB to support both MONO and STEREO speaker
+  .tbalden - alsa_sound: add HTC CSD CLIENT board flag for special cases (BT)
+  .David van Tonder - Revert "alsa_sound: Add metadata mode changes for LPA playback"
+  .Steve Kondik - alsa_sound: Support ES325 2Mic and Samsung CSD client
+  .Steve Kondik - msm8660: Fix mic in Hangouts
+  .Krishnankutty Kolathappilly - alsa_sound: Add metadata mode changes for LPA playback
+  .Karthik Reddy Katta - alsa_sound : Fix for audio routing speaker though BT is connected
+  .Yamit Mehta - alsa_sound: Increase delay in temp mute
+  .Sharad Sangle - alsa_audio:remove the device from device list if open fails
+  .Preetam Singh Ranawat - hardware/qcom/audio: Fix for Crash during Gtalk startup
+  .Krishnankutty Kolathappilly - alsa_sound: Fix corruption in recording over usb.
+  .Vimal Puthanveed - Change to handle A2dp suspend setparameter, which will suspend the thread
+  .Sidipotu Ashok - alsa_sound: Patch to remove delay in second MT call during hold
+  .Krishnankutty Kolathappilly - alsa_sound: Fix for audio loss on switching from BT to AOA
+  .Jitendra Singh Naruka - alsa_sound: set ALSADevice::mInChannels to 0 after voice call finishes
+  .Krishnankutty Kolathappilly - alsa_sound: Fix for Tunnelplayer IOCTL drain block
+  .freexperia - audio/msm7x30: fix for SEMC devices with stereo hw speaker
 
 CyanogenMod Project name: android_hardware_samsung
-  .ghepeu - exynos4: hal: include: Exif.h: always keep two decimal places in macros
-  .Daniel Hillenbrand - macloader: add 5C:F8:A1 to murata
+  .Javier Ferrer - Fix macloader buffer overflow
 
-CyanogenMod Project name: android_kernel_samsung_jf
-  .Steve Kondik - msm: restart: Always use Samsung magic restart reason
-  .Kuogee Hsieh - msm_fb: display: fix iommu page fault when iommu buffer freed
-  .Ken Zhang - msm: display: plane alpha support
-  .Steve Kondik - cm: Set ROW as default IO scheduler
-  .Steve Kondik - mmc: Fix warning during bootup
-  .Maya Erez - mmc: Urgent request support
-  .Steve Kondik - cm: Disable DVFS touch booster
-  .Steve Kondik - input: Add option to disable touch booster
-
-CyanogenMod Project name: jellybam
-  .igio90 - Add S4 to the chain Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+CyanogenMod Project name: android_kernel_samsung_smdk4412
+  .Daniel Hillenbrand - smdk4412: bulk update from i9300 update 9
+  .Daniel Hillenbrand - enable nfs support
+  .Daniel Hillenbrand - 4412: builtin md4 and dnsresolver
+  .Daniel Hillenbrand - i777, i9100, n7000: enable utf8 support for nls
+  .Daniel Hillenbrand - mali: change alloc order from 6 to 11 for 4210
+  .Daniel Hillenbrand - usb gadget: use two luns on devices with two cards
+  .Andrea Arcangeli - ondemand: cpuidle detection
+  .sakindia123 - drivers: modem_if : Remove some debugging
+  .sakindia123 - mach-u1: Improve touch sensitivity for MXT224E controller
+  .sakindia123 - mxt224_u1: Silence some status messages
+  .sakindia123 - makefile: mach-exynos: Separate 4x10 and 4x12 objects
+  .Daniel Hillenbrand - cm3663: fix initial proximity sensor state
+  .Daniel Hillenbrand - u1: add cyanogenmod mdnie scenario
+  .Daniel Hillenbrand - i777, i9100, n7000: regenerate defconfigs
+  .Daniel Hillenbrand - u1: import from CyanogenMod/android_kernel_samsung_smdk4210
+  .Daniel Hillenbrand - migrate: fix merge fail
 
 JELLYBAM Project name: android_bootable_recovery
-  .Marcel Bokhorst - recovery: fix sideload cancel
+  .Doug Zongker - support version 2 (2048-bit e=65537) keys in recovery
 
 CyanogenMod Project name: android_packages_apps_Gallery2
-  .Steve Kondik - Revert "Revert "Add storage selection (2/2)""
+  .Ricardo Cerqueira - Fix activity stack when restarting the screen nail
 
 CyanogenMod Project name: android_packages_apps_Apollo
-  .Odin Ugedal - Apollo: NB translation
-  .Andrew Jiang - Apollo: Simplified Chinese Translations
-  .Vladimir Belkov - Apollo: RU translation
-  .isimobile - Afrikaans: Add missing translations & plurals
-  .Marco Brohet - Apollo: NL translations
-  .Jacob Overgaard Madsen - Apollo: DA translation
+  .Gustavo - Apollo: PT-BR update translations
+  .prescott66 - Apollo: SK Translations
+  .okrt - Apollo: TR translations
+  .DelPETER - Apollo : translation
+  .Ondrej Zima - Apollo: CS translation
+  .pvolkov - Apollo: RU translation
+  .pvolkov - Apollo: RU translation
 
 JELLYBAM Project name: android_packages_apps_Contacts
-  .igio90 - Fix build! Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .igio90 - Big merge from AOKP and CM Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .Odin Ugedal - Contacts: NB translation
+  .Muhammed Nazim - Show voicemail only
+  .Lars Greiss - Contacts: Go TRDS 2.0
+  .Danny Baumann - Fix a number of issues with T9 dialer.
 
 CyanogenMod Project name: android_packages_apps_LegacyCamera
-  .Odin Ugedal - LegacyCamera: NB translation
-  .isimobile - LegacyCamera: Add missing AF translations
+  .jackmu95 - LegacyCamera: German translation
+  .Jacob Overgaard Madsen - LegacyCamera: DA translation
 
 CyanogenMod Project name: android_packages_apps_DSPManager
-  .isimobile - Afrikaans: Added missing translation text
+  .djMesias - DSPManager: ES translations
+  .Jacob Overgaard Madsen - DSPManager: DA translation
 
 CyanogenMod Project name: android_packages_apps_LockClock
-  .Takuo Kitame - LockClock: Update Japanese translation.
-  .Odin Ugedal - LockClock: NB translation
-  .David van Tonder - LockClock: Add support for the HTC One and Galaxy S4
+  .DvTonder - LockClock: Add default clock app detection
+  .prescott66 - LockClock: SK translations
+  .djMesias - LockClock: ES translations
+  .DelPETER - LockClock : FR translation
+
+JELLYBAM Project name: android_packages_apps_DeskClock
+  .DvTonder - DeskClock: Add support for XXHDPI devices (e.g. Galaxy S4 and HTC One)
+  .Jorge Ruesga - DeskClock: Recreate alarms DB on downgrade
+  .Danesh Mondegarian - DeskClock : Lockscreen dismiss Fix
 
 JELLYBAM Project name: android_packages_apps_Settings
-  .igio90 - Option to use volume keys to control media volume anytime (1/2)
-  .igio90 - Settings: add google+ restart for TRDS du that we finished the trds google plus app because of one background g+ needs to be restarted on trds toggle
+  .Matthias - Settings - add an AlertDialog before to delete APN to avoid fails
+  .igio90 - BamControl: HALO! Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .igio90 - correction Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .drcmda - halo blacklist (2/2)
+  .igio90 - BamControl: Initial Halo Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .igio90 - Settings: Camera button rebinding and lockscreen action additions (2/2) Adds new config_deviceHardwareKeys bitmask for camera button. Lets you rebind the camera press/longpress and adds a new KEYCODE_CAMERA handler to inject a longpress KeyEvent in order to let you bind keys to actually trigger the shutter, in addition to launching the app itself.
+  .igio90 - Fix derp
+  .Jens Doll - Notification Light: Fix apps with same name not showing up
+  .Danny Baumann - Fix dialog not opening for app-specific notification light settings.
+  .Danny Baumann - Fix dialog state handling.
+  .Danesh Mondegarian - Led Settings : Hex input for colorpicker
+  .DvTonder - Settings: Fix color picker ComposeShader view
+  .igio90 - Pie: set Big as default for item gap (1/2)
+  .igio90 - Pie: updates (1/2) -pie angle: fixes, cleaning and new value (Huge) -pie size defaults -strings updates
+  .igio90 - Pie Angle: better values and strings
+  .igio90 - Pie: set angle default to 12� (2/2)
+  .igio90 - Pie: Add option to change pie's angle from the attach 1/2
+  .igio90 - Revert "BAMControl: [2/2] Power connect/disconnect notification support"
+  .igio90 - Some moar changes to trds Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .Lars Greiss - Settings: refactor TRDS toggle and add some apps
+  .igio90 - BAMControl: [2/2] Power connect/disconnect notification support Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .Lars Greiss - Settings: TRDS 2.0 (3/3)
+  .igio90 - No back icon in action bar of APN Settings When entering the APN menu, the actionbar is missing a back icon allowing the user to go back to the previous pane.
+  .igio90 - BAMControl: Option to force keyboard to show enter key (2/2) Original SlimRoms feature!  Not everyone likes emoticons :-(
+  .Domenico - Fixed all the fucking xhdpi icons
+
+JELLYBAM Project name: android_packages_apps_Torch
+  .Jorge Ruesga - Torch: Fix NPE
 
 CyanogenMod Project name: android_packages_apps_SamsungServiceMode
-  .Marco Brohet - SamsungServiceMode: NL translations
+  .jackmu95 - SamsungServiceMode: German translation
+  .Jacob Overgaard Madsen - SamsungServiceMode: DA translation
 
 JELLYBAM Project name: android_packages_apps_Phone
-  .Bajee11 - Fix build
-  .Mike Kasick - Support additional LTE network modes
-  .Steve Spear - Changes for the 2g and lte toggles
-  .Daniel - XY Changes
-  .Bajee11 - Missed Call Breath (1/3)
-  .Steve Spear - Another big update
-  .Muhammed Nazim - Phone: IncomingCallWidget shows indefinitely sometimes.
-  .Muhammed Nazim - Phone: Ignore touch during network operators search
-  .Muhammed Nazim - Phone: Forward port Add Missed call and Voicemail specific notification lights
-  .Bin Li - Phone: Fix NPE in PhoneUtils::toLogSafePhoneNumber
-  .kufikugel - Phone: Navbar customization (2/3)
-  .Quarx2k - Cleanup
-  .igio90 - Some moar updates Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
-  .Daniel - XY Changes
-  .Bajee11 - Missed Call Breath (1/3)
-  .Steve Spear - Changes for the 2g and lte toggles
-  .Mike Kasick - Support additional LTE network modes
-  .igio90 - Some cleanup Signed-off-by: igio90 <giovanni.rocca.90@gmail.com>
+  .Lars Greiss - Phone: transparent in call widget (optional)
+  .Danny Baumann - Fix call target drawable misalignment for sw600-[m|h|xh]dpi.
+  .DvTonder - Phone: Fix typo in activity
+  .Danny Baumann - Kill off use off FORCE_LED_WITH_SCREEN_OFF notification flag.
 
 JELLYBAM Project name: android_packages_apps_Mms
-  .Bajee11 - Big update!
-  .igio90 - cleanup!
-  .Odin Ugedal - Mms: NB translation
+  .Jorge Ruesga - MMS: Fix lookup of vanity addresses
+  .Muhammed Nazim - Add Multi-Part and Split SMS Configs
+  .Romuald Brunet - MMS app: fix crash when MMSC setting is NULL
+  .Lars Greiss - Mms: Go TRDS 2.0
+  .Danny Baumann - Kill off use off FORCE_LED_WITH_SCREEN_OFF notification flag.
+  .igio90 - Cleanup
 
 CyanogenMod Project name: android_packages_apps_Camera
-  .Danny Baumann - Update German translation
-  .Ricardo Cerqueira - Camera: fix preview in panorama mode
-  .DelPETER - Camera : FR Translation
-  .Odin Ugedal - Camera: NB translation
-  .Steve Kondik - Revert all recent changes to preview orientation handling
-  .Jorge Ruesga - Camera: Add supportsOrientationResizePreview configuration
-  .Steve Kondik - camera: Clean up code for restarting the preview
-  .Steve Kondik - camera: Fix hang when changing picture size
-  .isimobile - Camera: Add Missing AF translations & do some cleanup
-  .Gary Mathews - camera: Fix camera storage location
-  .DelPETER - Camera : refactor translation
+  .djMesias - Camera: ES translations
+  .Francesco - Camera: Update italian translation
+  .DelPETER - Camera : FR translation
+  .Michael Bestas - Add 6mp, 4.5mp, 3.7mp, 2mp, WXGA & WQVGA resolutions
+  .Tamas Toth - Camera: HU translation update
+  .Eddy Witkamp - Camera: NL translation
+  .Eddy Witkamp - Camera: NL translation
+  .Ondrej Zima - Camera: CS translation - AOSP
+  .Michael Bestas - Camera: EL translations
+  .Ondrej Zima - Camera: CS translation
+  .jackmu95 - Camera: Update German translation
+  .jackmu95 - Camera: Update German translation
+  .djMesias - Camera: ES translations
+  .detule - camera: Add 2.4MP, 6MP, 7MP resolution strings
+  .jackmu95 - Camera: Update German translation
+  .DelPETER - Camera : PL translation
+  .Gustavo - Camera: PT-BR update translations
+  .Marco Brohet - Camera: NL translations
+  .Jorge Ruesga - Camera: Wait for camera initialization
+  .Tamas Toth - Camera: HU translation update
+  .DelPETER - Camera : FR translation
+  .djMesias - Camera: ES translations
+  .Daniel Hillenbrand - camera: add 1392x1392 resolution for galaxys s3 front cams
+  .blunden - Camera: Update timer and voice activation drawables
+  .djMesias - Camera: ES translation
+  .Jacob Overgaard Madsen - Camera: DA translation
+  .Tamas Toth - Camera: HU update translation
+  .Tomasz Popielarczyk - Camera: Update Polish translation
+  .Ondrej Zima - Camera: CS translation
+  .DelPETER - Camera : FR translation
+  .blunden - Camera: Update exposure drawables to fix various problems
 
 CyanogenMod Project name: android_packages_apps_CMFileManager
-  .pvolkov - CMFileManager: RU translation
-  .Andrew Jiang - CMFileManager: Simplified Chinese Translations
+  .Eddy Witkamp - CMFM: NL translation
+  .jackmu95 - CMFileManager: Update German translation
+  .Michael Bestas - CMFM: EL translations
+  .Jorge Ruesga - CMFM: Fix AssociationsDialog selection when have scrolling
+  .prescott66 - CMFileManager: SK translations
+  .prescott66 - CMFileManager: SK translations
   .djMesias - CMFileManager: ES translations
-  .pvolkov - CMFileManager: RU translation
+  .Samuel Tardieu - CMFileManager: update FR translation
   .Jacob Overgaard Madsen - CMFileManager: DA translation
-  .Eddy Witkamp - CMFM: Update translations
-  .Marco Brohet - CMFM: Use 'app' instead of 'application'
-  .Jorge Ruesga - CMFM: Fix ColorPickerDialog on landscape mode
-  .Odin Ugedal - CMFileManager: NB translation
-  .Jorge Ruesga - CMFM: es_ES: Styling fixes
-  .Jorge Ruesga - CMFM: Styling fixes
+  .Vladimir Belkov - CMFileManager: RU translation
 
-CyanogenMod Project name: android_packages_apps_KeyChain
-  .Andrew Jiang - KeyChain: Simplified Chinese Translations
+CyanogenMod Project name: packages_apps_PermissionsManager
+  .Dirk Rettschlag - Translation: import russian translation from crowdin.net
+  .ChampionSwimmer - Holo-fy the icons
 
-CyanogenMod Project name: android_packages_apps_Browser
-  .Andrew Jiang - Browser: Simplified Chinese Translations
-  .Vladimir Belkov - Browser: RU translation
+JELLYBAM Project name: packages_apps_jellybam_papers
+  .Domenico - Added v8 Wallpaper
 
 CyanogenMod Project name: android_packages_apps_Trebuchet
-  .Jorge Ruesga - Trebuchet: Fix workspaceTabletGrid check
-  .Tamás Tóth - Trebuchet: HU update translation
-  .Danny Baumann - Update German translation
-  .Odin Ugedal - Trebuchet: NB translation
-  .Jorge Ruesga - Trebuchet: Properly remove grid preference on isLargeScreen devices
-  .Jorge Ruesga - Trebuchet: Centers horizontally the drawer on vertical orientation
-  .Danny Baumann - Revert "Reload launcher on expanded desktop"
-  .Yannik Ehlert - Update German translation.
-  .DelPETER - Trebuchet : FR translation
-  .Andrew Jiang - Trebuchet: Simplified Chinese Translations
+  .Nebojsa Cvetkovic - Workspace: Landscape paged view indicators
+  .David Marble - Fix for low aspect ratio (4x3) tablets.
+  .Michael Bestas - Trebuchet: EL translations
   .rheeze - Trebuchet: Update italian translation
-  .Eddy Witkamp - Trebuchet: NL translation
-  .djMesias - Trebuchet: ES translations
-  .pvolkov - Trebuchet: RU translation
-  .Ondrej Zima - Trebuchet: CS translation
-  .Gustavo - Trebuchet: PT-BR translations
-  .Jorge Ruesga - Trebuchet: Fix drawer vertical orientation bugs
-  .Jorge Ruesga - Trebuchet: Labels on dock items
-  .pvolkov - Trebuchet: Refactor RU translation
+  .Matt Mower - Trebuchet: fix broken compilation due to commit 42994
+  .Jorge Ruesga - Trebuchet: Better layout for isScreenLarge devices
+  .okrt - Trebuchet: TR translations
+  .prescott66 - Trebuchet: SK translations
+  .Jorge Ruesga - Trebuchet: Fix double tab on home button
+  .elektroschmock - German: Refine translation
+  .Danny Baumann - Update German translation.
+  .Tomasz Popielarczyk - Trebuchet: Update Polish translation
+  .Jacob Overgaard Madsen - Trebuchet: DA translation
 
 CyanogenMod Project name: android_packages_apps_Bluetooth
-  .Odin Ugedal - Bluetooth: NB translation
-  .Andrew Jiang - Bluetooth: Simplified Chinese Translations
-  .Jacob Overgaard Madsen - Bluetooth: DA translation
-  .Steve Kondik - Fix crash during BT shutdown
+  .Francesco - Bluetooth: Update italian translation
+  .Danny Baumann - Fix MAP SDP record generation [3/3].
+  .jackmu95 - Bluetooth: German translation
+  .Martin Gerczuk - Added support for Filter parameter for PBAP function PullPhoneBook
+  .Danny Baumann - Fix MAP accept threads sometimes spinning endlessly.
+  .okrt - Bluetooth: TR translations
 
 CyanogenMod Project name: android_packages_wallpapers_Galaxy4
-  .pvolkov - Galaxy4: RU translation
-  .Odin Ugedal - Galaxy4: NB translation
+  .Jacob Overgaard Madsen - Galaxy4: DA translation
+
+JELLYBAM Project name: android_packages_input_LatinIME
+  .Lars Greiss - LatinIME: change keyboard hints to full holo blue light
+
+CyanogenMod Project name: android_dalvik
+  .Steve Kondik - Revert all STE Dalvik performance patches
+  .Anders O Nilsson - JIT: Use vmla.f64 instead of vmuld + vaddd.
+  .Anders O Nilsson - JIT: Combine add with shift and offset for array load & store.
+  .Anders O Nilsson - JIT: Combine shift & sub for monitor unlock.
+  .Anders O Nilsson - JIT: Use rsb and shift in easy multiply.
+  .Anders O Nilsson - JIT: Combine add with shift.
+  .Anders O Nilsson - JIT: Allow use of cbz/cbnz for conditional branch gen.
+  .Henrik Smiding - JIT: Suppress loop suspend checks.
+  .Henrik Smiding - JIT: Hoist loop load operations above loop.
 
 CyanogenMod Project name: android_device_samsung_galaxys2-common
-  .ghepeu - galaxys2-common: camera: exynos_exif.c: fix values of some wrong EXIF tags
-  .ghepeu - galaxys2-common: fix EXIF data generated by the camera
+  .Daniel Hillenbrand - galaxys2: loop ringtones, cleanup unused props
+  .Daniel Hillenbrand - galaxys2: libril: uus is absent
+  .Daniel Hillenbrand - galaxys2: fix getting preferred network type
+  .Daniel Hillenbrand - galaxys2-common: audio: fix merge fail
+  .Daniel Hillenbrand - galaxys2: audio: remove some logging
+  .Daniel Hillenbrand - galaxys2: libril: remove handling of uusInfo and reenable
+  .Daniel Hillenbrand - galaxys2: set default mdnie scenario and mode on boot
+  .Daniel Hillenbrand - galaxys2: back to blob libril
+  .Paul Kocialkowski - Mixer: Set the next elements routes when one failed
+  .Paul Kocialkowski - Mixer: Handle write element
+  .Daniel Hillenbrand - galaxys2: libril: add a fallback to handle signalstrength for older modems
+  .Daniel Hillenbrand - galaxys2: switch to smdk4412 kernel
+  .Daniel Hillenbrand - galaxys2: add opensource libril, remove ril class
+  .Dorian Snyder - galaxys2-common: allow d710 to build audio
 
 CyanogenMod Project name: android_device_samsung_i9100
-  .Andrew Jiang - I9100: Simplified Chinese Translations
-  .Gustavo - i9100: PT-BR translations
-
-CyanogenMod Project name: android_device_samsung_jf-common
-  .Steve Kondik - jf: Add media profile
-  .Steve Kondik - jf: Fix storage configuration
-  .Steve Kondik - jf: Add configuration for panel auto-brightness mode
-
-CyanogenMod Project name: android_device_samsung_msm8960-common
-  .Gustavo - msm8960-common: PT-BR translations
-  .Steve Kondik - msm8960: Fix writing of bytes to param partition
-  .Steve Kondik - msm8960: Relocate media profiles
-  .Steve Kondik - msm8960: Add support for MDNIE auto mode and make it default
-  .Steve Kondik - msm8960: Don't show color temp setting if not supported
-  .Dan Pasanen - msm8960-common: relocate panel_colors sysfs interface
-
-CyanogenMod Project name: android_device_samsung_qcom-common
-  .Steve Kondik - qcom-common: Use ondemand governor in recovery
-  .Steve Kondik - qcom-common: Set power modes in recovery
-  .Steve Kondik - msm8660: Use interactive cpufreq governor by default
-
-CyanogenMod Project name: android_device_samsung_jfltetmo
-  .Steve Kondik - jfltetmo: Use LTE APN by default
+  .Daniel Hillenbrand - i9100: fix extract script
+  .Daniel Hillenbrand - i9100: remove specific header path
+  .DelPETER - Samsung i9100 : FR translation
+  .Daniel Hillenbrand - i9100: switch to smdk4412 kernel
+  .Daniel Hillenbrand - i9100: remove ril blobs
+  .Eddy Witkamp - i9100: NL Translation
 
