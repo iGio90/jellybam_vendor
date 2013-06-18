@@ -121,9 +121,6 @@ PRODUCT_PACKAGES += \
     PerformanceControl \
     PermissionsManager
 
-PRODUCT_PACKAGES += \
-    OTAPlatform
-
 # Extra tools in CM
 PRODUCT_PACKAGES += \
     openvpn \
@@ -177,8 +174,8 @@ CM_BUILD := $(BOARD)
 
 # Add PA release version
 PA_VERSION_MAJOR = 3
-PA_VERSION_MINOR = 1
-PA_VERSION_MAINTENANCE = 6
+PA_VERSION_MINOR = 6
+PA_VERSION_MAINTENANCE = 0
 PA_PREF_REVISION = 1
 VERSION := $(PA_VERSION_MAJOR).$(PA_VERSION_MINOR)$(PA_VERSION_MAINTENANCE)
 PA_VERSION := pa_$(BOARD)-$(VERSION)-$(shell date +%0d%^b%Y-%H%M%S)
@@ -190,6 +187,15 @@ BAM_VERSION_MAINTENANCE = 0
 BAM_VERSION := $(BAM_VERSION_MAJOR).$(BAM_VERSION_MINOR).$(BAM_VERSION_MAINTENANCE)
 
 TARGET_CUSTOM_RELEASETOOL := vendor/jellybam/tools/squisher
+
+# goo.im properties
+ifneq ($(DEVELOPER_VERSION),true)
+    PRODUCT_PROPERTY_OVERRIDES += \
+      ro.goo.developerid=JellyBam \
+      ro.goo.rom=JellyBam \
+      ro.goo.version=$(BAM_VERSION) \
+      ro.goo.product.device=$(BOARD)
+endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.jellybam.version=$(BAM_VERSION) \
