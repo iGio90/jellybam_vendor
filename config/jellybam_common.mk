@@ -121,6 +121,9 @@ PRODUCT_PACKAGES += \
     PerformanceControl \
     PermissionsManager
 
+PRODUCT_PACKAGES += \
+    OTAPlatform
+
 # Extra tools in CM
 PRODUCT_PACKAGES += \
     openvpn \
@@ -182,7 +185,7 @@ PA_VERSION := pa_$(BOARD)-$(VERSION)-$(shell date +%0d%^b%Y-%H%M%S)
 
 # JELLYBAM version
 BAM_VERSION_MAJOR = 8
-BAM_VERSION_MINOR = 1
+BAM_VERSION_MINOR = 2
 BAM_VERSION_MAINTENANCE = 0
 BAM_VERSION := $(BAM_VERSION_MAJOR).$(BAM_VERSION_MINOR).$(BAM_VERSION_MAINTENANCE)
 
@@ -199,4 +202,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.romstats.url=http://www.bam-android.com/stats/ \
     ro.romstats.name=jellybam
     ro.romstats.version=$(BAM_VERSION) \
-    ro.romstats.tframe=7
+    ro.romstats.tframe=7 \
+    ro_otaplatform.changelog_url=https://raw.github.com/iGio90/jellybam_vendor/bam6/prebuilt/common/etc/bamlog.txt \
+    ro_otaplatform.gapps_url=http://goo.im/devs/paranoidandroid/roms/gapps \
+    ro_otaplatform.gapps_version=ro.addon.pa_version \
+    ro_otaplatform.backup_files=/system/etc/paranoid/properties.conf
