@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RomConfig>
     <RomName>JellyBam</RomName>
-    <RomVersion>8.2.0</RomVersion>
+    <RomVersion>8.3.0</RomVersion>
     <RomCheckUrl>http://www.modmydroid.net/update_me_6.xml</RomCheckUrl>
 	<OtaUid>2410199000123455</OtaUid>
     <RebootRecovery>0</RebootRecovery>
