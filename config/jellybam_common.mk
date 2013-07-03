@@ -50,6 +50,7 @@ PRODUCT_COPY_FILES += \
     vendor/jellybam/prebuilt/common/xml/com.sonyericsson.android.SwIqiBmp.jar:system/framework/com.sonyericsson.android.SwIqiBmp.jar \
     vendor/jellybam/prebuilt/common/gapps/addon.d/80-gapps.sh:system/addon.d/70-gapps.sh \
     vendor/jellybam/prebuilt/common/gapps/addon.d/71-gapps-faceunlock.sh:system/addon.d/71-gapps-faceunlock.sh \
+    vendor/jellybam/prebuilt/common/gapps/etc/audio_effects.conf:system/etc/audio_effects.conf \
     vendor/jellybam/prebuilt/common/gapps/etc/g.prop:system/etc/g.prop \
     vendor/jellybam/prebuilt/common/gapps/etc/resolv.conf:system/etc/resolv.conf \
     vendor/jellybam/prebuilt/common/gapps/etc/permissions/com.google.android.maps.xml:system/etc/permissions/com.google.android.maps.xml \
@@ -60,6 +61,7 @@ PRODUCT_COPY_FILES += \
     vendor/jellybam/prebuilt/common/gapps/framework/com.google.android.maps.jar:system/framework/com.google.android.maps.jar \
     vendor/jellybam/prebuilt/common/gapps/framework/com.google.android.media.effects.jar:system/framework/com.google.android.media.effects.jar \
     vendor/jellybam/prebuilt/common/gapps/framework/com.google.widevine.software.drm.jar:system/framework/com.google.widevine.software.drm.jar \
+    vendor/jellybam/prebuilt/common/gapps/lib/libcyanogen-dsp.so:system/lib/libcyanogen-dsp.so \
     vendor/jellybam/prebuilt/common/gapps/lib/libfacelock_jni.so:system/lib/libfacelock_jni.so \
     vendor/jellybam/prebuilt/common/gapps/lib/libfilterpack_facedetect.so:system/lib/libfilterpack_facedetect.so \
     vendor/jellybam/prebuilt/common/gapps/lib/libfrsdk.so:system/lib/libfrsdk.so \
