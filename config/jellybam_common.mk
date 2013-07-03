@@ -61,7 +61,7 @@ PRODUCT_COPY_FILES += \
     vendor/jellybam/prebuilt/common/gapps/framework/com.google.android.maps.jar:system/framework/com.google.android.maps.jar \
     vendor/jellybam/prebuilt/common/gapps/framework/com.google.android.media.effects.jar:system/framework/com.google.android.media.effects.jar \
     vendor/jellybam/prebuilt/common/gapps/framework/com.google.widevine.software.drm.jar:system/framework/com.google.widevine.software.drm.jar \
-    vendor/jellybam/prebuilt/common/gapps/lib/libcyanogen-dsp.so:system/lib/libcyanogen-dsp.so \
+    vendor/jellybam/prebuilt/common/gapps/lib/soundfx/libcyanogen-dsp.so:system/lib/soundfx/libcyanogen-dsp.so \
     vendor/jellybam/prebuilt/common/gapps/lib/libfacelock_jni.so:system/lib/libfacelock_jni.so \
     vendor/jellybam/prebuilt/common/gapps/lib/libfilterpack_facedetect.so:system/lib/libfilterpack_facedetect.so \
     vendor/jellybam/prebuilt/common/gapps/lib/libfrsdk.so:system/lib/libfrsdk.so \
