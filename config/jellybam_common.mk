@@ -50,7 +50,7 @@ PRODUCT_COPY_FILES += \
     vendor/jellybam/prebuilt/common/xml/com.sonyericsson.android.SwIqiBmp.jar:system/framework/com.sonyericsson.android.SwIqiBmp.jar \
     vendor/jellybam/prebuilt/common/gapps/addon.d/80-gapps.sh:system/addon.d/70-gapps.sh \
     vendor/jellybam/prebuilt/common/gapps/addon.d/71-gapps-faceunlock.sh:system/addon.d/71-gapps-faceunlock.sh \
-    vendor/jellybam/prebuilt/common/gapps/etc/audio_effects.conf:system/etc/audio_effects.conf \
+    vendor/jellybam/prebuilt/common/gapps/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf \
     vendor/jellybam/prebuilt/common/gapps/etc/g.prop:system/etc/g.prop \
     vendor/jellybam/prebuilt/common/gapps/etc/resolv.conf:system/etc/resolv.conf \
     vendor/jellybam/prebuilt/common/gapps/etc/permissions/com.google.android.maps.xml:system/etc/permissions/com.google.android.maps.xml \
