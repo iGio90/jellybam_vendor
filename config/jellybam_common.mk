@@ -48,7 +48,7 @@ PRODUCT_COPY_FILES += \
     vendor/jellybam/prebuilt/common/xml/twframework-res.apk:system/framework/twframework-res.apk \
     vendor/jellybam/prebuilt/common/xml/semc_audioeffectif.jar:system/framework/semc_audioeffectif.jar \
     vendor/jellybam/prebuilt/common/xml/com.sonyericsson.android.SwIqiBmp.jar:system/framework/com.sonyericsson.android.SwIqiBmp.jar \
-    vendor/jellybam/prebuilt/common/gapps/addon.d/70-gapps.sh:system/addon.d/70-gapps.sh \
+    vendor/jellybam/prebuilt/common/gapps/addon.d/80-gapps.sh:system/addon.d/70-gapps.sh \
     vendor/jellybam/prebuilt/common/gapps/addon.d/71-gapps-faceunlock.sh:system/addon.d/71-gapps-faceunlock.sh \
     vendor/jellybam/prebuilt/common/gapps/etc/g.prop:system/etc/g.prop \
     vendor/jellybam/prebuilt/common/gapps/etc/resolv.conf:system/etc/resolv.conf \
