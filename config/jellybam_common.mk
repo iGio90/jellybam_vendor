@@ -33,6 +33,9 @@ PRODUCT_COPY_FILES += \
     vendor/jellybam/prebuilt/common/etc/permissions/vtmanager_library.xml:system/etc/permissions/vtmanager_library.xml \
     vendor/jellybam/prebuilt/common/xml/twframework.jar:system/framework/twframework.jar \
     vendor/jellybam/prebuilt/common/xml/twframework-res.apk:system/framework/twframework-res.apk \
+    vendor/jellybam/prebuilt/common/libs/libjni_filtershow_filters.so:system/lib/libjni_filtershow_filters.so \
+    vendor/jellybam/prebuilt/common/libs/libjni_mosaic.so:system/lib/libjni_mosaic.so \
+    vendor/jellybam/prebuilt/common/libs/liblightcycle.so:system/lib/liblightcycle.so \
     vendor/jellybam/prebuilt/common/libs/libglcanvas.so:system/lib/libglcanvas.so \
     vendor/jellybam/prebuilt/common/libs/libdrawglfunction.so:system/lib/libdrawglfunction.so \
     vendor/jellybam/prebuilt/common/libs/libdhwr.so:system/lib/libdhwr.so \
