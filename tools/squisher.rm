@@ -1,6 +1,7 @@
 system/app/CMUpdater.apk
 system/app/Gallery2.apk
 system/app/Home.apk
+system/app/LatinIME.apk
 system/app/PinyinIME.apk
 system/etc/CHANGELOG-CM.txt
 system/etc/init.d/00banner

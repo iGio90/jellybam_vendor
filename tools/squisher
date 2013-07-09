@@ -111,8 +111,9 @@ mkdir $REPACK/ota/system/etc/paranoid/preferences
 mkdir $REPACK/ota/system/etc/paranoid/preferences/images
 cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/preferences/images/* $REPACK/ota/system/etc/paranoid/preferences/images/
 cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/pa/preferences/$OVERLAYTARGET/* $REPACK/ota/system/etc/paranoid/preferences/
-cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/apps/* $REPACK/ota/system/app/
 cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/bootanimation/$OVERLAYTARGET/bootanimation.zip $REPACK/ota/system/media/bootanimation.zip
+cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/apps/* $REPACK/ota/system/app/
+cp -r $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/libs/* $REPACK/ota/system/lib/
 cp $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/xml/hosts $REPACK/ota/system/etc/
 cp $ANDROID_BUILD_TOP/vendor/jellybam/prebuilt/common/etc/init.d/90* $REPACK/ota/system/etc/init.d/
 
