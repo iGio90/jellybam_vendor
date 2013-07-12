@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RomConfig>
     <RomName>JellyBam</RomName>
-    <RomVersion>8.4.0</RomVersion>
-    <RomCheckUrl>http://www.modmydroid.net/update_me_6.xml</RomCheckUrl>
+    <RomVersion>9.1.0</RomVersion>
+    <RomCheckUrl>http://www.bam-android.com/update_me.xml</RomCheckUrl>
 	<OtaUid>2410199000123455</OtaUid>
     <RebootRecovery>0</RebootRecovery>
 	<DisableInstalledApps>1</DisableInstalledApps>

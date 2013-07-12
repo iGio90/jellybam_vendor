@@ -187,7 +187,7 @@ PA_VERSION := pa_$(BOARD)-$(VERSION)-$(shell date +%0d%^b%Y-%H%M%S)
 
 # JELLYBAM version
 BAM_VERSION_MAJOR = 9
-BAM_VERSION_MINOR = 0
+BAM_VERSION_MINOR = 1
 BAM_VERSION_MAINTENANCE = 0
 BAM_VERSION := $(BAM_VERSION_MAJOR).$(BAM_VERSION_MINOR).$(BAM_VERSION_MAINTENANCE)
 
@@ -211,10 +211,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.papref.revision=$(PA_PREF_REVISION) \
     ro.aokp.version=$(BOARD)_jb-mr1_build-6 \
     ro.romstats.url=http://www.bam-android.com/stats/ \
-    ro.romstats.name=jellybam
+    ro.romstats.name=JELLYBAM \
     ro.romstats.version=$(BAM_VERSION) \
-    ro.romstats.tframe=7 \
-    ro_otaplatform.changelog_url=https://raw.github.com/iGio90/jellybam_vendor/bam9/prebuilt/common/etc/bamlog.txt \
-    ro_otaplatform.gapps_url=http://goo.im/devs/paranoidandroid/roms/gapps \
-    ro_otaplatform.gapps_version=ro.addon.pa_version \
-    ro_otaplatform.backup_files=/system/etc/paranoid/properties.conf
+    ro.romstats.tframe=7
